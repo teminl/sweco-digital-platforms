@@ -1,7 +1,6 @@
 # Sweco Bootstrap
 
-Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, application icons and svg:s.
-How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros)
+Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, application icons and svg:s. How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros).
 
 ### Frameworks and dependencies
 
