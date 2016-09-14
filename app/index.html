@@ -1,25 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+<!-- META START -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sweco Bootstrap</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="Content-Language" content="sv">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="imagetoolbar" content="no">
+<!-- APPLICATION NAME START -->
+    <title>Sweco - Application-name</title>
+    <meta name="Application-name" content="Sweco - Application-name">
+<!-- APPLICATION NAME STOP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<!-- META STOP -->
+<!-- ICO START -->
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192x192.png">
+<!-- ICO STOP -->
     {{content-for "head"}}
-
+<!-- CSS START -->
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
     <link rel="stylesheet" href="{{rootURL}}assets/sweco-bootstrap.css">
-
+<!-- CSS STOP -->
+<!-- SCRIPT START -->
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/sweco-bootstrap.js"></script>
-
+<!-- SCRIPT STOP -->
     {{content-for "head-footer"}}
   </head>
   <body>
     {{content-for "body"}}
-
     {{content-for "body-footer"}}
   </body>
 </html>
