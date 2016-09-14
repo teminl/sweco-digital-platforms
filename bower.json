@@ -12,5 +12,8 @@
     "font-awesome": "4.6.3",
     "progress.js": "0.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+  },
+  "resolutions": {
+  }
 }
