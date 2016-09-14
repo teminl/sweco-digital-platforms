@@ -1,10 +1,7 @@
 # Sweco Bootstrap
 
-Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, application icons and svg:s. How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros)
-
-### Sweco Bootstrap example page, gh-pages
-
-[Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/) containing HTML example elements.
+Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, application icons and svg:s.
+How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros)
 
 ### Frameworks and dependencies
 
@@ -15,6 +12,10 @@ Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, applic
 * [jQuery](https://jquery.com/)
 * [jQuery-browser-detection](https://github.com/schickling/jquery-browser-detection)
 * [Progress.js](http://usablica.github.io/progress.js/)
+
+### Sweco Bootstrap example page, gh-pages
+
+[Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/) containing HTML example elements.
 
 ### What's included
 
