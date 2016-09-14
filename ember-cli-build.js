@@ -1,23 +1,24 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var nodeSass = require('node-sass');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+
+    // Sass
+    sassOptions: {
+      nodeSass: nodeSass,
+      includePaths: [
+        'bower_components/bootstrap/scss'
+      ]
+    },
 
     // Autoprefixer
     autoprefixer: {
       browsers: ['last 2 ios version'],
       cascade: false
-    },
-
-    // Sass
-    sassOptions: {
-      includePaths: [
-        'bower_components/bootstrap/sass'
-      ]
     }
-
 
   });
 
@@ -47,8 +48,6 @@ module.exports = function(defaults) {
   app.import("bower_components/jquery-browser-detection/src/jquery.browser.detection.js");
   // Bootstrap
   app.import("bower_components/bootstrap/dist/js/bootstrap.min.js");
-  // Lodash
-  app.import('bower_components/lodash/lodash.js');
   // Jasny Bootstrap
   app.import("bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js");
   // Progressjs
