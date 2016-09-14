@@ -1,0 +1,20 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close" {{action 'close'}}><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title">{{title}}</h4>
+    </div>
+    <div class="modal-body">
+      {{yield}}
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'close'}}>{{closeBtnText}}</button>
+      <button type="button" class="btn btn-info {{if sending 'disabled'}}" {{action 'send'}}>
+        {{sendBtnText}}
+        {{#if sending}}
+          <i class="fa fa-circle-o-notch fa-spin"></i>
+        {{/if}}
+      </button>
+    </div>
+  </div>
+</div>

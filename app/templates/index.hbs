@@ -1,0 +1,36 @@
+<!-- PAGE START -->
+  <div id="page">
+
+<!-- NAVBAR NORTH START -->
+    {{partial 'partials/navbar'}}
+<!-- NAVBAR NORTH STOP -->
+
+<!-- NAVBAR SOUTH START -->
+    {{partial 'partials/navbar-south'}}
+<!-- NAVBAR SOUTH STOP -->
+
+<!-- FRONT PAGE START -->
+    <div class="front-page">
+      <div class="hero">
+        <h1>Sweco <small>Bootstrap</small></h1>
+      </div>
+    </div>
+<!-- FRONT PAGE STOP -->
+
+<!-- MODAL START -->
+    {{#if isModalVisible}}
+      {{component modal.name on-cancel=(action 'closeModal') content=modal}}
+    {{/if}}
+<!-- MODAL STOP -->
+
+<!-- OUTLET START -->
+    {{outlet}}
+<!-- OUTLET STOP -->
+
+<!-- CONTENT START -->
+    <section class="container" id="content">
+
+    </section>
+<!-- CONTENT STOP -->
+  </div>
+<!-- PAGE STOP -->

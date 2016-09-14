@@ -1,0 +1,26 @@
+  <div class="navbar navbar-fixed-top navbar-north" role="navigation" id="navbarNorth">
+    <div class="container">
+      <div class="row">
+<!-- LOGOTYPE START -->
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <a href="./" class="logotype"><img src="img/logotype.svg" alt="" /></a>
+        </div>
+<!-- LOGOTYPE STOP -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<!-- SEARCH START -->
+          {{sweco-search value=query search='search' clear='clear'}}
+<!-- SEARCH STOP -->
+        </div>
+        <div class="col-lg-3 col-md-3">
+<!-- TOOLBAR START -->
+          <div class="toolbar">
+            {{#link-to 'bootstrap' class="btn btn-navbar"}}<i class="fa fa-cloud fa-lg"></i><span class="txt">Bootstrap</span>{{/link-to}}
+          </div>
+<!-- TOOLBAR STOP -->
+        </div>
+      </div>
+    </div>
+<!-- PROGRESS START -->
+    {{progress-js isLoading=isLoading}}
+<!-- PROGRESS STOP -->
+  </div>
