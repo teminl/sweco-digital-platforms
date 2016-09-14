@@ -4,7 +4,21 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+
+    // Autoprefixer
+    autoprefixer: {
+      browsers: ['last 2 ios version'],
+      cascade: false
+    },
+
+    // Sass
+    sassOptions: {
+      includePaths: [
+        'bower_components/bootstrap/sass'
+      ]
+    }
+
+
   });
 
   // Use `app.import` to add additional libraries to the generated
@@ -19,6 +33,26 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+
+  // Font-Awesome
+  app.import("bower_components/font-awesome/fonts/fontawesome-webfont.eot", { destDir: "fonts" });
+  app.import("bower_components/font-awesome/fonts/fontawesome-webfont.svg", { destDir: "fonts" });
+  app.import("bower_components/font-awesome/fonts/fontawesome-webfont.ttf", { destDir: "fonts" });
+  app.import("bower_components/font-awesome/fonts/fontawesome-webfont.woff", { destDir: "fonts" });
+  app.import("bower_components/font-awesome/fonts/fontawesome-webfont.woff2", { destDir: "fonts" });
+  app.import("bower_components/font-awesome/fonts/FontAwesome.otf", { destDir: "fonts" });
+  // Modernizr
+  app.import("bower_components/modernizr/modernizr.js");
+  // Jquery browser detection
+  app.import("bower_components/jquery-browser-detection/src/jquery.browser.detection.js");
+  // Bootstrap
+  app.import("bower_components/bootstrap/dist/js/bootstrap.min.js");
+  // Lodash
+  app.import('bower_components/lodash/lodash.js');
+  // Jasny Bootstrap
+  app.import("bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js");
+  // Progressjs
+  app.import("bower_components/progress.js/minified/progress.min.js");
 
   return app.toTree();
 };
