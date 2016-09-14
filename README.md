@@ -1,7 +1,11 @@
-# My-new-app
+# Sweco Bootstrap
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+* Bootstrap example page, containing HTML example elements.
+* Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, application icons and svg:s. How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros)
+
+## Bootstrap example page, gh-pages
+
+* [Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/)
 
 ## Prerequisites
 
@@ -16,7 +20,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd my-new-app`
+* `cd sweco-bootstrap`
 * `npm install`
 * `bower install`
 
@@ -24,6 +28,12 @@ You will need the following things properly installed on your computer.
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
+
+### Quick Start
+
+    npm install
+    bower install
+    ember s
 
 ### Code Generators
 
@@ -41,7 +51,60 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+#### Publish to Github gh-pages
+
+    npm run deploy
+
+### Editing
+If using Sublime Text, exclude node_modules, add e.g. the following to Settings / User:
+```
+"folder_exclude_patterns":
+[
+	".svn",
+	".git",
+	".hg",
+	".DS_Store",
+	"CVS",
+	"tmp/*",
+	"node_modules"
+],
+```
+Also add syntax highlighting and tab/code completion for Less, Sass and SCSS files with package control.
+
+
+### Rebuild ember-cli
+
+For a moment, nothing happened. Then, after a second or so, nothing continued to happen.
+
+Remove old global ember-cli, Clear NPM and Bower cache. Then install new global ember-cli and choose version.
+
+    npm uninstall -g ember-cli
+    npm cache clean
+    bower cache clean
+    npm install -g ember-cli@*.*.*
+    npm install
+    bower install
+    ember s
+
+### Rebuild thirdparty dependencies
+
+This is for resetting NPM- and Bower-dependencies. If major changes in dependencies versioning or layoutstructure/webfonts. Don´t forget to do it in the working branch.
+
+Linux/Mac/Windows Bash-shell (For ex. Git prompt)
+
+    rm -rf node_modules
+    rm -rf bower_components
+    npm install
+    bower install
+    ember s
+
+REM Windows CMD (Grunt dependencies needs the command patch, if it´s not done by Cygwin, then use bash-prompt)
+
+    rd /q /s node_modules
+    rd /q /s bower_components
+    npm install
+    bower install
+    ember s
 
 ## Further Reading / Useful Links
 
