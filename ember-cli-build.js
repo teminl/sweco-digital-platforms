@@ -46,6 +46,8 @@ module.exports = function(defaults) {
   app.import("bower_components/modernizr/modernizr.js");
   // Jquery browser detection
   app.import("bower_components/jquery-browser-detection/src/jquery.browser.detection.js");
+  // Tether
+  app.import("bower_components/tether/dist/js/tether.min.js");
   // Bootstrap
   app.import("bower_components/bootstrap/dist/js/bootstrap.min.js");
   // Jasny Bootstrap

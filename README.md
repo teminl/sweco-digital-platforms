@@ -11,6 +11,7 @@ Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, applic
 * [jQuery](https://jquery.com/)
 * [jQuery-browser-detection](https://github.com/schickling/jquery-browser-detection)
 * [Progress.js](http://usablica.github.io/progress.js/)
+* [Tether](http://tether.io/)
 
 ### Sweco Bootstrap example page, gh-pages
 
