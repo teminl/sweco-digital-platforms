@@ -4,8 +4,7 @@
 
 ## Sweco Bootstrap example page, gh-pages
 
-* Sweco Bootstrap example page, containing HTML example elements.
-* [Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/)
+* [Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/) containing HTML example elements.
 
 ## Prerequisites
 
