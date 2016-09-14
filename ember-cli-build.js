@@ -14,7 +14,7 @@ module.exports = function(defaults) {
       ]
     },
 
-    // Autoprefixer
+    // Autoprefixer https://github.com/postcss/autoprefixer
     autoprefixer: {
       browsers: ['last 2 ios version'],
       cascade: false
