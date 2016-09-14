@@ -1,0 +1,50 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Logs
+logs
+*.log
+
+# General
+.tmp
+.project
+*.pem
+*.crt
+
+# compiled output
+dist
+tmp
+
+# dependencies
+# Grunt, Node
+.grunt
+npm-debug.log
+bower_components
+node_modules
+
+# misc
+.sass-cache
+connect.lock
+coverage/*
+libpeerconnection.log
+npm-debug.log
+testem.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Codekit
+config.codekit
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac
+.DS_Store
+*.cer
