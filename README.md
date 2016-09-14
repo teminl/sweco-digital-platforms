@@ -1,10 +1,10 @@
 # Sweco Bootstrap
 
-* Bootstrap example page, containing HTML example elements.
 * Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, application icons and svg:s. How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros)
 
 ## Sweco Bootstrap example page, gh-pages
 
+* Sweco Bootstrap example page, containing HTML example elements.
 * [Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/)
 
 ## Prerequisites
@@ -45,7 +45,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Publish to Github gh-pages
 
-* `npm run deploy`
+* `npm run deploy
 
 ## Editing
 If using Sublime Text, exclude node_modules, add e.g. the following to Settings / User:
