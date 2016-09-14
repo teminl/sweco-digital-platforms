@@ -1,10 +1,45 @@
 # Sweco Bootstrap
 
-* Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, application icons and svg:s. How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros)
+Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, application icons and svg:s. How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros)
 
-## Sweco Bootstrap example page, gh-pages
+### Sweco Bootstrap example page, gh-pages
 
-* [Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/) containing HTML example elements.
+[Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/) containing HTML example elements.
+
+### What's included
+
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+
+```
+dist/
+├── css/
+│   ├── sweco-bootstrap.css
+│   ├── sweco-bootstrap.css.map
+│   ├── sweco-bootstrap.min.css
+│   └── sweco-bootstrap.min.css.map
+├── js/
+│   ├── sweco-bootstrap.js
+│   └── sweco-bootstrap.min.js
+├── fonts/
+│   ├── SwecoSans-Regular.*
+│   ├── SwecoSans-Medium.*
+│   ├── SwecoSans-Bold.*
+│   ├── fontawesome-webfont.*
+└── img/
+    ├── apple-touch-icon.png
+    ├── favicon-*.png
+    ├── mstile-*.png
+    ├── logotype.svg
+    ├── logotype-black.svg
+    └── sweco-front.png
+```
+
+We provide compiled CSS and JS (`sweco-bootstrap.*`), as well as compiled and minified CSS and JS (`sweco-bootstrap.min.*`). CSS [source maps](https://developer.chrome.com/devtools/docs/css-preprocessors) (`sweco-bootstrap.*.map`) are available for use with certain browsers' developer tools.
+
+
+## Bugs and feature requests
+
+Have a bug or a feature request? Please first read the [existing issues](https://github.com/sweco/6613-sweco-bootstrap/issues) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/sweco/6613-sweco-bootstrap/new).
 
 ## Prerequisites
 
