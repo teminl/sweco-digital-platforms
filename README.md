@@ -19,21 +19,15 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd sweco-bootstrap`
-* `npm install`
-* `bower install`
+		git clone <repository-url> this repository
+		cd sweco-bootstrap
+		npm install
+		bower install
 
 ## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Quick Start
-
-* `npm install`
-* `bower install`
 * `ember s`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
 
@@ -51,11 +45,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-#### Publish to Github gh-pages
+## Publish to Github gh-pages
 
     npm run deploy
 
-### Editing
+## Editing
 If using Sublime Text, exclude node_modules, add e.g. the following to Settings / User:
 ```
 "folder_exclude_patterns":
@@ -72,7 +66,7 @@ If using Sublime Text, exclude node_modules, add e.g. the following to Settings 
 Also add syntax highlighting and tab/code completion for Less, Sass and SCSS files with package control.
 
 
-### Rebuild ember-cli
+## Rebuild ember-cli
 
 For a moment, nothing happened. Then, after a second or so, nothing continued to happen.
 
@@ -81,12 +75,12 @@ Remove old global ember-cli, Clear NPM and Bower cache. Then install new global 
     npm uninstall -g ember-cli
     npm cache clean
     bower cache clean
-    npm install -g ember-cli@*.*.*
+    npm install -g ember-cli
     npm install
     bower install
     ember s
 
-### Rebuild thirdparty dependencies
+## Rebuild thirdparty dependencies
 
 This is for resetting NPM- and Bower-dependencies. If major changes in dependencies versioning or layoutstructure/webfonts. Don´t forget to do it in the working branch.
 
