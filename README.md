@@ -44,7 +44,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Publish to Github gh-pages
 
-* `npm run deploy
+* `npm run deploy`
 
 ## Editing
 If using Sublime Text, exclude node_modules, add e.g. the following to Settings / User:
