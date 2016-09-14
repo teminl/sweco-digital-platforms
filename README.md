@@ -19,10 +19,10 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-		git clone <repository-url> this repository
-		cd sweco-bootstrap
-		npm install
-		bower install
+1. `git clone https://github.com/sweco/6613-sweco-bootstrap.git` this repository
+1. Change into the new directory
+1. `npm install`
+1. `bower install`
 
 ## Running / Development
 
