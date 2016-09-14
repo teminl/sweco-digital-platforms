@@ -6,6 +6,16 @@ Containing the Sweco Visual Guidelines 2016 with logotype, fonts, colors, applic
 
 [Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/) containing HTML example elements.
 
+### Frameworks and dependencies
+
+* [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
+* [Jasny-bootstrap](http://www.jasny.net/bootstrap/)
+* [Font-awesome](http://fontawesome.io/icons/)
+* [Modernizr](https://modernizr.com/)
+* [jQuery](https://jquery.com/)
+* [jQuery-browser-detection](https://github.com/schickling/jquery-browser-detection)
+* [Progress.js](http://usablica.github.io/progress.js/)
+
 ### What's included
 
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
