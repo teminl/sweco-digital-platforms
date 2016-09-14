@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'my-new-app',
+    modulePrefix: 'sweco-bootstrap',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
