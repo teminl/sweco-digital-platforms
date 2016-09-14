@@ -31,9 +31,9 @@ You will need the following things properly installed on your computer.
 
 ### Quick Start
 
-    npm install
-    bower install
-    ember s
+* `npm install`
+* `bower install`
+* `ember s`
 
 ### Code Generators
 
