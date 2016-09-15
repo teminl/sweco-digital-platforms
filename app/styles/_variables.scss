@@ -191,8 +191,11 @@ $blockquote-font-size:    ($font-size-base * 1.25);
 $blockquote-border-color: $gray-lighter;
 $blockquote-border-width: .25rem;
 
+// Border
+$border-color:            rgba(0,0,0,.1);
+
 // Hr
-$hr-border-color:         rgba(0,0,0,.1);
+$hr-border-color:         $border-color;
 $hr-border-width:         $border-width;
 
 // Content
@@ -200,7 +203,36 @@ $mark-padding:            .2em;
 
 $dt-font-weight:          bold;
 
-$kbd-box-shadow:          inset 0 -.1rem 0 rgba(0,0,0,.25) !default;
+$kbd-box-shadow:          inset 0 -.1rem 0 rgba(0,0,0,.25);
 $nested-kbd-font-weight:  bold;
 
 $list-inline-padding:     5px;
+
+// Components
+$line-height-lg:          (4 / 3);
+$line-height-sm:          1.5;
+
+$border-radius:           .25rem;
+$border-radius-lg:        .3rem;
+$border-radius-sm:        .2rem;
+
+$component-bg-hover:      $gray-superlight;
+$component-active-color:  $white;
+$component-active-bg:     $brand-primary;
+
+$caret-width:             .3em;
+$caret-width-lg:          $caret-width;
+
+// Tables
+$table-cell-padding:      .75rem;
+$table-sm-cell-padding:   .3rem;
+
+$table-bg:                transparent;
+$table-bg-accent:         $light-gray-superlight;
+$table-bg-hover:          $component-bg-hover;
+$table-bg-active:         $gray-superlight;
+
+$table-border-width:      $border-width;
+$table-border-color:      $border-color;
+
+
