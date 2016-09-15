@@ -46,7 +46,7 @@
     "node-sass": "3.10.0",
     "ember-cli-sass": "5.5.1",
     "ember-cli-autoprefixer": "0.0.3",
-    "liquid-fire": "0.23.0"
+    "liquid-fire": "0.25.0"
   },
   "bugs": {
     "url": "https://github.com/sweco/6613-sweco-bootstrap/issues"
