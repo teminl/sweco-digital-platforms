@@ -1,0 +1,23 @@
+<div id="search">
+  <div class="input-group">
+    {{input
+      id='searchInput'
+      name='searchInput'
+      type='text'
+      class=customClass
+      value=value
+      enter='search'
+      autocomplete='false'
+      tabindex='1'
+      placeholder='Test placeholder for search'
+    }}
+    <span class="input-group-btn">
+      <button class="btn btn-primary btn-search" type="button" tabindex="2" {{action 'search'}}><i class="fa fa-search"></i></button>
+    </span>
+  </div>
+  <!-- RESET START -->
+  {{#if value}}
+  	<button type="button" class="close btn-search-reset" aria-hidden="true" {{action 'clear'}}><i class="fa fa-times-circle icon-only"></i></button>
+  {{/if}}
+  <!-- RESET STOP -->
+</div>
