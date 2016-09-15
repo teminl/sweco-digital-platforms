@@ -1,0 +1,40 @@
+// Fonts
+
+// Sweco Sans Regular
+@font-face {
+  font-family: 'SwecoSans-Regular';
+  src: url('../fonts/SwecoSans-Regular.eot');
+  src: url('../fonts/SwecoSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SwecoSans-Regular.woff2') format('woff2'),
+       url('../fonts/SwecoSans-Regular.woff') format('woff'),
+       url('../fonts/SwecoSans-Regular.ttf') format('truetype'),
+       url('../fonts/SwecoSans-Regular.svg#SwecoSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Sweco Sans Medium
+@font-face {
+  font-family: 'SwecoSans-Medium';
+  src: url('../fonts/SwecoSans-Medium.eot');
+  src: url('../fonts/SwecoSans-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SwecoSans-Medium.woff2') format('woff2'),
+       url('../fonts/SwecoSans-Medium.woff') format('woff'),
+       url('../fonts/SwecoSans-Medium.ttf') format('truetype'),
+       url('../fonts/SwecoSans-Medium.svg#SwecoSans-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Sweco Sans Bold
+@font-face {
+  font-family: 'SwecoSans-Bold';
+  src: url('../fonts/SwecoSans-Bold.eot');
+  src: url('../fonts/SwecoSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SwecoSans-Bold.woff2') format('woff2'),
+       url('../fonts/SwecoSans-Bold.woff') format('woff'),
+       url('../fonts/SwecoSans-Bold.ttf') format('truetype'),
+       url('../fonts/SwecoSans-Bold.svg#SwecoSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,206 @@
+/*
+ * Sweco Bootstrap Variables
+ * Overides Bootstrap default values
+ */
+
+// Options for Bootstrap
+$enable-flex:               true;
+$enable-rounded:            false;
+$enable-shadows:            false;
+$enable-gradients:          false;
+$enable-transitions:        false;
+$enable-hover-media-query:  false;
+$enable-grid-classes:       true;
+$enable-print-styles:       true;
+
+// Spacing
+$spacer:   1rem;
+$spacer-x: $spacer;
+$spacer-y: $spacer;
+$spacers: (
+  0: (
+    x: 0,
+    y: 0
+  ),
+  1: (
+    x: $spacer-x,
+    y: $spacer-y
+  ),
+  2: (
+    x: ($spacer-x * 1.5),
+    y: ($spacer-y * 1.5)
+  ),
+  3: (
+    x: ($spacer-x * 3),
+    y: ($spacer-y * 3)
+  )
+);
+$border-width: 1px;
+
+// White
+$white:                 #fff;
+
+// Black
+$black:                 #000;
+$black-ich:             #222;
+$black-light:           #3a3a3a;
+$black-lightning:       #444;
+$black-lighter:         #555;
+$black-ultralight:      #777;
+$black-superlight:      #999;
+
+// Sweco Dark gray
+$dark-gray:             #4d535a;                    // Sweco Dark gray
+$dark-gray-ich:         lighten($dark-gray, 10%);   // #
+$dark-gray-light:       lighten($dark-gray, 20%);   // #
+$dark-gray-lighter:     lighten($dark-gray, 30%);   // #
+$dark-gray-ultralight:  lighten($dark-gray, 40%);   // #
+$dark-gray-superlight:  lighten($dark-gray, 50%);   // #
+$gray-dark:             $dark-gray;                 // Bootstrap compability
+
+// Sweco Gray
+$gray:                  #a5a5a8;                    // Sweco Gray
+$gray-ich:              lighten($gray, 5%);         // #
+$gray-light:            lighten($gray, 10%);        // #
+$gray-lighter:          lighten($gray, 15%);        // #
+$gray-ultralight:       lighten($gray, 20%);        // #
+$gray-superlight:       #eee;                       // Sweco Gray Superlight
+$gray-lightest:         $gray-superlight;           // Bootstrap compability
+
+// Sweco Light gray
+$light-gray:            #e2e0da;                    // Sweco Light gray
+$light-gray-ich:        lighten($light-gray, 2%);   // #
+$light-gray-light:      lighten($light-gray, 4%);   // #
+$light-gray-lighter:    lighten($light-gray, 6%);   // #
+$light-gray-ultralight: lighten($light-gray, 8%);   // #
+$light-gray-superlight: lighten($light-gray, 10%);  // #
+
+// Sweco Ochre
+$ochre-dark:            #a4852f;                    // Sweco Ochre
+$ochre:                 #dec55b;                    // Sweco Light ochre
+$ochre-ich:             lighten($ochre, 10%);       // #
+$ochre-light:           lighten($ochre, 15%);       // #
+$ochre-lighter:         lighten($ochre, 20%);       // #
+$ochre-ultralight:      lighten($ochre, 25%);       // #
+
+// Sweco Pink
+$pink-dark:             #b586a4;                    // Sweco Dark lilac
+$pink:                  #f2b1dc;                    // Sweco Soft pink
+$pink-ich:              lighten($pink, 6%);         // #
+$pink-light:            lighten($pink, 8%);         // #
+$pink-lighter:          lighten($pink, 10%);        // #
+$pink-ultralight:       lighten($pink, 12%);        // #
+
+// Sweco Blue
+$blue-dark:             #7e8dbb;                    // Sweco Bluegray
+$blue:                  #8aa3b9;                    // Sweco Blue
+$blue-ich:              lighten($blue, 4%);         // #
+$blue-light:            lighten($blue, 6%);         // #
+$blue-lighter:          lighten($blue, 8%);         // #
+$blue-ultralight:       lighten($blue, 10%);        // #
+
+// Red
+$red:                   #e41a1f;                    // PMS 186 old Sweco Red
+$red-ich:               lighten($red, 10%);         // #
+$red-light:             lighten($red, 20%);         // #
+$red-lighter:           lighten($red, 30%);         // #
+$red-ultralight:        lighten($red, 40%);         // #
+$red-superlight:        lighten($red, 45%);         // #
+
+
+// Colors for use across Bootstrap
+$brand-default:         $white;
+$brand-primary:         $dark-gray;
+$brand-success:         $ochre-dark;
+$brand-info:            $blue-dark;
+$brand-warning:         $pink-dark;
+$brand-danger:          $red;
+$brand-inverse:         $dark-gray;
+
+// Body
+$body-bg:               $gray-superlight;
+$body-color:            $black-light;
+
+// Links
+$link-color:            $ochre-dark;
+$link-decoration:       none;
+$link-hover-color:      $ochre-dark;
+$link-hover-decoration: underline;
+
+// Grid columns
+$grid-columns:          12;
+$grid-gutter-width:     30px;
+
+
+// Typography
+$font-family-regular:     "SwecoSans-Regular";
+$font-family-medium:      "SwecoSans-Medium";
+$font-family-heavy:       "SwecoSans-Bold";
+$font-family-sans-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-base:        $font-family-regular, $font-family-sans-serif;
+
+// Font-size for scale all typography
+$font-size-root:          15px;
+
+$font-size-base:          1rem;
+$font-size-lg:            1.25rem;
+$font-size-sm:            .875rem;
+$font-size-xs:            .75rem;
+
+$line-height-base:        1.5;
+
+$font-size-h1:            2.5rem;
+$font-size-h2:            2rem;
+$font-size-h3:            1.75rem;
+$font-size-h4:            1.5rem;
+$font-size-h5:            1.25rem;
+$font-size-h6:            1rem;
+
+// Display
+$display1-size:           6rem;
+$display2-size:           5.5rem;
+$display3-size:           4.5rem;
+$display4-size:           3.5rem;
+
+$display1-weight:         300;
+$display2-weight:         300;
+$display3-weight:         300;
+$display4-weight:         300;
+
+// Headings
+$headings-margin-bottom:  ($spacer / 2);
+$headings-font-family:    $font-family-medium;
+$headings-font-weight:    normal;
+$headings-line-height:    1.1;
+$headings-color:          $black-light;
+
+// Lead
+$lead-font-size:          1.25rem;
+$lead-font-weight:        300;
+
+// Small
+$small-font-size:         80%;
+
+// Muted, abbr
+$text-muted:              $gray;
+$abbr-border-color:       $gray;
+
+// Blockquote
+$blockquote-small-color:  $gray-light;
+$blockquote-font-size:    ($font-size-base * 1.25);
+$blockquote-border-color: $gray-lighter;
+$blockquote-border-width: .25rem;
+
+// Hr
+$hr-border-color:         rgba(0,0,0,.1);
+$hr-border-width:         $border-width;
+
+// Content
+$mark-padding:            .2em;
+
+$dt-font-weight:          bold;
+
+$kbd-box-shadow:          inset 0 -.1rem 0 rgba(0,0,0,.25) !default;
+$nested-kbd-font-weight:  bold;
+
+$list-inline-padding:     5px;
