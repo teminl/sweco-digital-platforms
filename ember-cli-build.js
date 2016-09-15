@@ -50,8 +50,6 @@ module.exports = function(defaults) {
   app.import("bower_components/tether/dist/js/tether.min.js");
   // Bootstrap
   app.import("bower_components/bootstrap/dist/js/bootstrap.min.js");
-  // Jasny Bootstrap
-  app.import("bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js");
   // Progressjs
   app.import("bower_components/progress.js/minified/progress.min.js");
 
