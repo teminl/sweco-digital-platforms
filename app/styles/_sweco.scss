@@ -1,0 +1,228 @@
+// Sweco
+
+html,
+body
+{
+  min-height: 100%;
+  height: auto;
+  height: 100%;
+}
+
+// Fixed body for non scroll content
+.body-fixed
+{
+  overflow: hidden;
+}
+
+// Page
+#page
+{
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+}
+
+// Container
+.container
+{
+  &.container-bg
+  {
+    background-color: $white;
+  }
+}
+
+// Content
+#content
+{
+  position: relative;
+  min-height: 100%;
+  padding-top: $navbar-north-height;
+  padding-bottom: $navbar-south-height;
+}
+
+// Remove IE clear and reveal on inputs
+::-ms-clear
+{
+  display: none;
+}
+
+::-ms-reveal
+{
+  display: none;
+}
+
+// Text selection
+::selection
+{
+  background: $gray-lighter;
+}
+::-moz-selection
+{
+  background: $gray-lighter;
+}
+
+// Pointer events
+.pointer-events-none
+{
+  -webkit-touch-callout: none;
+  user-select: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+.pointer-events-all
+{
+  -webkit-touch-callout: default;
+  user-select: all;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+// Inner scroll
+.inner
+{
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+// Inner scroll-y
+.inner-y
+{
+  @extend .inner;
+  overflow-x: hidden;
+}
+
+// Inner scroll-x
+.inner-x
+{
+  @extend .inner;
+  overflow-y: hidden;
+}
+
+
+// Typography
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+legend,
+label,
+table th
+{
+  color: $headings-color;
+  text-transform: uppercase;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4
+{
+  font-family: $font-family-regular;
+  text-transform: none;
+}
+
+.page-header
+{
+  padding: ($spacer-y * 2) 0;
+}
+
+.lead
+{
+  font-family: $font-family-medium;
+  font-size: $font-size-lg;
+}
+
+.text-muted
+{
+  font-size: inherit;
+}
+
+strong, b, dt
+{
+  font-family: $font-family-medium;
+}
+
+// Label
+label[for]
+{
+  cursor: pointer;
+  user-select: none;
+}
+
+// Table
+.table
+{
+  @extend .table-sm;
+  &.table-bordered
+  {
+    thead
+    {
+      th
+      {
+        border-bottom-width: 1px;
+      }
+    }
+  }
+}
+
+// Icon spacing
+.btn
+{
+  > .fa
+  {
+    margin-right: 5px;
+  }
+}
+
+.icon-right
+{
+  margin-right: 0 !important;
+  margin-left: 5px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+{
+  > .fa
+  {
+    margin-right: 10px;
+  }
+}
+
+// Navbar
+.navbar
+{
+  background: $navbar-bg;
+  &.navbar-north
+  {
+    min-height: $navbar-north-height;
+    box-shadow: 0 5px $box-shadow-size $box-shadow;
+    .container
+    {
+      position: relative;
+    }
+    // Logotype
+    .logotype
+    {
+      display: block;
+      width: 120px;
+      height: 60px;
+      margin-left: -$spacer-x;
+      img
+      {
+        width: 120px;
+        height: 60px;
+      }
+      &:hover,
+      &:focus,
+      &:active
+      {
+        text-decoration: none;
+        outline: 0;
+      }
+    }
+  }
+}
+

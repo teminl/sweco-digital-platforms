@@ -120,6 +120,7 @@ $brand-inverse:         $dark-gray;
 // Body
 $body-bg:               $gray-superlight;
 $body-color:            $black-light;
+$text-color:            $body-color;
 
 // Links
 $link-color:            $ochre-dark;
@@ -140,14 +141,16 @@ $font-family-sans-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 $font-family-base:        $font-family-regular, $font-family-sans-serif;
 
 // Font-size for scale all typography
-$font-size-root:          15px;
+$font-size-root:          14px;
 
 $font-size-base:          1rem;
+$font-size-xl:            1.5rem;
 $font-size-lg:            1.25rem;
 $font-size-sm:            .875rem;
 $font-size-xs:            .75rem;
 
 $line-height-base:        1.5;
+$line-height-computed:    1.5rem;
 
 $font-size-h1:            2.5rem;
 $font-size-h2:            2rem;
@@ -194,6 +197,10 @@ $blockquote-border-width: .25rem;
 // Border
 $border-color:            rgba(0,0,0,.1);
 
+// Highlight & shadows
+$box-shadow-size:       15px;
+$box-shadow:            rgba(0,0,0,.3);
+
 // Hr
 $hr-border-color:         $border-color;
 $hr-border-width:         $border-width;
@@ -201,10 +208,10 @@ $hr-border-width:         $border-width;
 // Content
 $mark-padding:            .2em;
 
-$dt-font-weight:          bold;
+$dt-font-weight:          normal;
 
-$kbd-box-shadow:          inset 0 -.1rem 0 rgba(0,0,0,.25);
-$nested-kbd-font-weight:  bold;
+$kbd-box-shadow:          none;
+$nested-kbd-font-weight:  normal;
 
 $list-inline-padding:     5px;
 
@@ -234,5 +241,16 @@ $table-bg-active:         $gray-superlight;
 
 $table-border-width:      $border-width;
 $table-border-color:      $border-color;
+
+// Navbar
+$navbar-padding-x:        0;
+$navbar-padding-y:        0;
+$navbar-bg:               rgba(34,34,34,.9); // @black-ich;
+$navbar-color:            $white;
+$navbar-north-height:     60px;
+$navbar-south-height:     60px;
+
+
+
 
 

@@ -1,0 +1,173 @@
+// Sweco - for development
+
+// Line height computed
+.line-height-computed
+{
+  height: $line-height-computed;
+  vertical-align: middle;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+// Colors
+.colors
+{
+  div.row + div.row
+  {
+    margin-top: $spacer-y;
+  }
+  ul
+  {
+    @extend .list-unstyled;
+    li
+    {
+      color: $white;
+      margin: 0;
+      padding: ($spacer / 2);
+      .fa
+      {
+        color: $white;
+      }
+    }
+    li:last-child
+    {
+      color: $text-color;
+      .fa
+      {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.color-black
+{
+  .color
+  {background-color: $black;}
+  .ich
+  {background-color: $black-ich;}
+  .light
+  {background-color: $black-light;}
+  .lighter
+  {background-color: $black-lighter;}
+  .ultralight
+  {background-color: $black-ultralight;}
+  .superlight
+  {background-color: $black-superlight;}
+}
+
+.color-dark-gray
+{
+  .color
+  {background-color: $dark-gray;}
+  .ich
+  {background-color: $dark-gray-ich;}
+  .light
+  {background-color: $dark-gray-light;}
+  .lighter
+  {background-color: $dark-gray-lighter;}
+  .ultralight
+  {background-color: $dark-gray-ultralight;}
+  .superlight
+  {background-color: $dark-gray-superlight;}
+}
+
+.color-gray
+{
+  .color
+  {background-color: $gray;}
+  .ich
+  {background-color: $gray-ich;}
+  .light
+  {background-color: $gray-light;}
+  .lighter
+  {background-color: $gray-lighter;}
+  .ultralight
+  {background-color: $gray-ultralight;}
+  .superlight
+  {background-color: $gray-superlight;}
+}
+
+.color-light-gray
+{
+  li
+  {
+      color: $text-color !important;
+  }
+  .color
+  {background-color: $light-gray;}
+  .ich
+  {background-color: $light-gray-ich;}
+  .light
+  {background-color: $light-gray-light;}
+  .lighter
+  {background-color: $light-gray-lighter;}
+  .ultralight
+  {background-color: $light-gray-ultralight;}
+  .superlight
+  {background-color: $light-gray-superlight;}
+}
+
+.color-ochre
+{
+  .dark
+  {background-color: $ochre-dark;}
+  .color
+  {background-color: $ochre;}
+  .ich
+  {background-color: $ochre-ich;}
+  .light
+  {background-color: $ochre-light;}
+  .lighter
+  {background-color: $ochre-lighter;}
+  .ultralight
+  {background-color: $ochre-ultralight;}
+}
+
+.color-pink
+{
+  .dark
+  {background-color: $pink-dark;}
+  .color
+  {background-color: $pink;}
+  .ich
+  {background-color: $pink-ich;}
+  .light
+  {background-color: $pink-light;}
+  .lighter
+  {background-color: $pink-lighter;}
+  .ultralight
+  {background-color: $pink-ultralight;}
+}
+
+.color-blue
+{
+  .dark
+  {background-color: $blue-dark;}
+  .color
+  {background-color: $blue;}
+  .ich
+  {background-color: $blue-ich;}
+  .light
+  {background-color: $blue-light;}
+  .lighter
+  {background-color: $blue-lighter;}
+  .ultralight
+  {background-color: $blue-ultralight;}
+}
+
+.color-red
+{
+  .color
+  {background-color: $red;}
+  .ich
+  {background-color: $red-ich;}
+  .light
+  {background-color: $red-light;}
+  .lighter
+  {background-color: $red-lighter;}
+  .ultralight
+  {background-color: $red-ultralight;}
+  .superlight
+  {background-color: $red-superlight;}
+}
