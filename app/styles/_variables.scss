@@ -109,12 +109,12 @@ $red-superlight:        lighten($red, 45%);         // #
 
 
 // Colors for use across Bootstrap
-$brand-default:         $white;
 $brand-primary:         $dark-gray;
-$brand-success:         $ochre-dark;
+$brand-secondary:       $white; // Default
 $brand-info:            $blue-dark;
 $brand-warning:         $pink-dark;
 $brand-danger:          $red;
+$brand-success:         #5cb85c;
 $brand-inverse:         $dark-gray;
 
 // Body
@@ -210,11 +210,11 @@ $blockquote-border-color: $gray-lighter;
 $blockquote-border-width: .25rem;
 
 // Border
-$border-color:            rgba(0,0,0,.1);
+$border-color:            $gray; // rgba(0,0,0,.1)
 
 // Highlight & shadows
-$box-shadow-size:       15px;
-$box-shadow:            rgba(0,0,0,.3);
+$box-shadow-size:         15px;
+$box-shadow:              rgba(0,0,0,.3);
 
 // Hr
 $hr-border-color:         $border-color;
@@ -222,6 +222,10 @@ $hr-border-width:         $border-width;
 
 // Content
 $mark-padding:            .2em;
+$mark-bg:                 $gray-lighter;
+
+$code-color:              $pink-dark;
+$code-bg:                 $gray-superlight;
 
 $dt-font-weight:          normal;
 
@@ -247,7 +251,7 @@ $caret-width-lg:          $caret-width;
 
 // Tables
 $table-cell-padding:      .75rem;
-$table-sm-cell-padding:   .33rem;
+$table-sm-cell-padding:   .33rem .3rem .34rem;
 
 $table-bg:                transparent;
 $table-bg-accent:         $light-gray-superlight;
@@ -257,13 +261,31 @@ $table-bg-active:         $gray-superlight;
 $table-border-width:      $border-width;
 $table-border-color:      $border-color;
 
+// Z-index
+$zindex-dropdown-backdrop:       990;
+$zindex-navbar:                  1000;
+$zindex-dropdown:                1000;
+$zindex-btn:                     1010;
+$zindex-popover:                 1060;
+$zindex-tooltip:                 1070;
+$zindex-navbar-fixed:            1030;
+$zindex-navbar-sticky:           1030;
+$zindex-offcanvas-backdrop:      1040;
+$zindex-offcanvas:               1050;
+$zindex-modal-bg:                1060;
+$zindex-modal:                   1070;
+$zindex-dropdown-modal:          1080;
+$zindex-lightbox-backdrop:       2000;
+$zindex-lightbox:                2010;
+$zindex-progressjs:              3000;
+
 // Navbar
-$navbar-padding-x:        0;
-$navbar-padding-y:        0;
-$navbar-bg:               rgba(0,0,0,.77); // @black-ich;
-$navbar-color:            $white;
-$navbar-north-height:     60px;
-$navbar-south-height:     60px;
+$navbar-padding-x:               0;
+$navbar-padding-y:               0;
+$navbar-bg:                      rgba(0,0,0,.77); // @black-ich;
+$navbar-color:                   $white;
+$navbar-north-height:            60px;
+$navbar-south-height:            60px;
 
 // Buttons
 $btn-padding-x:                  1rem;
@@ -312,6 +334,13 @@ $btn-padding-y-lg:               .83rem;
 $btn-block-spacing-y:            .5rem;
 $btn-toolbar-margin:             .5rem;
 
+// Close
 
+$close-font-weight:               normal;
+$close-color:                     $brand-primary;
+$close-text-shadow:               none;
+
+// Forms
+$input-bg:                       $white;
 
 

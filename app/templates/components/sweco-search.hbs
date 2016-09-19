@@ -1,4 +1,4 @@
-<div id="search">
+<div id="search" class="search">
   <div class="input-group">
     {{input
       id='searchInput'
@@ -12,12 +12,12 @@
       placeholder='Test placeholder for search'
     }}
     <span class="input-group-btn">
-      <button class="btn btn-primary btn-search" type="button" tabindex="2" {{action 'search'}}><i class="fa fa-search"></i></button>
+      <button class="btn btn-search" type="button" tabindex="2" {{action 'search'}}><i class="fa fa-search"></i></button>
     </span>
   </div>
   <!-- RESET START -->
   {{#if value}}
-  	<button type="button" class="close btn-search-reset" aria-hidden="true" {{action 'clear'}}><i class="fa fa-times-circle icon-only"></i></button>
+  	<button type="button" class="close btn-search-reset" aria-hidden="true" {{action 'clear'}}><i class="fa fa-times-circle"></i></button>
   {{/if}}
   <!-- RESET STOP -->
 </div>
