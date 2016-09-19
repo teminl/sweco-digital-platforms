@@ -313,6 +313,26 @@ h1, h2, h3, h4, h5, h6,
 {
   text-transform: uppercase;
   outline: 0 !important;
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] &
+  {
+    background: $btn-disabled-bg-color !important;
+    border-color: $btn-link-disabled-color !important;
+    color: $btn-link-disabled-color !important;
+    opacity: 1 !important;
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active
+    {
+      background: $btn-disabled-bg-color !important;
+      border-color: $btn-link-disabled-color !important;
+      color: $btn-link-disabled-color !important;
+      opacity: 1 !important;
+    }
+  }
 }
 
 // Caret dropdown arrow
