@@ -31,6 +31,7 @@
 .btn-xs
 {
   @extend .btn-sm;
+  padding: $btn-padding-y-xs $btn-padding-x-xs !important;
 }
 
 // Panels wells

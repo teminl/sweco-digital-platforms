@@ -114,6 +114,42 @@ table th
   text-transform: uppercase;
 }
 
+h1,
+.h1
+{
+  line-height: $line-height-h1 !important;
+}
+
+h2,
+.h2
+{
+  line-height: $line-height-h2 !important;
+}
+
+h3,
+.h3
+{
+  line-height: $line-height-h3 !important;
+}
+
+h4,
+.h4
+{
+  line-height: $line-height-h4 !important;
+}
+
+h5,
+.h5
+{
+  line-height: $line-height-h5 !important;
+}
+
+h6,
+.h6
+{
+  line-height: $line-height-h6 !important;
+}
+
 .display-1,
 .display-2,
 .display-3,
@@ -121,6 +157,26 @@ table th
 {
   font-family: $font-family-regular;
   text-transform: none;
+}
+
+.display-1
+{
+  line-height: $line-height-display-1 !important;
+}
+
+.display-2
+{
+  line-height: $line-height-display-2 !important;
+}
+
+.display-3
+{
+  line-height: $line-height-display-3 !important;
+}
+
+.display-4
+{
+  line-height: $line-height-display-4 !important;
 }
 
 .page-header
