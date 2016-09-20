@@ -449,8 +449,9 @@ $custom-file-text: (
 );
 
 // Dropdowns
-$dropdown-min-width:             160px;
-$dropdown-padding-y:             0;
+$dropdown-min-width:             200px;
+$dropdown-max-height:            180px;
+$dropdown-padding-y:             1px;
 $dropdown-margin-top:            10px;
 $dropdown-bg:                    $white;
 $dropdown-border-color:          $border-color;
@@ -458,15 +459,17 @@ $dropdown-border-width:          $border-width;
 $dropdown-divider-bg:            $border-color;
 $dropdown-box-shadow:            0 5px $box-shadow-size $box-shadow;
 
-$dropdown-link-color:            $gray-dark;
-$dropdown-link-hover-color:      darken($gray-dark, 5%);
+$dropdown-link-color:            $text-color;
+$dropdown-link-hover-color:      $dropdown-link-color;
 $dropdown-link-hover-bg:         $component-bg-hover;
 
 $dropdown-link-active-color:     $component-active-color;
 $dropdown-link-active-bg:        $component-active-bg;
+$dropdown-link-active-hover-bg:  darken($component-active-bg, 5%);
 
 $dropdown-link-disabled-color:   $disabled-color;
 $dropdown-item-padding-x:        10px;
+$dropdown-item-padding-y:        5px;
 $dropdown-header-color:          $headings-color;
 
 
