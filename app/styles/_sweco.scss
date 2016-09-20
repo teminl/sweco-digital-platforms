@@ -229,13 +229,20 @@ label[for]
   > .fa
   {
     margin-right: 5px;
+    &.fa-angle-left,
+    &.fa-angle-right
+    {
+      @extend .fa-lg;
+      vertical-align: -8% !important;
+    }
   }
 }
 
-.icon-right
+.icon-right,
+.fa-right
 {
   margin-right: 0 !important;
-  margin-left: 5px;
+  margin-left: 5px !important;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -286,6 +293,7 @@ h1, h2, h3, h4, h5, h6,
     margin: 10px 0;
     .form-control
     {
+      background-clip: border-box !important;
       border-color: $input-bg;
       padding-right: 30px !important;
     }
@@ -293,16 +301,19 @@ h1, h2, h3, h4, h5, h6,
     {
       @extend .btn-info;
       margin-left: 0 !important;
+      padding-left: 15px;
+      padding-right: 14px;
       .fa
       {
-        margin: 0;
+        font-size: $font-size-lg;
+        margin: -2px 0;
       }
     }
     .btn-search-reset
     {
       position: absolute;
-      top: 9px;
-      right: 55px;
+      top: 10px;
+      right: 60px;
       z-index: ($zindex-navbar-fixed + 5);
     }
   }
@@ -375,6 +386,47 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+// Dropdowns
+.dropdown-menu
+{
+  box-shadow: $dropdown-box-shadow !important;
+  &::before,
+  &::after
+  {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    display: block;
+    position: absolute;
+    left: ($spacer-x / 2);
+    z-index: 1;
+  }
+  &::before
+  {
+    border-width: 10px;
+    border-bottom-color: $border-color;
+    top: -20px;
+  }
+  &::after
+  {
+    margin-left: 0px;
+    border-width: 10px;
+    border-bottom-color: $white;
+    top: -19px;
+  }
+}
+
+ul.dropdown-menu
+{
+  @extend .list-unstyled;
+  margin: 0;
+  padding: 0;
+  // @extend .inner-y;
+  // max-height: $dropdown-menu-max-height;
+}
+
 // Close
 .close
 {
@@ -401,4 +453,17 @@ h1, h2, h3, h4, h5, h6,
       color: $disabled-color;
     }
   }
+}
+
+// Code
+pre
+{
+  background-color: $code-bg;
+  padding: $code-padding-y $code-padding-x;
+  margin: $spacer-y 0 !important;
+}
+
+samp
+{
+  font-size: $font-size-sm !important;
 }

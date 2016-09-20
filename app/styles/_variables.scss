@@ -49,8 +49,8 @@ $black-lighter:         #555;
 $black-ultralight:      #777;
 $black-superlight:      #999;
 
-// Sweco Dark gray
-$dark-gray:             #4d535a;                    // Sweco Dark gray
+// Sweco Gray Dark
+$dark-gray:             #4d535a;                    // Sweco Gray Dark
 $dark-gray-ich:         lighten($dark-gray, 10%);   // #
 $dark-gray-light:       lighten($dark-gray, 20%);   // #
 $dark-gray-lighter:     lighten($dark-gray, 30%);   // #
@@ -65,10 +65,10 @@ $gray-light:            lighten($gray, 10%);        // #
 $gray-lighter:          lighten($gray, 15%);        // #
 $gray-ultralight:       lighten($gray, 20%);        // #
 $gray-superlight:       #eee;                       // Sweco Gray Superlight
-$gray-lightest:         $gray-superlight;           // Bootstrap compability
+$gray-lightest:         $gray-superlight;           // Bootstrap shim
 
-// Sweco Light gray
-$light-gray:            #e2e0da;                    // Sweco Light gray
+// Sweco Gray Light
+$light-gray:            #e2e0da;                    // Sweco Gray Light
 $light-gray-ich:        lighten($light-gray, 2%);   // #
 $light-gray-light:      lighten($light-gray, 4%);   // #
 $light-gray-lighter:    lighten($light-gray, 6%);   // #
@@ -76,31 +76,31 @@ $light-gray-ultralight: lighten($light-gray, 8%);   // #
 $light-gray-superlight: lighten($light-gray, 10%);  // #
 
 // Sweco Ochre
-$ochre-dark:            #a4852f;                    // Sweco Ochre
-$ochre:                 #dec55b;                    // Sweco Light ochre
+$ochre-dark:            #a4852f;                    // Sweco Ochre Muted
+$ochre:                 #dec55b;                    // Sweco Ochre Bright
 $ochre-ich:             lighten($ochre, 10%);       // #
 $ochre-light:           lighten($ochre, 15%);       // #
 $ochre-lighter:         lighten($ochre, 20%);       // #
 $ochre-ultralight:      lighten($ochre, 25%);       // #
 
 // Sweco Pink
-$pink-dark:             #b586a4;                    // Sweco Dark lilac
-$pink:                  #f2b1dc;                    // Sweco Soft pink
+$pink-dark:             #b586a4;                    // Sweco Pink Muted
+$pink:                  #f2b1dc;                    // Sweco Pink Bright
 $pink-ich:              lighten($pink, 6%);         // #
 $pink-light:            lighten($pink, 8%);         // #
 $pink-lighter:          lighten($pink, 10%);        // #
 $pink-ultralight:       lighten($pink, 12%);        // #
 
 // Sweco Blue
-$blue-dark:             #7e8dbb;                    // Sweco Bluegray
-$blue:                  #8aa3b9;                    // Sweco Blue
-$blue-ich:              lighten($blue, 4%);         // #
-$blue-light:            lighten($blue, 6%);         // #
-$blue-lighter:          lighten($blue, 8%);         // #
-$blue-ultralight:       lighten($blue, 10%);        // #
+$blue-dark:             #7e8dab;                    // Sweco Blue Muted
+$blue:                  #8aa3b9;                    // Sweco Blue Text
+$blue-ich:              lighten($blue, 5%);         // #
+$blue-light:            lighten($blue, 10%);        // #
+$blue-lighter:          lighten($blue, 15%);        // #
+$blue-ultralight:       #c0d4fd;                    // Sweco Blue Bright
 
-// Red
-$red:                   #e41a1f;                    // PMS 186 old Sweco Red
+// Sweco Red
+$red:                   #e41a1f;                    // PMS 186 Old Sweco Red
 $red-ich:               lighten($red, 10%);         // #
 $red-light:             lighten($red, 20%);         // #
 $red-lighter:           lighten($red, 30%);         // #
@@ -203,35 +203,28 @@ $disabled-color:          $text-muted;
 // Abbr
 $abbr-border-color:       $gray;
 
-// Blockquote
-$blockquote-small-color:  $gray-light;
-$blockquote-font-size:    ($font-size-base * 1.25);
-$blockquote-border-color: $gray-lighter;
-$blockquote-border-width: .25rem;
-
-// Border
-$border-color:            $gray; // rgba(0,0,0,.1)
-
 // Highlight & shadows
 $box-shadow-size:         15px;
 $box-shadow:              rgba(0,0,0,.3);
+
+// Border
+$border-color:            $gray; // rgba(0,0,0,.1)
 
 // Hr
 $hr-border-color:         $border-color;
 $hr-border-width:         $border-width;
 
+// Blockquote
+$blockquote-small-color:  $gray-light;
+$blockquote-font-size:    $font-size-lg;
+$blockquote-border-color: $border-color;
+$blockquote-border-width: .25rem;
+
 // Content
 $mark-padding:            .2em;
 $mark-bg:                 $gray-lighter;
 
-$code-color:              $pink-dark;
-$code-bg:                 $gray-superlight;
-
 $dt-font-weight:          normal;
-
-$kbd-box-shadow:          none;
-$nested-kbd-font-weight:  normal;
-
 $list-inline-padding:     5px;
 
 // Components
@@ -333,12 +326,6 @@ $btn-padding-y-lg:               .83rem;
 
 $btn-block-spacing-y:            .5rem;
 $btn-toolbar-margin:             .5rem;
-
-// Close
-
-$close-font-weight:               normal;
-$close-color:                     $brand-primary;
-$close-text-shadow:               none;
 
 // Border radius
 $btn-border-radius:              $border-radius;
@@ -460,5 +447,59 @@ $custom-file-text: (
     en: "Browse"
   )
 );
+
+// Dropdowns
+$dropdown-min-width:             160px;
+$dropdown-padding-y:             0;
+$dropdown-margin-top:            10px;
+$dropdown-bg:                    $white;
+$dropdown-border-color:          $border-color;
+$dropdown-border-width:          $border-width;
+$dropdown-divider-bg:            $border-color;
+$dropdown-box-shadow:            0 5px $box-shadow-size $box-shadow;
+
+$dropdown-link-color:            $gray-dark;
+$dropdown-link-hover-color:      darken($gray-dark, 5%);
+$dropdown-link-hover-bg:         $component-bg-hover;
+
+$dropdown-link-active-color:     $component-active-color;
+$dropdown-link-active-bg:        $component-active-bg;
+
+$dropdown-link-disabled-color:   $disabled-color;
+$dropdown-item-padding-x:        10px;
+$dropdown-header-color:          $headings-color;
+
+
+
+
+
+
+
+// Close
+$close-font-weight:           normal;
+$close-color:                 $brand-primary;
+$close-text-shadow:           none;
+
+// Code
+$code-font-size:              90%;
+$code-padding-x:              .4rem;
+$code-padding-y:              .2rem;
+$code-color:                  $pink-dark;
+$code-bg:                     $gray-superlight;
+
+$kbd-color:                   $white;
+$kbd-bg:                      $black-lighter;
+$kbd-box-shadow:              none;
+$nested-kbd-font-weight:      normal;
+
+$pre-bg:                      $code-bg;
+$pre-color:                   $code-color;
+$pre-border-color:            $text-color;
+$pre-scrollable-max-height:   340px;
+
+
+
+
+
 
 

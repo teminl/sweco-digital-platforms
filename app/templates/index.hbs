@@ -38,22 +38,22 @@ FRONT PAGE STOP -->
       <h2 id="colors">Sweco brand colors</h2>
       <hr/>
       <div class="colors">
-        <p><i class="fa fa-star"></i> Brand colors</p>
+        <p><i class="fa fa-star"></i> Brand colors<i class="fa fa-font m-l-1"></i> Text color</p>
 
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-lg-3">
             <ul class="color-black">
-              <li class="color">$black <i class="fa fa-star"></i></li>
+              <li class="color">$black</li>
               <li class="ich">$-ich</li>
-              <li class="light">$-light <i class="fa fa-star"></i></li>
+              <li class="light">$-light (Text)<i class="fa fa-font"></i><code>#3a3a3a</code></li>
               <li class="lighter">$-lighter</li>
               <li class="ultralight">$-ultralight</li>
               <li class="superlight">$-superlight</li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3">
             <ul class="color-dark-gray">
-              <li class="color">$dark-gray <i class="fa fa-star"></i></li>
+              <li class="color">$dark-gray<i class="fa fa-star"></i><code>#4d535a</code></li>
               <li class="ich">$-ich</li>
               <li class="light">$-light</li>
               <li class="lighter">$-lighter</li>
@@ -61,9 +61,9 @@ FRONT PAGE STOP -->
               <li class="superlight">$-superlight</li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3">
             <ul class="color-gray">
-              <li class="color">$gray <i class="fa fa-star"></i></li>
+              <li class="color">$gray<i class="fa fa-star"></i><code>#a5a5a8</code></li>
               <li class="ich">$-ich</li>
               <li class="light">$-light</li>
               <li class="lighter">$-lighter</li>
@@ -71,9 +71,9 @@ FRONT PAGE STOP -->
               <li class="superlight">$-superlight</li>
             </ul>
           </div>
-          <div class="col-md-3">
+          <div class="col-lg-3">
             <ul class="color-light-gray">
-              <li class="color">$light-gray <i class="fa fa-star"></i></li>
+              <li class="color">$light-gray<i class="fa fa-star"></i><code>#e2e0da</code></li>
               <li class="ich">$-ich</li>
               <li class="light">$-light</li>
               <li class="lighter">$-lighter</li>
@@ -86,8 +86,8 @@ FRONT PAGE STOP -->
         <div class="row">
           <div class="col-md-4">
             <ul class="color-ochre">
-              <li class="dark">$ochre-dark (Ochre) <i class="fa fa-star"></i></li>
-              <li class="color">$ochre (Ochre-light) <i class="fa fa-star"></i></li>
+              <li class="dark">$ochre-dark (Ochre Muted)<i class="fa fa-star"></i><code>#a4852f</code></li>
+              <li class="color">$ochre (Ochre Bright)<i class="fa fa-star"></i><code>#dec55b</code></li>
               <li class="ich">$-ich</li>
               <li class="light">$-light</li>
               <li class="lighter">$-lighter</li>
@@ -96,8 +96,8 @@ FRONT PAGE STOP -->
           </div>
           <div class="col-md-4">
             <ul class="color-pink">
-              <li class="dark">$pink-dark (Dark lilac) <i class="fa fa-star"></i></li>
-              <li class="color">$pink (Pink) <i class="fa fa-star"></i></li>
+              <li class="dark">$pink-dark (Pink Muted)<i class="fa fa-star"></i><code>#b586a4</code></li>
+              <li class="color">$pink (Pink Bright)<i class="fa fa-star"></i><code>#f2b1dc</code></li>
               <li class="ich">$-ich</li>
               <li class="light">$-light</li>
               <li class="lighter">$-lighter</li>
@@ -106,12 +106,12 @@ FRONT PAGE STOP -->
           </div>
           <div class="col-md-4">
             <ul class="color-blue">
-              <li class="dark">$blue-dark (Bluegray) <i class="fa fa-star"></i></li>
-              <li class="color">$blue (Light blue) <i class="fa fa-star"></i></li>
+              <li class="dark">$blue-dark (Blue Muted)<i class="fa fa-star"></i><code>#7e8dbb</code></li>
+              <li class="color">$blue (Blue Text)<i class="fa fa-font"></i><code>#8aa3b9</code></li>
               <li class="ich">$-ich</li>
               <li class="light">$-light</li>
               <li class="lighter">$-lighter</li>
-              <li class="ultralight">$-ultralight</li>
+              <li class="ultralight">$-ultralight (Blue Bright)<i class="fa fa-star"></i><code>#c0d4fd</code></li>
             </ul>
           </div>
         </div>
@@ -190,6 +190,7 @@ FRONT PAGE STOP -->
           <h2>Inline text elements</h2>
           <hr>
           <ul class="list-unstyled">
+            <li>This line has <a href="#">inline link</a>, how a default link is displayed.</li>
             <li>You can use the mark tag to <mark>highlight</mark> text.</li>
             <li><del>This line of text is meant to be treated as deleted text.</del></li>
             <li><s>This line of text is meant to be treated as no longer accurate.</s></li>
@@ -198,16 +199,14 @@ FRONT PAGE STOP -->
             <li><small>This line of text is meant to be treated as fine print.</small></li>
             <li><strong>This line rendered as bold text.</strong></li>
             <li><em>This line rendered as italicized text.</em></li>
-            <li>This line has <a href="#">inline link</a>, how a default link is displayed.</li>
             <li>This is <abbr title="attribute">attr</abbr>.</li>
             <li>This is abbreviations <abbr title="HyperText Markup Language" class="initialism">HTML</abbr></li>
             <li>Variables <var>y</var> = <var>m</var><var>x</var> + <var>b</var></li>
+            <li>User inputs looks like this <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></li>
             <li>The <code>&lt;code&gt;</code> element.</li>
             <li>
               <pre><code>&lt;p&gt;This is how code blocks is displayed&lt;/p&gt;</code></pre>
             </li>
-            <li><samp>This text is meant to be treated as sample output from a computer program.</samp></li>
-            <li>User inputs looks like this <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></li>
           </ul>
 
         </div>
@@ -232,7 +231,7 @@ FRONT PAGE STOP -->
       </div>
 <!-- TYPOGRAPHY STOP -->
 
-      <h2 id="tables">Table</h2>
+      <h2 id="tables">Tables</h2>
       <hr>
 <!-- TABLES START -->
       <div class="table-responsive">
@@ -296,9 +295,9 @@ FRONT PAGE STOP -->
 
         <h5>Button disabled</h5>
         <p>
-          <button type="button" class="btn btn-secondary disabled">Secondary</button>
+          <button type="button" class="btn btn-secondary disabled"><i class="fa fa-paper-plane"></i>Secondary</button>
           <button type="button" class="btn btn-info disabled"><i class="fa fa-info-circle"></i>Info</button>
-          <button type="button" class="btn btn-primary disabled">Primary</button>
+          <button type="button" class="btn btn-primary disabled"><i class="fa fa-cloud-upload"></i>Primary</button>
           <button type="button" class="btn btn-warning disabled"><i class="fa fa-exclamation-triangle"></i>Warning</button>
           <button type="button" class="btn btn-danger disabled"><i class="fa fa-bolt"></i>Danger</button>
           <!-- button type="button" class="btn btn-success disabled">Success</button -->
@@ -375,9 +374,9 @@ FRONT PAGE STOP -->
 
         <h5>Button group justified</h5>
         <p class="btn-group btn-group-justified">
-          <a href="#" class="btn btn-secondary">Left</a>
+          <a href="#" class="btn btn-secondary"><i class="fa fa-angle-left"></i>Left</a>
           <a href="#" class="btn btn-secondary">Middle</a>
-          <a href="#" class="btn btn-secondary">Right</a>
+          <a href="#" class="btn btn-secondary">Right<i class="fa fa-right fa-angle-right"></i></a>
         </p>
 
         <h5>Button toolbar</h5>

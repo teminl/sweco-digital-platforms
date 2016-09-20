@@ -3,6 +3,7 @@
 // Line height computed
 .line-height-computed
 {
+  font-size: $font-size-sm;
   height: $line-height-computed;
   vertical-align: middle;
   border-top: 1px solid $border-color;
@@ -21,12 +22,22 @@
     @extend .list-unstyled;
     li
     {
+      display: block;
+      min-height: 40px;
       color: $white;
       margin: 0;
-      padding: ($spacer / 2);
+      padding: 8px 10px;
+      @extend .clearfix;
       .fa
       {
+        @extend .pull-right;
         color: $white;
+        margin-top: 3px;
+      }
+      code
+      {
+        @extend .pull-right;
+        margin: -1px 5px 0;
       }
     }
     li:last-child
@@ -34,7 +45,7 @@
       color: $text-color;
       .fa
       {
-        color: $text-color;
+        color: $white;
       }
     }
   }
