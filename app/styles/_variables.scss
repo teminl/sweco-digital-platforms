@@ -335,6 +335,8 @@ $btn-border-radius-lg:           $border-radius-lg;
 $btn-border-radius-sm:           $border-radius-sm;
 
 // Forms
+$fieldset-bg:                    $gray-superlight;
+
 $input-padding-x:                .75rem;
 $input-padding-y:                .5rem;
 $input-line-height:              1.25;
@@ -478,7 +480,10 @@ $dropdown-header-color:          $headings-color;
 
 
 
-
+// Jumbotron
+$jumbotron-padding:           2rem;
+$jumbotron-bg:                $blue-dark;
+$jumbotron-color:             $white;
 
 // Close
 $close-font-weight:           normal;

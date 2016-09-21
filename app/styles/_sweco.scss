@@ -110,6 +110,7 @@ legend,
 label,
 table th
 {
+  font-family: $headings-font-family;
   color: $headings-color;
   text-transform: uppercase;
 }
@@ -186,7 +187,7 @@ h6,
 
 .lead
 {
-  font-family: $font-family-medium;
+  font-family: $font-family-base;
   font-size: $font-size-lg;
 }
 
@@ -201,10 +202,23 @@ strong, b, dt
 }
 
 // Label
-label[for]
+label
 {
-  cursor: pointer;
   user-select: none;
+  cursor: pointer;
+}
+
+// Code
+pre
+{
+  background-color: $code-bg;
+  padding: $code-padding-y $code-padding-x;
+  margin: $spacer-y 0 !important;
+}
+
+samp
+{
+  font-size: $font-size-sm !important;
 }
 
 // Table
@@ -573,12 +587,21 @@ ul.dropdown-menu
 }
 
 // Forms
+fieldset
+{
+  @extend .card;
+  @extend .card-block;
+  border: 0 !important;
+  background-color: $fieldset-bg !important;
+}
+
 .form-control
 {
   &[disabled],
   &[readonly],
   fieldset[disabled] &
   {
+    background-clip: border-box !important;
     &::placeholder
     {
       color: $disabled-color;
@@ -586,15 +609,23 @@ ul.dropdown-menu
   }
 }
 
-// Code
-pre
+// Checkbox and radio
+.form-check-input,
+input[type="checkbox"],
+input[type="radio"]
 {
-  background-color: $code-bg;
-  padding: $code-padding-y $code-padding-x;
-  margin: $spacer-y 0 !important;
+  vertical-align: top;
+  margin-right: .5rem;
 }
 
-samp
+// Jumbotron
+.jumbotron
 {
-  font-size: $font-size-sm !important;
+  color: $jumbotron-color;
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6
+  {
+    color: inherit;
+  }
 }
+
