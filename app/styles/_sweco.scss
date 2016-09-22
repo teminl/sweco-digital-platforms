@@ -595,8 +595,10 @@ fieldset
   background-color: $fieldset-bg !important;
 }
 
+// Form-control
 .form-control
 {
+  transition: all .4s ease;
   &[disabled],
   &[readonly],
   fieldset[disabled] &
@@ -607,6 +609,11 @@ fieldset
       color: $disabled-color;
     }
   }
+  &.form-control-sm
+  {
+    font-size: $font-size-base !important;
+    font-size: $input-line-height !important;
+  }
 }
 
 // Checkbox and radio
@@ -614,9 +621,159 @@ fieldset
 input[type="checkbox"],
 input[type="radio"]
 {
-  vertical-align: top;
+  vertical-align: text-top;
   margin-right: .5rem;
 }
+
+// Input-group
+.input-group-addon
+{
+  color: $input-group-addon-color !important;
+}
+
+.input-group-sm .input-group-btn .btn
+{
+  height: $input-height-sm;
+  max-height: 2rem;
+}
+
+// Textarea
+textarea.form-control
+{
+  min-height: 80px;
+}
+
+// Selects
+select.form-control:not([size]):not([multiple])
+{
+  @extend .custom-select;
+}
+
+select.form-control[multiple]
+{
+  @extend .inner-y;
+  max-height: 80px;
+}
+
+// Custom-file
+.custom-file
+{
+  width: 100%;
+  .custom-file-control
+  {
+    &::before
+    {
+
+    }
+    &::after
+    {
+      font-family: $font-family-regular;
+      text-transform: none !important;
+    }
+  }
+}
+
+// Checkboxes & radios
+.check,
+.radio
+{
+  position: relative;
+  label
+  {
+    margin: 0;
+    padding: 11px 0 0 30px;
+    cursor: pointer;
+    &:hover
+    {
+      &::before,
+      &::after
+      {
+        color: darken($btn-info-bg, 6.5%);
+      }
+    }
+  }
+  input
+  {
+    @extend .hide;
+  }
+  input + label:before,
+  input + label:after
+  {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: $zindex-btn;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: FontAwesome;
+    color: $btn-info-bg;
+    font-size: 23px;
+    cursor: pointer;
+    // .bg-transition;
+  }
+  input + label::before
+  {
+    top: 13px;
+    left: 1px;
+    width: 17px;
+    height: 17px;
+    content: "";
+    background-color: $white;
+    border-radius: 50%;
+  }
+  input[disabled] + label:before,
+  input[disabled] + label:after,
+  input[disabled] + label
+  {
+    color: $disabled-color !important;
+    // .pointer-events-none;
+    &:hover
+    {
+      color: $disabled-color !important;
+      // .pointer-events-none;
+    }
+  }
+}
+.check
+{
+  input + label::after
+  {
+    content: "\f0c8"; // fa-var-square
+    font-size: 23px;
+  }
+  input:checked + label::after
+  {
+    content: "\f14a"; // fa-var-check-square
+    font-size: 23px;
+  }
+}
+.radio
+{
+  input + label::before,
+  input + label::after
+  {
+    top: 10px;
+  }
+  input + label::after
+  {
+    content: "\f111"; // fa-var-circle
+  }
+  input + label::after,
+  input:checked + label::after
+  {
+    top: 5px;
+  }
+  input:checked + label::after
+  {
+    content: "\f058"; // fa-var-check-circle
+  }
+  label
+  {
+    padding-top: 0;
+  }
+}
+
 
 // Jumbotron
 .jumbotron

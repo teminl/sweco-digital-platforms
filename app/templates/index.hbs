@@ -32,7 +32,7 @@ FRONT PAGE STOP -->
 
       <div class="jumbotron m-y-2">
         <h1 class="display-3">Sweco Bootstrap 4</h1>
-        <p class="lead">Layout options for structuring a Sweco application with Bootstrap, including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML <i class="fa fa-html5"></i> elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation, alerts, and much more.</p>
+        <p class="lead">Layout options for structuring a Sweco application with Bootstrap, including global styles, required scaffolding, grid system.<br/>Containing styles for displaying content and HTML <i class="fa fa-html5"></i> elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.</p>
       </div>
 
 <!-- COLORS START -->
@@ -46,7 +46,7 @@ FRONT PAGE STOP -->
             <ul class="color-black">
               <li class="color">.black</li>
               <li class="ich">.black-ich</li>
-              <li class="light">.black-light (Text)<i class="fa fa-font"></i><code>#3a3a3a</code></li>
+              <li class="light">.black-light (Text)<code>#3a3a3a</code><i class="fa fa-font"></i></li>
               <li class="lighter">.black-lighter</li>
               <li class="ultralight">.black-ultralight</li>
               <li class="superlight">.black-superlight</li>
@@ -54,7 +54,7 @@ FRONT PAGE STOP -->
           </div>
           <div class="col-lg-3">
             <ul class="color-dark-gray">
-              <li class="color">.dark-gray<i class="fa fa-star"></i><code>#4d535a</code></li>
+              <li class="color">.dark-gray<code>#4d535a</code><i class="fa fa-star"></i></li>
               <li class="ich">.dark-gray-ich</li>
               <li class="light">.dark-gray-light</li>
               <li class="lighter">.dark-gray-lighter</li>
@@ -64,7 +64,7 @@ FRONT PAGE STOP -->
           </div>
           <div class="col-lg-3">
             <ul class="color-gray">
-              <li class="color">.gray<i class="fa fa-star"></i><code>#a5a5a8</code></li>
+              <li class="color">.gray<code>#a5a5a8</code><i class="fa fa-star"></i></li>
               <li class="ich">.gray-ich</li>
               <li class="light">.gray-light</li>
               <li class="lighter">.gray-lighter</li>
@@ -74,7 +74,7 @@ FRONT PAGE STOP -->
           </div>
           <div class="col-lg-3">
             <ul class="color-light-gray">
-              <li class="color">.light-gray<i class="fa fa-star"></i><code>#e2e0da</code></li>
+              <li class="color">.light-gray<code>#e2e0da</code><i class="fa fa-star"></i></li>
               <li class="ich">.light-gray-ich</li>
               <li class="light">.light-gray-light</li>
               <li class="lighter">.light-gray-lighter</li>
@@ -87,32 +87,38 @@ FRONT PAGE STOP -->
         <div class="row">
           <div class="col-md-4">
             <ul class="color-ochre">
-              <li class="dark">.ochre-dark (Ochre Muted)<i class="fa fa-star"></i><code>#a4852f</code></li>
-              <li class="color">.ochre (Ochre Bright)<i class="fa fa-star"></i><code>#dec55b</code></li>
+              <li class="dark">.ochre-dark (Ochre Muted)<code>#a4852f</code><i class="fa fa-star"></i></li>
+              <li class="color">.ochre (Ochre Bright)<code>#dec55b</code><i class="fa fa-star"></i></li>
+              <!--
               <li class="ich">.ochre-ich</li>
               <li class="light">.ochre-light</li>
               <li class="lighter">.ochre-lighter</li>
               <li class="ultralight">.ochre-ultralight</li>
+              -->
             </ul>
           </div>
           <div class="col-md-4">
             <ul class="color-pink">
-              <li class="dark">.pink-dark (Pink Muted)<i class="fa fa-star"></i><code>#b586a4</code></li>
-              <li class="color">.pink (Pink Bright)<i class="fa fa-star"></i><code>#f2b1dc</code></li>
+              <li class="dark">.pink-dark (Pink Muted)<code>#b586a4</code><i class="fa fa-star"></i></li>
+              <li class="color">.pink (Pink Bright)<code>#f2b1dc</code><i class="fa fa-star"></i></li>
+              <!--
               <li class="ich">.pink-ich</li>
               <li class="light">.pink-light</li>
               <li class="lighter">.pink-lighter</li>
               <li class="ultralight">.pink-ultralight</li>
+              -->
             </ul>
           </div>
           <div class="col-md-4">
             <ul class="color-blue">
-              <li class="dark">.blue-dark (Blue Muted)<i class="fa fa-star"></i><code>#7e8dbb</code></li>
-              <li class="color">.blue (Blue Text)<i class="fa fa-font"></i><code>#8aa3b9</code></li>
+              <li class="dark">.blue-dark (Blue Muted)<code>#7e8dbb</code><i class="fa fa-star"></i></li>
+              <li class="color">.blue (Blue Text)<code>#8aa3b9</code><i class="fa fa-star"></i><i class="fa fa-font"></i></li>
+              <!--
               <li class="ich">.blue-ich</li>
               <li class="light">.blue-light</li>
               <li class="lighter">.blue-lighter</li>
-              <li class="ultralight">.blue-ultralight (Blue Bright)<i class="fa fa-star"></i><code>#c0d4fd</code></li>
+              -->
+              <li class="ultralight">.blue-ultralight (Blue Bright)<code>#c0d4fd</code><i class="fa fa-star"></i></li>
             </ul>
           </div>
         </div>
@@ -455,20 +461,20 @@ FRONT PAGE STOP -->
 
     <div class="row">
       <div class="col-lg-6">
-
+<!-- INPUT TYPES START -->
         <form>
           <fieldset>
             <h4>Input</h4>
             <div class="form-group row">
               <label for="example-text-input" class="col-xs-4 col-form-label text-xs-right">Text</label>
               <div class="col-xs-8">
-                <input class="form-control" type="text" value="The placeholder" id="example-text-input">
+                <input class="form-control" type="text" placeholder="The placeholder" value="" id="example-text-input">
               </div>
             </div>
             <div class="form-group row">
               <label for="example-search-input" class="col-xs-4 col-form-label text-xs-right">Search</label>
               <div class="col-xs-8">
-                <input class="form-control" type="search" value="The placeholder" id="example-search-input">
+                <input class="form-control" type="search" placeholder="The placeholder" value="" id="example-search-input">
               </div>
             </div>
             <div class="form-group row">
@@ -602,6 +608,25 @@ FRONT PAGE STOP -->
                 </div>
               </div>
             </div>
+<div>
+  <label class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input">
+    <span class="custom-control-indicator"></span>
+    <span class="custom-control-description">Check this custom checkbox</span>
+  </label>
+</div>
+<div>
+  <label class="custom-control custom-radio">
+    <input id="radio1" name="radio" type="radio" class="custom-control-input">
+    <span class="custom-control-indicator"></span>
+    <span class="custom-control-description">Toggle this custom radio</span>
+  </label>
+  <label class="custom-control custom-radio">
+    <input id="radio2" name="radio" type="radio" class="custom-control-input">
+    <span class="custom-control-indicator"></span>
+    <span class="custom-control-description">Or toggle this other custom radio</span>
+  </label>
+</div>
 
             <div class="row">
               <label class="col-xs-4 col-form-label text-xs-right">Radio</label>
@@ -633,6 +658,12 @@ FRONT PAGE STOP -->
             </div>
 
             <div class="form-group row">
+              <label for="readonlyTextInput" class="col-xs-4 col-form-label text-xs-right">Readonly input</label>
+              <div class="col-xs-8">
+                <input class="form-control" id="readonlyTextInput" type="text" placeholder="Readonly input" readonly>
+              </div>
+            </div>
+            <div class="form-group row">
               <label for="disabledTextInput" class="col-xs-4 col-form-label text-xs-right">Disabled input</label>
               <div class="col-xs-8">
                 <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" disabled>
@@ -654,43 +685,62 @@ FRONT PAGE STOP -->
 
           </fieldset>
         </form>
-
+<!-- INPUT TYPES STOP -->
       </div>
       <div class="col-lg-6">
-
+<!-- INPUT GROUP START -->
         <form>
           <fieldset>
             <h4>Input-group, sizes and addons</h4>
             <div class="form-group input-group input-group-lg">
-              <span class="input-group-addon">@</span>
+              <span class="input-group-addon"><i class="fa fa-group" aria-hidden="true"></i></span>
               <input class="form-control form-control-lg" type="text" placeholder="Large input.form-control-lg">
+              <span class="input-group-btn">
+                <button class="btn btn-info" type="button">Love it</button>
+              </span>
             </div>
             <div class="form-group input-group">
-              <span class="input-group-addon">@</span>
+              <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
               <input class="form-control" type="text" placeholder="Default input .form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-info" type="button">Love it</button>
+              </span>
             </div>
             <div class="form-group input-group input-group-sm">
-              <span class="input-group-addon">@</span>
+              <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
               <input class="form-control form-control-sm" type="text" placeholder="Small input .form-control-sm">
+              <span class="input-group-btn">
+                <button class="btn btn-info" type="button">Love it</button>
+              </span>
             </div>
             <div class="form-group">
               <select class="form-control form-control-lg">
                 <option>Large select .form-control-lg</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
               </select>
             </div>
             <div class="form-group">
               <select class="form-control">
                 <option>Default select .form-control</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
               </select>
             </div>
             <div class="form-group">
               <select class="form-control form-control-sm">
                 <option>Small select .form-control-sm</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
               </select>
             </div>
           </fieldset>
         </form>
-
+<!-- INPUT GROUP START -->
+<!-- INPUT VALIDATION START -->
         <form>
           <fieldset>
             <h4>Validation</h4>
@@ -733,7 +783,7 @@ FRONT PAGE STOP -->
             </div>
           </fieldset>
         </form>
-
+<!-- INPUT VALIDATION STOP -->
       </div>
     </div>
 <!-- FORMS STOP -->
