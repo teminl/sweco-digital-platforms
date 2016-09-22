@@ -4,6 +4,10 @@ Layout options for structuring a Sweco application with Bootstrap 4, including g
 
 Containing the Sweco Visual Guidelines with logotype, fonts, colors, application icons and svg:s. How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros).
 
+### Sweco Bootstrap example page, gh-pages
+
+[Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/) containing HTML example elements.
+
 ### Frameworks and dependencies
 
 * [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
@@ -13,10 +17,6 @@ Containing the Sweco Visual Guidelines with logotype, fonts, colors, application
 * [jQuery-browser-detection](https://github.com/schickling/jquery-browser-detection)
 * [Progress.js](http://usablica.github.io/progress.js/)
 * [Tether](http://tether.io/)
-
-### Sweco Bootstrap example page, gh-pages
-
-[Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/) containing HTML example elements.
 
 ### What's included
 
