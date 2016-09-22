@@ -2,7 +2,7 @@
 
 Containing the Sweco Visual Guidelines with logotype, fonts, colors, application icons and svg:s. How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros).
 
-Layout options for structuring a Sweco application with Bootstrap, including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML 5 elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.
+Layout options for structuring a Sweco application with Bootstrap 4, including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML 5 elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.
 
 ### Frameworks and dependencies
 
