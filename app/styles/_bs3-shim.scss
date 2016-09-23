@@ -46,3 +46,13 @@
 {
   display: none !important;
 }
+
+// Breadcrumb
+ul.breadcrumb
+{
+  @extend .list-unstyled;
+  li
+  {
+    @extend .breadcrumb-item;
+  }
+}
