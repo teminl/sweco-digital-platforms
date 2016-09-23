@@ -99,22 +99,19 @@ $blue-light:            lighten($blue, 10%);        // #
 $blue-lighter:          lighten($blue, 15%);        // #
 $blue-ultralight:       #c0d4fd;                    // Sweco Blue Bright
 
-// Sweco Red
-$red:                   #e41a1f;                    // PMS 186 Old Sweco Red
-$red-ich:               lighten($red, 10%);         // #
-$red-light:             lighten($red, 20%);         // #
-$red-lighter:           lighten($red, 30%);         // #
-$red-ultralight:        lighten($red, 40%);         // #
-$red-superlight:        lighten($red, 45%);         // #
+// Red, validation and states
+$red:                   #c03;
 
+// Green, validation and states
+$green:                 #093;
 
 // Colors for use across Bootstrap
 $brand-primary:         $dark-gray;
 $brand-secondary:       $white; // Default
 $brand-info:            $blue-dark;
 $brand-warning:         $pink-dark;
-$brand-danger:          $red;
-$brand-success:         #5cb85c;
+$brand-danger:          $red; // Validation and states
+$brand-success:         $green; // Validation and states
 $brand-inverse:         $dark-gray;
 
 // Body
@@ -379,7 +376,7 @@ $input-group-addon-border-color: $input-border-color;
 
 $cursor-disabled:                not-allowed;
 
-
+// Custom-control
 $custom-control-gutter:                       1.5rem;
 $custom-control-spacer-x:                     1rem;
 $custom-control-spacer-y:                     .25rem;
@@ -415,8 +412,8 @@ $custom-radio-radius:                         50%;
 $custom-radio-checked-icon:                   url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
 
 // Custom-select
-$custom-select-padding-x:                     .75rem ;
-$custom-select-padding-y:                     .375rem;
+$custom-select-padding-x:                     $input-padding-x;
+$custom-select-padding-y:                     $input-padding-y;
 $custom-select-indicator-padding:             1rem; // Extra padding to account for the presence of the background-image based indicator
 $custom-select-color:                         $input-color;
 $custom-select-bg:                            $white;
@@ -428,7 +425,7 @@ $custom-select-border-width:                  $input-btn-border-width;
 $custom-select-border-color:                  $input-border-color;
 $custom-select-border-radius:                 $border-radius;
 $custom-select-focus-border-color:            $input-border-focus;
-$custom-select-focus-box-shadow:              inset 0 1px 2px rgba(0, 0, 0, .075), 0 0 5px rgba(81, 167, 232, .5);
+$custom-select-focus-box-shadow:              none;
 $custom-select-sm-padding-y:                  .2rem;
 $custom-select-sm-font-size:                  75%;
 
@@ -481,7 +478,22 @@ $dropdown-item-padding-y:        5px;
 $dropdown-header-color:          $headings-color;
 
 
+// Form states and alerts
+$state-success-text:             $brand-success;
+$state-success-bg:               transparent;
+$state-success-border:           $brand-success;
 
+$state-info-text:                $brand-info;
+$state-info-bg:                  transparent;
+$state-info-border:              $brand-info;
+
+$state-warning-text:             $brand-warning;
+$state-warning-bg:               transparent;
+$state-warning-border:           $brand-warning;
+
+$state-danger-text:              $brand-danger;
+$state-danger-bg:                transparent;
+$state-danger-border:            $brand-danger;
 
 
 // Jumbotron

@@ -661,14 +661,29 @@ select.form-control[multiple]
   width: 100%;
   .custom-file-control
   {
-    &::before
-    {
-
-    }
     &::after
     {
       font-family: $font-family-regular;
       text-transform: none !important;
+    }
+    &::before
+    {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: FontAwesome;
+      content: "\f093" !important; // fa-upload
+      color: $white !important;
+      font-size: $font-size-lg;
+      line-height: .7;
+      background-color: $btn-info-bg !important;
+      transition: all .4s ease;
+    }
+    &:hover
+    {
+      &::before
+      {
+        background-color: darken($btn-info-bg, 10%) !important;
+      }
     }
   }
 }
@@ -680,15 +695,16 @@ select.form-control[multiple]
   position: relative;
   label
   {
-    margin: 0;
-    padding: 11px 0 0 30px;
+    margin: 0 !important;
+    padding: 10px 0 0 30px !important;
+    min-height: 27px;
     cursor: pointer;
     &:hover
     {
       &::before,
       &::after
       {
-        color: darken($btn-info-bg, 6.5%);
+        color: darken($btn-info-bg, 10%);
       }
     }
   }
@@ -696,8 +712,8 @@ select.form-control[multiple]
   {
     @extend .hide;
   }
-  input + label:before,
-  input + label:after
+  input + label::before,
+  input + label::after
   {
     position: absolute;
     top: 5px;
@@ -710,7 +726,7 @@ select.form-control[multiple]
     color: $btn-info-bg;
     font-size: 23px;
     cursor: pointer;
-    // .bg-transition;
+    transition: all .4s ease;
   }
   input + label::before
   {
@@ -722,16 +738,28 @@ select.form-control[multiple]
     background-color: $white;
     border-radius: 50%;
   }
-  input[disabled] + label:before,
-  input[disabled] + label:after,
+  &.has-success label::after
+  {
+    color: $state-success-text !important;
+  }
+  &.has-warning label::after
+  {
+    color: $state-warning-text !important;
+  }
+  &.has-danger label::after
+  {
+    color: $state-danger-text !important;
+  }
+  input[disabled] + label::before,
+  input[disabled] + label::after,
   input[disabled] + label
   {
     color: $disabled-color !important;
-    // .pointer-events-none;
+    @extend .pointer-events-none;
     &:hover
     {
       color: $disabled-color !important;
-      // .pointer-events-none;
+      @extend .pointer-events-none;
     }
   }
 }
@@ -774,6 +802,22 @@ select.form-control[multiple]
   }
 }
 
+// Form validation icons
+$form-icon-success: none;
+$form-icon-warning: none;
+$form-icon-danger: none;
+
+
+// Alert
+.alert
+{
+  border-width: 2px !important;
+  .close
+  {
+    color: inherit !important;
+    margin-top: -1px;
+  }
+}
 
 // Jumbotron
 .jumbotron

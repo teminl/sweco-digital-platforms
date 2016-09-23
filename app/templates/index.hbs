@@ -580,79 +580,44 @@ FRONT PAGE STOP -->
               </div>
             </div>
 
-            <div class="row">
+            <div class="form-group row">
               <label class="col-xs-4 col-form-label text-xs-right">Checkbox</label>
               <div class="col-xs-8">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="option1" checked>
-                    Checkbox one
-                  </label>
+                <div class="check">
+                  <input type="checkbox" id="check1" value="option1" checked><label for="check1">Checkbox one</label>
                 </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="option2">
-                    Checkbox two
-                  </label>
+                <div class="check">
+                  <input type="checkbox" id="check2" value="option2"><label for="check2">Checkbox two</label>
                 </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option3" aria-label="...">
-                  </label>
+                <div class="check">
+                  <input type="checkbox" id="blankCheckbox" value="option3" aria-label="...">
+                  <label for="blankCheckbox"></label>
                 </div>
-                <div class="form-check disabled">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" value="option4" disabled>
-                    Checkbox disabled
-                  </label>
+                <div class="check disabled">
+                  <input type="checkbox" id="check4" value="option4" disabled>
+                  <label for="check4">Checkbox disabled</label>
                 </div>
               </div>
             </div>
-<div>
-  <label class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input">
-    <span class="custom-control-indicator"></span>
-    <span class="custom-control-description">Check this custom checkbox</span>
-  </label>
-</div>
-<div>
-  <label class="custom-control custom-radio">
-    <input id="radio1" name="radio" type="radio" class="custom-control-input">
-    <span class="custom-control-indicator"></span>
-    <span class="custom-control-description">Toggle this custom radio</span>
-  </label>
-  <label class="custom-control custom-radio">
-    <input id="radio2" name="radio" type="radio" class="custom-control-input">
-    <span class="custom-control-indicator"></span>
-    <span class="custom-control-description">Or toggle this other custom radio</span>
-  </label>
-</div>
 
-            <div class="row">
+            <div class="form-group row">
               <label class="col-xs-4 col-form-label text-xs-right">Radio</label>
               <div class="col-xs-8">
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    Radio one
-                  </label>
+                <div class="radio">
+                  <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label for="exampleRadios1">Radio one</label>
                 </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    Radio two
-                  </label>
+                <div class="radio">
+                  <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label for="exampleRadios2">Radio two</label>
                 </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" aria-label="...">
-                  </label>
+                <div class="radio">
+                  <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3" aria-label="...">
+                  <label for="exampleRadios3"></label>
                 </div>
-                <div class="form-check disabled">
-                  <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" disabled>
-                    Radio disabled
-                  </label>
+                <div class="radio disabled">
+                  <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4" disabled>
+                  <label for="exampleRadios4">Radio disabled</label>
                 </div>
               </div>
             </div>
@@ -763,31 +728,44 @@ FRONT PAGE STOP -->
               <small class="form-text text-muted">Example help text that remains unchanged.</small>
             </div>
 
-            <div class="form-check has-success">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="checkboxSuccess" value="option1">
-                Checkbox with success
-              </label>
+            <div class="form-group">
+              <div class="check has-success">
+                <input type="checkbox" id="checkboxSuccess" value="option1" checked>
+                <label for="checkboxSuccess">Checkbox with success</label>
+              </div>
+              <div class="check has-warning">
+                <input type="checkbox" id="checkboxWarning" value="option1" checked>
+                <label for="checkboxWarning">Checkbox with warning</label>
+              </div>
+              <div class="check has-danger">
+                <input type="checkbox" id="checkboxDanger" value="option1" checked>
+                <label for="checkboxDanger">Checkbox with danger</label>
+              </div>
             </div>
-            <div class="form-check has-warning">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="checkboxWarning" value="option1">
-                Checkbox with warning
-              </label>
+
+<!-- ALERTS START -->
+            <h4>Alerts</h4>
+            <div class="alert alert-success" role="alert">
+              <button type="button" class="close" data-dismiss="alert"><i class="fa fa-times-circle"></i></button>
+              <strong>Well done!</strong> You successfully read this important alert message.
             </div>
-            <div class="form-check has-danger">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="checkboxDanger" value="option1">
-                Checkbox with danger
-              </label>
+            <div class="alert alert-warning" role="alert">
+              <button type="button" class="close" data-dismiss="alert"><i class="fa fa-times-circle"></i></button>
+              <strong>Warning!</strong> Better check yourself, you're not looking too good.
             </div>
+            <div class="alert alert-danger" role="alert">
+              <button type="button" class="close" data-dismiss="alert"><i class="fa fa-times-circle"></i></button>
+              <strong>Oh snap!</strong> Change a few things up and try submitting again.
+            </div>
+<!-- ALERTS STOP -->
+
           </fieldset>
         </form>
 <!-- INPUT VALIDATION STOP -->
+
       </div>
     </div>
 <!-- FORMS STOP -->
-
 
 
 
