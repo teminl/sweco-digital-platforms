@@ -647,6 +647,11 @@ textarea.form-control
 select.form-control:not([size]):not([multiple])
 {
   @extend .custom-select;
+  &.form-control-sm
+  {
+    padding-top: .36rem;
+    padding-bottom: .36rem;
+  }
 }
 
 select.form-control[multiple]
