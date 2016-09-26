@@ -126,6 +126,11 @@ body
   overflow-y: hidden;
 }
 
+// Hide
+.hide
+{
+  display: none !important;
+}
 
 // Typography
 h1, h2, h3, h4, h5, h6,
@@ -173,6 +178,28 @@ h6,
 .h6
 {
   line-height: $line-height-h6 !important;
+}
+
+// Typography size class
+.font-size-xs
+{
+  font-size: $font-size-xs;
+}
+.font-size-sm
+{
+  font-size: $font-size-sm;
+}
+.font-size-base
+{
+  font-size: $font-size-base;
+}
+.font-size-lg
+{
+  font-size: $font-size-lg;
+}
+.font-size-xl
+{
+  font-size: $font-size-xl;
 }
 
 .display-1,
@@ -460,6 +487,16 @@ h1, h2, h3, h4, h5, h6,
       box-shadow: inset $btn-outline-box-width 0 0 0 $btn-success-bg;
     }
   }
+}
+// Btn Bootstrap 3 shim
+.btn-default
+{
+  @extend .btn-secondary;
+}
+.btn-xs
+{
+  @extend .btn-sm;
+  padding: $btn-padding-y-xs $btn-padding-x-xs !important;
 }
 
 // Dropdowns
@@ -905,14 +942,18 @@ select.form-control[multiple]
   }
 }
 
-// Navs
+// Navs, includes shim for BS 3
 .nav
 {
-  .nav-item
+  .nav-item,
+  > li
   {
+    @extend .nav-item;
     text-transform: $nav-text-transform;
-    .nav-link
+    .nav-link,
+    > a
     {
+      @extend .nav-link;
       color: $nav-link-color;
       min-height: 40px;
       &:hover,
@@ -927,21 +968,80 @@ select.form-control[multiple]
       }
     }
   }
+  &.nav-tabs
+  {
+    @extend .nav-tabs;
+    border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+    > li
+    {
+      float: left;
+      margin-bottom: -$nav-tabs-border-width;
+      > a
+      {
+        padding: $nav-link-padding;
+        border: $nav-tabs-border-width solid transparent;
+        @include hover-focus
+        {
+          border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
+        }
+      }
+      &.active a,
+      a.active,
+      a.open
+      {
+        @include plain-hover-focus
+        {
+          color: $nav-tabs-active-link-hover-color;
+          background-color: $nav-tabs-active-link-hover-bg;
+          border-color: $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color transparent;
+        }
+      }
+    }
+  }
   &.nav-pills
   {
-    .nav-link
+    > li
     {
+      float: left;
+    }
+    .nav-link,
+    a
+    {
+      padding: $nav-link-padding;
       border-right: 1px solid $nav-border-color;
+    }
+    .active a,
+    a.active,
+    .open a
+    {
+      @include plain-hover-focus
+      {
+        color: $nav-pills-active-link-color;
+        cursor: default;
+        background-color: $nav-pills-active-link-bg;
+      }
     }
     &.nav-stacked
     {
-      .nav-link
+      > li
+      {
+        float: none;
+        display: block;
+        > a
+        {
+          width: 100%;
+        }
+      }
+      .nav-link,
+      a
       {
         border-right: 0;
         border-bottom: 1px solid $nav-border-color;
       }
     }
-    .nav-link.active
+    .nav-link.active,
+    .active a,
+    a.active
     {
       border: 1px solid $nav-pills-active-border-color;
     }
@@ -951,14 +1051,16 @@ select.form-control[multiple]
 // Pagination
 .pagination
 {
-  .page-item
+  .page-item,
+  > li
   {
-    display: inline-block;
-    + .page-item
+    @extend .page-item;
+    + .page-item a
     {
       margin-left: $pagination-spacing !important;
     }
-    .page-link
+    .page-link,
+    > a
     {
       min-width: 40px;
       height: 40px;
@@ -1017,5 +1119,21 @@ select.form-control[multiple]
   }
 }
 
+// Breadcrumb
+ul.breadcrumb
+{
+  @extend .list-unstyled;
+  li
+  {
+    @extend .breadcrumb-item;
+  }
+}
 
+// Panels wells
+.panel,
+.well
+{
+  @extend .card;
+  @extend .card-block;
+}
 
