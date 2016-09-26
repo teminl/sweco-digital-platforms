@@ -466,8 +466,8 @@ h1, h2, h3, h4, h5, h6,
 .dropdown-menu
 {
   box-shadow: $dropdown-box-shadow !important;
-  &::before,
-  &::after
+  &:before,
+  &:after
   {
     content: '';
     width: 0;
@@ -479,13 +479,13 @@ h1, h2, h3, h4, h5, h6,
     left: ($spacer-x / 2);
     z-index: 1;
   }
-  &::before
+  &:before
   {
     border-width: 10px;
     border-bottom-color: $border-color;
     top: -20px;
   }
-  &::after
+  &:after
   {
     margin-left: 0px;
     border-width: 10px;
@@ -522,7 +522,7 @@ h1, h2, h3, h4, h5, h6,
   {
     @extend .hide;
   }
-  &::after
+  &:after
   {
     font-family: FontAwesome;
     color: inherit;
@@ -537,7 +537,7 @@ h1, h2, h3, h4, h5, h6,
 .dropdown-toggle-split,
 .btn-group .btn + .btn
 {
-  &::after
+  &:after
   {
     margin-left: 0 !important;
   }
@@ -547,7 +547,7 @@ h1, h2, h3, h4, h5, h6,
 {
   .dropdown-toggle
   {
-    &::after
+    &:after
     {
       content: "\f106" !important;
       border: 0 !important;
@@ -555,14 +555,14 @@ h1, h2, h3, h4, h5, h6,
   }
   .dropdown-menu
   {
-    &::before
+    &:before
     {
       border-top-color: $border-color !important;
       border-bottom-color: transparent !important;
       top: auto !important;
       bottom: -20px !important;
     }
-    &::after
+    &:after
     {
       border-top-color: $white !important;
       border-bottom-color: transparent !important;
@@ -643,7 +643,7 @@ fieldset
   fieldset[disabled] &
   {
     background-clip: border-box !important;
-    &::placeholder
+    &:placeholder
     {
       color: $disabled-color;
     }
@@ -705,12 +705,12 @@ select.form-control[multiple]
   width: 100%;
   .custom-file-control
   {
-    &::after
+    &:after
     {
       font-family: $font-family-regular;
       text-transform: none !important;
     }
-    &::before
+    &:before
     {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -724,7 +724,7 @@ select.form-control[multiple]
     }
     &:hover
     {
-      &::before
+      &:before
       {
         background-color: darken($btn-info-bg, 10%) !important;
       }
@@ -746,8 +746,8 @@ select.form-control[multiple]
     @extend .user-select-none;
     &:hover
     {
-      &::before,
-      &::after
+      &:before,
+      &:after
       {
         color: darken($btn-info-bg, 10%);
       }
@@ -757,8 +757,8 @@ select.form-control[multiple]
   {
     @extend .hide;
   }
-  input + label::before,
-  input + label::after
+  input + label:before,
+  input + label:after
   {
     position: absolute;
     top: 5px;
@@ -773,7 +773,7 @@ select.form-control[multiple]
     cursor: pointer;
     transition: all .4s ease;
   }
-  input + label::before
+  input + label:before
   {
     top: 13px;
     left: 1px;
@@ -785,13 +785,13 @@ select.form-control[multiple]
   }
   &.has-success
   {
-    label::after
+    label:after
     {
       color: $state-success-text !important;
     }
     &:hover
     {
-      label::after
+      label:after
       {
         color: darken($state-success-text, 10%) !important;
       }
@@ -799,13 +799,13 @@ select.form-control[multiple]
   }
   &.has-warning
   {
-    label::after
+    label:after
     {
       color: $state-warning-text !important;
     }
     &:hover
     {
-      label::after
+      label:after
       {
         color: darken($state-warning-text, 10%) !important;
       }
@@ -813,20 +813,20 @@ select.form-control[multiple]
   }
   &.has-danger
   {
-    label::after
+    label:after
     {
       color: $state-danger-text !important;
     }
     &:hover
     {
-      label::after
+      label:after
       {
         color: darken($state-danger-text, 10%) !important;
       }
     }
   }
-  input[disabled] + label::before,
-  input[disabled] + label::after,
+  input[disabled] + label:before,
+  input[disabled] + label:after,
   input[disabled] + label
   {
     color: $disabled-color !important;
@@ -840,12 +840,12 @@ select.form-control[multiple]
 }
 .check
 {
-  input + label::after
+  input + label:after
   {
     content: "\f0c8"; // fa-var-square
     font-size: 23px;
   }
-  input:checked + label::after
+  input:checked + label:after
   {
     content: "\f14a"; // fa-var-check-square
     font-size: 23px;
@@ -853,21 +853,21 @@ select.form-control[multiple]
 }
 .radio
 {
-  input + label::before,
-  input + label::after
+  input + label:before,
+  input + label:after
   {
     top: 10px;
   }
-  input + label::after
+  input + label:after
   {
     content: "\f111"; // fa-var-circle
   }
-  input + label::after,
-  input:checked + label::after
+  input + label:after,
+  input:checked + label:after
   {
     top: 5px;
   }
-  input:checked + label::after
+  input:checked + label:after
   {
     content: "\f058"; // fa-var-check-circle
   }
