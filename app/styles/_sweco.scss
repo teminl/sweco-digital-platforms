@@ -31,16 +31,12 @@ body
     padding-left: $grid-gutter-width !important;
     padding-right: $grid-gutter-width !important;
   }
-
-  &.container-bg
-  {
-    background-color: $white;
-  }
 }
 
 // Content
 #content
 {
+  background-color: $white;
   position: relative;
   min-height: 100%;
   padding-top: $navbar-north-height;
@@ -88,17 +84,11 @@ body
 // User select
 .user-select-none
 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
 .user-select-all
 {
-  -webkit-user-select: all;
-  -moz-user-select: all;
-  -ms-user-select: all;
   user-select: all;
 }
 
@@ -250,9 +240,12 @@ blockquote
   font-size: inherit;
 }
 
-strong, b, dt
+// Strong bold ones
+strong, b, dt, th, label,
+.btn, .nav, .pagination, .tag, .breadcrumb, .list-group
 {
   font-family: $font-family-medium;
+  font-weight: normal !important;
 }
 
 // Label
@@ -1011,6 +1004,11 @@ select.form-control[multiple]
     {
       padding: $nav-link-padding;
       border-right: 1px solid $nav-border-color;
+      &.disabled,
+      &[disabled]
+      {
+        color: $nav-disabled-link-color !important;
+      }
     }
     .active a,
     a.active,
@@ -1124,7 +1122,6 @@ select.form-control[multiple]
 // Tags
 .tag
 {
-  font-family: $font-family-medium;
   text-transform: uppercase;
   min-height: 20px;
   &.tag-pill
@@ -1169,15 +1166,14 @@ select.form-control[multiple]
     &:after
     {
       position: absolute;
-      top: 17px;
-      right: $spacer-x;
+      top: 6px;
+      right: 10px;
       font-family: FontAwesome;
       color: inherit;
       font-size: $font-size-lg;
       width: 12px !important;
       content: "\f105" !important;
       border: 0 !important;
-      margin: -11px 0 16px 10px !important;
     }
     &.list-group-item-action
     {
@@ -1188,6 +1184,7 @@ select.form-control[multiple]
     }
     p
     {
+      font-family: $font-family-regular;
       text-transform: none;
     }
   }
