@@ -960,11 +960,13 @@ select.form-control[multiple]
       &:active,
       &:focus
       {
-        color: $nav-link-hover-color;
-      }
-      &:hover
-      {
-        background-color: $nav-link-hover-bg;
+        @include hover-focus-active
+        {
+          color: $nav-link-hover-color;
+          text-decoration: none;
+          background-color: $nav-link-hover-bg;
+          outline: 0;
+        }
       }
     }
   }
@@ -1062,15 +1064,15 @@ select.form-control[multiple]
     .page-link,
     > a
     {
+      outline: 0 !important;
       min-width: 40px;
       height: 40px;
       border-radius: $pagination-border-radius;
-      &:hover,
-      &:active,
-      &:focus
+      @include hover-focus-active
       {
-        color: $text-color;
-        text-decoration: none !important;
+        color: $component-color;
+        text-decoration: none;
+        background-color: transparent;
       }
     }
     &:first-child
@@ -1119,15 +1121,80 @@ select.form-control[multiple]
   }
 }
 
+// Tags
+.tag
+{
+  text-transform: uppercase;
+  min-height: 20px;
+  &.tag-pill
+  {
+    border-radius: $tag-pill-border-radius;
+  }
+}
+
 // Breadcrumb
-ul.breadcrumb
+.breadcrumb
 {
   @extend .list-unstyled;
   li
   {
     @extend .breadcrumb-item;
   }
+  .breadcrumb-item,
+  li > a
+  {
+    outline: 0;
+  }
 }
+
+// List group
+.list-group
+{
+  .list-group-item
+  {
+    position: relative;
+    width: 100%;
+    color: $list-group-link-color;
+    text-align: inherit;
+    text-transform: uppercase;
+    @include hover-focus
+    {
+      color: $list-group-link-hover-color;
+      text-decoration: none;
+      background-color: $list-group-hover-bg;
+      outline: 0;
+    }
+    &:after
+    {
+      position: absolute;
+      top: 17px;
+      right: $spacer-x;
+      font-family: FontAwesome;
+      color: inherit;
+      font-size: $font-size-lg;
+      width: 12px !important;
+      content: "\f105" !important;
+      border: 0 !important;
+      margin: -11px 0 16px 10px !important;
+    }
+    &.list-group-item-action
+    {
+      &:after
+      {
+        display: none;
+      }
+    }
+    p
+    {
+      text-transform: none;
+    }
+  }
+}
+
+
+
+
+
 
 // Panels wells
 .panel,

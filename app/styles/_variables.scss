@@ -613,9 +613,41 @@ $pre-color:                   $code-color;
 $pre-border-color:            $text-color;
 $pre-scrollable-max-height:   340px;
 
+// Tags
+$tag-default-bg:            $disabled-color;
+$tag-primary-bg:            $brand-primary;
+$tag-success-bg:            $brand-success;
+$tag-info-bg:               $brand-info;
+$tag-warning-bg:            $brand-warning;
+$tag-danger-bg:             $brand-danger;
+$tag-color:                 $white;
+$tag-link-hover-color:      $white;
+$tag-font-size:             85%;
+$tag-font-weight:           bold;
+$tag-padding-x:             .5em;
+$tag-padding-y:             .3em;
+$tag-pill-padding-x:        .6em;
+$tag-pill-border-radius:    10rem;
 
-
-
+// List group
+$list-group-bg:                         $white;
+$list-group-border-color:               $border-color;
+$list-group-border-width:               $border-width;
+$list-group-border-radius:              none;
+$list-group-hover-bg:                   $component-bg-hover;
+$list-group-active-color:               $component-active-color;
+$list-group-active-bg:                  $component-active-bg;
+$list-group-active-border:              $list-group-active-bg;
+$list-group-active-text-color:          $list-group-active-color;
+$list-group-disabled-color:             $disabled-color;
+$list-group-disabled-bg:                $disabled-bg;
+$list-group-disabled-text-color:        $list-group-disabled-color;
+$list-group-link-color:                 $component-color;
+$list-group-link-hover-color:           $list-group-link-color;
+$list-group-link-heading-color:         $headings-color;
+$list-group-item-padding-x:             $spacer-x;
+$list-group-item-padding-y:             .6rem;
+$list-group-item-heading-margin-bottom: ($spacer-y / 2);
 
 
 
