@@ -1196,6 +1196,7 @@ select.form-control[multiple]
 // Card
 .card
 {
+  border: 0 !important;
   margin-bottom: $spacer-y !important;
   .card-img
   {
