@@ -366,6 +366,18 @@ h1, h2, h3, h4, h5, h6,
   transition: all .4s ease;
   text-transform: uppercase;
   outline: 0 !important;
+  &.btn-secondary
+  {
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle
+    {
+      background-color: $component-bg-hover !important;
+    }
+  }
   &.disabled,
   &[disabled],
   fieldset[disabled] &
@@ -560,7 +572,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-// Bootstrap 3 dropdown shim
+// Dropdown-menu Bootstrap 3 dropdown shim
 ul.dropdown-menu
 {
   @extend .list-unstyled;
@@ -893,9 +905,117 @@ select.form-control[multiple]
   }
 }
 
-// Breadcrumb
-.breadcrumb
+// Navs
+.nav
 {
-  background-color: transparent !important;
-  padding: 0 !important;
+  .nav-item
+  {
+    text-transform: $nav-text-transform;
+    .nav-link
+    {
+      color: $nav-link-color;
+      min-height: 40px;
+      &:hover,
+      &:active,
+      &:focus
+      {
+        color: $nav-link-hover-color;
+      }
+      &:hover
+      {
+        background-color: $nav-link-hover-bg;
+      }
+    }
+  }
+  &.nav-pills
+  {
+    .nav-link
+    {
+      border-right: 1px solid $nav-border-color;
+    }
+    &.nav-stacked
+    {
+      .nav-link
+      {
+        border-right: 0;
+        border-bottom: 1px solid $nav-border-color;
+      }
+    }
+    .nav-link.active
+    {
+      border: 1px solid $nav-pills-active-border-color;
+    }
+  }
 }
+
+// Pagination
+.pagination
+{
+  .page-item
+  {
+    display: inline-block;
+    + .page-item
+    {
+      margin-left: $pagination-spacing !important;
+    }
+    .page-link
+    {
+      min-width: 40px;
+      height: 40px;
+      border-radius: $pagination-border-radius;
+      &:hover,
+      &:active,
+      &:focus
+      {
+        color: $text-color;
+        text-decoration: none !important;
+      }
+    }
+    &:first-child
+    {
+      .fa
+      {
+        margin: -1px 2px 0 -2px;
+      }
+    }
+    &:last-child
+    {
+      .fa
+      {
+        margin: -1px -2px 0 2px;
+      }
+    }
+  }
+  .fa
+  {
+    font-size: $font-size-lg;
+  }
+  &.pagination-lg
+  {
+    .page-link
+    {
+      min-width: 50px;
+      height: 50px;
+      .fa
+      {
+        font-size: $font-size-xl;
+      }
+    }
+  }
+  &.pagination-sm
+  {
+    .page-link
+    {
+      min-width: 30px;
+      height: 30px;
+      .fa
+      {
+        font-size: $font-size-sm;
+        margin-top: -4px;
+      }
+    }
+  }
+}
+
+
+

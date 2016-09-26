@@ -120,9 +120,9 @@ $body-color:            $black-light;
 $text-color:            $body-color;
 
 // Links
-$link-color:            $ochre-dark;
+$link-color:            $pink-dark;
 $link-decoration:       none;
-$link-hover-color:      $ochre-dark;
+$link-hover-color:      $pink-dark;
 $link-hover-decoration: underline;
 
 // Grid breakpoints
@@ -250,6 +250,8 @@ $border-radius:           .25rem;
 $border-radius-lg:        .3rem;
 $border-radius-sm:        .2rem;
 
+// Component colors
+$component-color:         $text-color;
 $component-bg-hover:      $gray-superlight;
 $component-active-color:  $white;
 $component-active-bg:     $brand-primary;
@@ -349,53 +351,72 @@ $btn-border-radius-lg:           $border-radius-lg;
 $btn-border-radius-sm:           $border-radius-sm;
 
 // Navs
-$nav-item-margin:                             .2rem;
+$nav-text-transform:                          uppercase;
+$nav-item-margin:                             0;
 $nav-item-inline-spacer:                      1rem;
-$nav-link-padding:                            .5em 1em;
-$nav-link-hover-bg:                           $gray-lighter;
-$nav-disabled-link-color:                     $gray-light;
-$nav-disabled-link-hover-color:               $gray-light;
+$nav-link-padding:                            .6rem 1rem;
+$nav-link-color:                              $text-color;
+$nav-border-color:                            $component-bg-hover;
+
+$nav-link-hover-bg:                           $component-bg-hover;
+$nav-link-hover-color:                        darken($text-color, 10%);
+
+$nav-disabled-link-color:                     $disabled-color;
+$nav-disabled-link-hover-color:               $disabled-color;
 $nav-disabled-link-hover-bg:                  transparent;
 
-$nav-tabs-border-color:                       #ddd;
+$nav-tabs-border-color:                       $border-color;
 $nav-tabs-border-width:                       $border-width;
 $nav-tabs-border-radius:                      $border-radius;
-$nav-tabs-link-hover-border-color:            $gray-lighter;
-$nav-tabs-active-link-hover-color:            $gray;
-$nav-tabs-active-link-hover-bg:               $body-bg;
-$nav-tabs-active-link-hover-border-color:     #ddd;
-$nav-tabs-justified-link-border-color:        #ddd;
-$nav-tabs-justified-active-link-border-color: $body-bg;
+$nav-tabs-link-hover-border-color:            transparent;
 
-$nav-pills-border-radius:                     $border-radius;
-$nav-pills-active-link-color:                 $component-active-color;
-$nav-pills-active-link-bg:                    $component-active-bg;
+$nav-tabs-active-link-hover-color:            $component-color;
+$nav-tabs-active-link-hover-bg:               $white;
+$nav-tabs-active-link-hover-border-color:     $border-color;
+
+$nav-tabs-justified-link-border-color:        $border-color;
+$nav-tabs-justified-active-link-border-color: transparent;
+
+$nav-pills-border-radius:                     none;
+$nav-pills-active-border-color:               $border-color;
+$nav-pills-active-link-color:                 $component-color;
+$nav-pills-active-link-bg:                    $white;
+
+// Breadcrumbs
+$breadcrumb-padding-y:          0;
+$breadcrumb-padding-x:          0;
+$breadcrumb-item-padding:       .5rem;
+$breadcrumb-bg:                 transparent;
+$breadcrumb-divider-color:      $text-muted;
+$breadcrumb-active-color:       $text-muted;
+$breadcrumb-divider:            "/";
 
 // Pagination
-$pagination-padding-x:                 .75rem;
-$pagination-padding-y:                 .5rem;
-$pagination-padding-x-sm:              .75rem;
-$pagination-padding-y-sm:              .275rem;
-$pagination-padding-x-lg:              1.5rem;
-$pagination-padding-y-lg:              .75rem;
+$pagination-border-radius:             50%;
+$pagination-spacing:                   ($spacer-x / 2);
+$pagination-padding-x:                 1rem;
+$pagination-padding-y:                 .6rem;
+$pagination-padding-x-sm:              .73rem;
+$pagination-padding-y-sm:              .4rem;
+$pagination-padding-x-lg:              1.25rem;
+$pagination-padding-y-lg:              .7rem;
 
-
-$pagination-color:                     $link-color;
-$pagination-bg:                        #fff;
+$pagination-color:                     $text-color;
+$pagination-bg:                        transparent;
 $pagination-border-width:              $border-width;
-$pagination-border-color:              #ddd;
+$pagination-border-color:              transparent;
 
 $pagination-hover-color:               $link-hover-color;
-$pagination-hover-bg:                  $gray-lighter;
-$pagination-hover-border:              #ddd;
+$pagination-hover-bg:                  transparent;
+$pagination-hover-border:              $border-color;
 
-$pagination-active-color:              #fff;
-$pagination-active-bg:                 $brand-primary;
-$pagination-active-border:             $brand-primary;
+$pagination-active-color:              $text-color;
+$pagination-active-bg:                 transparent;
+$pagination-active-border:             $border-color;
 
-$pagination-disabled-color:            $gray-light;
-$pagination-disabled-bg:               #fff;
-$pagination-disabled-border:           #ddd;
+$pagination-disabled-color:            $disabled-color;
+$pagination-disabled-bg:               transparent;
+$pagination-disabled-border:           transparent;
 
 // Forms
 $fieldset-bg:                    $gray-superlight;
@@ -527,9 +548,9 @@ $dropdown-bg:                    $white;
 $dropdown-border-color:          $border-color;
 $dropdown-border-width:          $border-width;
 $dropdown-divider-bg:            $border-color;
-$dropdown-box-shadow:            0 5px $box-shadow-size $box-shadow;
+$dropdown-box-shadow:            0 4px $box-shadow-size $box-shadow;
 
-$dropdown-link-color:            $text-color;
+$dropdown-link-color:            $component-color;
 $dropdown-link-hover-color:      $dropdown-link-color;
 $dropdown-link-hover-bg:         $component-bg-hover;
 
