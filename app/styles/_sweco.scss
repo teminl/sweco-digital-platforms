@@ -1124,6 +1124,7 @@ select.form-control[multiple]
 // Tags
 .tag
 {
+  font-family: $font-family-medium;
   text-transform: uppercase;
   min-height: 20px;
   &.tag-pill
@@ -1150,6 +1151,7 @@ select.form-control[multiple]
 // List group
 .list-group
 {
+  margin-bottom: $spacer-y !important;
   .list-group-item
   {
     position: relative;
@@ -1191,12 +1193,17 @@ select.form-control[multiple]
   }
 }
 
+// Card
+.card
+{
+  margin-bottom: $spacer-y !important;
+  .card-img
+  {
+    @extend .img-fluid;
+  }
+}
 
-
-
-
-
-// Panels wells
+// Panels and wells
 .panel,
 .well
 {
