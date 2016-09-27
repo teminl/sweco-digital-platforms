@@ -127,11 +127,34 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
 legend,
 label,
-table th
+strong, b, dt, th,
+.btn, .nav, .pagination, .tag, .breadcrumb, .list-group
 {
   font-family: $headings-font-family;
-  color: $headings-color;
+  font-weight: normal !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Typography uppercase
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+legend,
+label,
+th,
+.btn, .nav, .pagination, .tag, .breadcrumb, .list-group
+{
   text-transform: uppercase;
+}
+
+// Headings color
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+legend,
+label,
+dt, th
+{
+  color: $headings-color;
 }
 
 h1,
@@ -238,14 +261,6 @@ blockquote
 .text-muted
 {
   font-size: inherit;
-}
-
-// Strong bold ones
-strong, b, dt, th, label,
-.btn, .nav, .pagination, .tag, .breadcrumb, .list-group
-{
-  font-family: $font-family-medium;
-  font-weight: normal !important;
 }
 
 // Label
@@ -1193,11 +1208,49 @@ select.form-control[multiple]
 // Card
 .card
 {
+  display: flex !important;
+  flex-direction: column !important;
   border: 0 !important;
+  margin-top: $spacer-y !important;
   margin-bottom: $spacer-y !important;
-  .card-img
+  .card-block
   {
-    @extend .img-fluid;
+    flex-grow: 1 !important;
+  }
+  .card-footer
+  {
+    display: flex !important;
+    flex-direction: row !important;
+    border-top: 0 !important;
+    padding: 0 !important;
+    .btn
+    {
+      @extend .btn-default;
+      @extend .btn-sm;
+      @extend .btn-block;
+      border-color: $component-bg-hover !important;
+      margin-top: 0 !important;
+      flex-grow: 1;
+      & + .btn
+      {
+        border-left: 0 !important;
+      }
+    }
+  }
+}
+
+// Card width for IE, Firefox flexbox fix if 4 cards, TODO
+.card-deck
+{
+  .card
+  {
+    width: 256px;
+    > img
+    {
+      width: auto;
+      height: 140px;
+      object-fit: cover;
+    }
   }
 }
 
