@@ -1213,6 +1213,27 @@ select.form-control[multiple]
   border: 0 !important;
   margin-top: $spacer-y !important;
   margin-bottom: $spacer-y !important;
+  &.card-info
+  {
+    background-color: $brand-info;
+    color: $white;
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6,
+    legend,
+    label,
+    dt, th
+    {
+      color: inherit;
+    }
+    .card-block a
+    {
+      color: $white;
+      @include hover-focus
+      {
+        color: $white;
+      }
+    }
+  }
   .card-block
   {
     flex-grow: 1 !important;
@@ -1234,6 +1255,15 @@ select.form-control[multiple]
       & + .btn
       {
         border-left: 0 !important;
+      }
+      .fa
+      {
+        margin-right: 5px;
+        &.fa-angle-right
+        {
+          margin-left: 5px;
+          margin-right: 0;
+        }
       }
     }
   }
@@ -1258,7 +1288,36 @@ select.form-control[multiple]
 .panel,
 .well
 {
-  @extend .card;
-  @extend .card-block;
+  position: relative;
+  display: block;
+  background-color: $card-bg;
+  @include clearfix;
+  padding: $card-spacer-x;
+  margin-bottom: $card-spacer-y;
+  a
+  {
+    text-decoration: underline;
+  }
+  &.well-info
+  {
+    background-color: $brand-info;
+    color: $white;
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6,
+    legend,
+    label,
+    dt, th
+    {
+      color: inherit;
+    }
+    a
+    {
+      color: $white;
+      @include hover-focus
+      {
+        color: $white;
+      }
+    }
+  }
 }
 
