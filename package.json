@@ -1,7 +1,7 @@
 {
   "name": "sweco-bootstrap",
   "version": "1.0.0",
-  "description": "Sweco Bootstrap",
+  "description": "Sweco Digital Guidelines - Sweco Bootstrap",
   "private": true,
   "directories": {
     "doc": "doc",
