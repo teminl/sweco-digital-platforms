@@ -1074,6 +1074,10 @@ select.form-control[multiple]
       &[disabled]
       {
         color: $nav-disabled-link-color !important;
+        @include plain-hover-focus
+        {
+          background-color: transparent;
+        }
       }
     }
     .active a,
