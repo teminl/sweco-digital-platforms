@@ -1,14 +1,14 @@
 # Sweco Digital Guidelines
 
-# Sweco Bootstrap
+### Example page
+
+[Sweco Bootstrap example page](http://sweco.github.io/sweco-digital-guidelines/) containing HTML example elements.
+
+## Sweco Bootstrap
 
 Layout options for structuring a Sweco application with Bootstrap 4, including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML 5 elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.
 
 Containing the Sweco Visual Guidelines with logotype, fonts, colors, application icons and svg:s. How to use Visual Guidelines, ask [sweco-sepros](https://github.com/sweco-sepros).
-
-### Sweco Bootstrap example page, gh-pages
-
-[Sweco Bootstrap example page](http://sweco.github.io/6613-sweco-bootstrap/) containing HTML example elements.
 
 ### Frameworks and dependencies
 
