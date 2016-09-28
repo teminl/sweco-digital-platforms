@@ -1,6 +1,6 @@
 # Sweco Digital Guidelines
 
-Containing the Sweco Digital Guidelines with typography, colors, application icons and logotype svg:s
+Containing the Sweco Digital Guidelines with typography, colors, application icons and logotype svg:s.
 
 ### Example page
 
@@ -22,7 +22,7 @@ The sweco-bootstrap.js includes a handful of JavaScript to help bring some of ou
 * [Progress.js](http://usablica.github.io/progress.js/)
 * [Tether](http://tether.io/)
 
-Dependency versions see [bower.json](https://github.com/sweco/sweco-digital-guidelines/blob/master/bower.json)
+Dependency versions see: [bower.json](https://github.com/sweco/sweco-digital-guidelines/blob/master/bower.json)
 
 ### What's included
 
