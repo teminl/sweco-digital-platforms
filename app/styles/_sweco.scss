@@ -671,13 +671,55 @@ ul.dropdown-menu
   }
 }
 
+// Panels and wells
+.panel,
+.well
+{
+  position: relative;
+  display: block;
+  background-color: $card-bg;
+  @include clearfix;
+  padding: $card-spacer-x;
+  margin-bottom: $card-spacer-y;
+  a
+  {
+    text-decoration: underline;
+  }
+  &.well-info
+  {
+    background-color: $brand-info;
+    color: $white;
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6,
+    legend,
+    label,
+    dt, th
+    {
+      color: inherit;
+    }
+    a
+    {
+      color: $white;
+      @include hover-focus
+      {
+        color: $white;
+      }
+    }
+  }
+}
+
 // Forms
 fieldset
 {
-  @extend .card;
-  @extend .card-block;
-  border: 0 !important;
+  @include clearfix;
+  padding: $card-spacer-x !important;
+  margin-bottom: $card-spacer-y !important;
   background-color: $fieldset-bg !important;
+}
+
+.col-form-label
+{
+  padding-right: 0 !important;
 }
 
 // Form-control
@@ -1312,43 +1354,6 @@ select.form-control[multiple]
       width: auto;
       height: 140px;
       object-fit: cover;
-    }
-  }
-}
-
-// Panels and wells
-.panel,
-.well
-{
-  position: relative;
-  display: block;
-  background-color: $card-bg;
-  @include clearfix;
-  padding: $card-spacer-x;
-  margin-bottom: $card-spacer-y;
-  a
-  {
-    text-decoration: underline;
-  }
-  &.well-info
-  {
-    background-color: $brand-info;
-    color: $white;
-    h1, h2, h3, h4, h5, h6,
-    .h1, .h2, .h3, .h4, .h5, .h6,
-    legend,
-    label,
-    dt, th
-    {
-      color: inherit;
-    }
-    a
-    {
-      color: $white;
-      @include hover-focus
-      {
-        color: $white;
-      }
     }
   }
 }
