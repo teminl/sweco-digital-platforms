@@ -22,7 +22,7 @@ The sweco-bootstrap.js includes a handful of JavaScript to help bring some of ou
 * [Progress.js](http://usablica.github.io/progress.js/)
 * [Tether](http://tether.io/)
 
-Version see [bower.json](https://github.com/sweco/sweco-digital-guidelines/blob/master/bower.json).
+Dependency versions see [bower.json](https://github.com/sweco/sweco-digital-guidelines/blob/master/bower.json)
 
 ### What's included
 
