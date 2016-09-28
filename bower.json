@@ -1,11 +1,10 @@
 {
   "name": "sweco-bootstrap",
   "dependencies": {
-    "ember": "~2.8.0",
-    "ember-cli-shims": "0.1.1",
+    "ember": "~2.8.1",
     "ember-cli-github-pages": "poetic/ember-cli-github-pages#0.1.2",
     "modernizr": "2.8.3",
-    "jquery": "3.0.0",
+    "jquery": "3.1.1",
     "jquery-browser-detection": "0.2.0",
     "bootstrap": "4.0.0-alpha.4",
     "font-awesome": "4.6.3",
