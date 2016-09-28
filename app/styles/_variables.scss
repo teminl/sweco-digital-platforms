@@ -375,18 +375,18 @@ $nav-tabs-justified-link-border-color:        $border-color;
 $nav-tabs-justified-active-link-border-color: transparent;
 
 $nav-pills-border-radius:                     none;
-$nav-pills-active-border-color:               $border-color;
+$nav-pills-active-border-color:               $component-bg-hover;
 $nav-pills-active-link-color:                 $component-color;
 $nav-pills-active-link-bg:                    $white;
 
 // Breadcrumbs
-$breadcrumb-padding-y:          0;
-$breadcrumb-padding-x:          0;
-$breadcrumb-item-padding:       .5rem;
-$breadcrumb-bg:                 transparent;
-$breadcrumb-divider-color:      $text-muted;
-$breadcrumb-active-color:       $text-muted;
-$breadcrumb-divider:            "/";
+$breadcrumb-padding-y:                 0;
+$breadcrumb-padding-x:                 0;
+$breadcrumb-item-padding:              .5rem;
+$breadcrumb-bg:                        transparent;
+$breadcrumb-divider-color:             $text-muted;
+$breadcrumb-active-color:              $text-muted;
+$breadcrumb-divider:                   "/";
 
 // Pagination
 $pagination-border-radius:             50%;
@@ -576,9 +576,9 @@ $state-danger-bg:                transparent;
 $state-danger-border:            $brand-danger;
 
 // Form validation icons
-$form-icon-success: none;
-$form-icon-warning: none;
-$form-icon-danger: none;
+$form-icon-success:              none;
+$form-icon-warning:              none;
+$form-icon-danger:               none;
 
 // Progress bars
 $progress-bg:                 $disabled-bg;

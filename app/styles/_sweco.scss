@@ -1013,6 +1013,14 @@ select.form-control[multiple]
     > li
     {
       float: left;
+      &:first-child
+      {
+        a,
+        .nav-link
+        {
+          border-left: 1px solid $nav-border-color;
+        }
+      }
     }
     .nav-link,
     a
@@ -1027,13 +1035,26 @@ select.form-control[multiple]
     }
     .active a,
     a.active,
+    .nav-link.active,
     .open a
     {
+      border-right: 1px solid $nav-border-color !important;
       @include plain-hover-focus
       {
         color: $nav-pills-active-link-color;
         cursor: default;
         background-color: $nav-pills-active-link-bg;
+      }
+      &:before
+      {
+        display: inline-block;
+        font-family: FontAwesome;
+        color: inherit;
+        font-size: $font-size-lg;
+        width: 12px !important;
+        content: "\f105" !important;
+        vertical-align: text-top;
+        margin: -4px 0;
       }
     }
     &.nav-stacked
@@ -1042,6 +1063,15 @@ select.form-control[multiple]
       {
         float: none;
         display: block;
+        &:first-child
+        {
+          .nav-link,
+          a
+          {
+            border-left: 0;
+            border-top: 1px solid $nav-border-color;
+          }
+        }
         > a
         {
           width: 100%;
@@ -1053,12 +1083,13 @@ select.form-control[multiple]
         border-right: 0;
         border-bottom: 1px solid $nav-border-color;
       }
-    }
-    .nav-link.active,
-    .active a,
-    a.active
-    {
-      border: 1px solid $nav-pills-active-border-color;
+      .active a,
+      a.active,
+      .nav-link.active,
+      .open a
+      {
+        border-right: 0 !important;
+      }
     }
   }
 }
