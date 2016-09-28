@@ -2,7 +2,7 @@
 
 ### Example page
 
-[Sweco Bootstrap example page](http://sweco.github.io/sweco-digital-guidelines/) containing HTML example elements.
+[Sweco Digital Guidelines example page](http://sweco.github.io/sweco-digital-guidelines/) containing HTML example elements.
 
 ## Sweco Bootstrap
 
