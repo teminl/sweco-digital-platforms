@@ -12,6 +12,8 @@ Layout options for structuring a Sweco application with Bootstrap 4, including g
 
 ### Frameworks and dependencies
 
+The sweco-bootstrap.js includes a handful of JavaScript to help bring some of our components to life.
+
 * [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
 * [Font-awesome](http://fontawesome.io/icons/)
 * [Modernizr](https://modernizr.com/)
@@ -19,6 +21,8 @@ Layout options for structuring a Sweco application with Bootstrap 4, including g
 * [jQuery-browser-detection](https://github.com/schickling/jquery-browser-detection)
 * [Progress.js](http://usablica.github.io/progress.js/)
 * [Tether](http://tether.io/)
+
+Version see [bower.json](https://github.com/sweco/sweco-digital-guidelines/blob/master/bower.json).
 
 ### What's included
 
