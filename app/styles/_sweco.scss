@@ -659,6 +659,7 @@ ul.dropdown-menu
 // Close
 .close
 {
+  transition: all .4s ease;
   opacity: 1 !important;
   &:hover
   {
