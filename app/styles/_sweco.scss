@@ -748,7 +748,6 @@ fieldset
 input[type="checkbox"],
 input[type="radio"]
 {
-  vertical-align: text-top;
   margin-right: .5rem;
 }
 
@@ -944,7 +943,7 @@ select.form-control[multiple]
   input + label:before,
   input + label:after
   {
-    top: 10px;
+    top: 11px;
   }
   input + label:after
   {
