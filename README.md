@@ -8,7 +8,7 @@ Containing the Sweco Digital Guidelines with typography, colors, application ico
 
 ## Sweco Bootstrap
 
-Sweco Bootstrap is built on [Bootstrap 4](http://v4-alpha.getbootstrap.com/) the world’s most popular framework for building responsive, mobile-first sites and applications. Sweco Bootstrap contains layout options for structuring a Sweco application with [Bootstrap 4](http://v4-alpha.getbootstrap.com/), including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML 5 elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.
+Sweco Bootstrap is built with [Bootstrap 4](http://v4-alpha.getbootstrap.com/) the world’s most popular framework for building responsive, mobile-first sites and applications. Sweco Bootstrap contains layout options for structuring a Sweco application with [Bootstrap 4](http://v4-alpha.getbootstrap.com/), including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML 5 elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.
 
 ### Frameworks and dependencies
 
