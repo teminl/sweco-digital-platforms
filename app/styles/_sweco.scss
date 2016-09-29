@@ -987,9 +987,21 @@ select.form-control[multiple]
 {
   color: $jumbotron-color;
   h1, h2, h3, h4, h5, h6,
-  .h1, .h2, .h3, .h4, .h5, .h6
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  legend,
+  label,
+  dt, th
   {
     color: inherit;
+  }
+  a
+  {
+    color: $jumbotron-color;
+    text-decoration: underline;
+    @include hover-focus
+    {
+      color: $jumbotron-color;
+    }
   }
 }
 
