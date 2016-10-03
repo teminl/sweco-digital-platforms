@@ -264,7 +264,8 @@ blockquote
 }
 
 // Label
-label
+label,
+.label
 {
   @extend .user-select-none;
   cursor: pointer;
@@ -794,7 +795,8 @@ select.form-control[multiple]
   {
     &:after
     {
-      font-family: $font-family-regular;
+      @extend label;
+      color: $input-color-placeholder;
       text-transform: none !important;
     }
     &:before
@@ -814,6 +816,17 @@ select.form-control[multiple]
       &:before
       {
         background-color: darken($btn-info-bg, 10%) !important;
+      }
+    }
+  }
+  .custom-file-input
+  {
+    &:focus
+    {
+      + .custom-file-control
+      {
+        background-color: $input-bg-focus !important;
+        border-color: $input-border-focus !important;
       }
     }
   }
