@@ -734,6 +734,14 @@ ul.dropdown-menu
   &.well-info
   {
     background-color: $brand-info;
+  }
+  &.well-warning
+  {
+    background-color: $brand-warning;
+  }
+  &.well-info,
+  &.well-warning
+  {
     color: $white;
     h1, h2, h3, h4, h5, h6,
     .h1, .h2, .h3, .h4, .h5, .h6,
