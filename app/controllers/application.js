@@ -7,5 +7,7 @@ export default Ember.Controller.extend({
     $.browserDetection({
       addClasses: true
     });
+
   }
+
 });

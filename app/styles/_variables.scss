@@ -229,7 +229,7 @@ $hr-border-width:         $border-width;
 // Blockquote
 $blockquote-small-color:  $gray-light;
 $blockquote-font-size:    $font-size-lg;
-$blockquote-border-color: $border-color;
+$blockquote-border-color: $light-gray;
 $blockquote-border-width: .25rem;
 
 // Content
@@ -256,6 +256,9 @@ $component-active-bg:     $brand-primary;
 $caret-width:             .3em;
 $caret-width-lg:          $caret-width;
 
+// Transition for btn, nav and such
+$transition: all .4s ease;
+
 // Tables
 $table-cell-padding:      .75rem;
 $table-sm-cell-padding:   .33rem .3rem .34rem;
@@ -275,6 +278,7 @@ $zindex-dropdown:                1000;
 $zindex-btn:                     1010;
 $zindex-popover:                 1060;
 $zindex-tooltip:                 1070;
+$zindex-fixed-content:           1020;
 $zindex-navbar-fixed:            1030;
 $zindex-navbar-sticky:           1030;
 $zindex-offcanvas-backdrop:      1040;
@@ -662,7 +666,7 @@ $card-border-radius:                    none;
 $card-border-color:                     transparent;
 $card-border-radius-inner:              none;
 $card-cap-bg:                           $disabled-bg;
-$card-bg:                               $gray-superlight;
+$card-bg:                               $white; // $gray-superlight
 $card-link-hover-color:                 $white;
 $card-img-overlay-padding:              1.25rem;
 $card-deck-margin:                      .625rem;
@@ -680,4 +684,8 @@ $thumbnail-box-shadow:                  0 1px 2px rgba(0,0,0,.075);
 $media-margin-top:                      $spacer-y;
 $media-heading-margin-bottom:           ($spacer-y / 2);
 $media-alignment-padding-x:             10px;
+
+// Sweco
+$front-page-img: url("../img/sweco-front.jpg");
+$overlay-pattern: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHZpZXdCb3g9IjAgMCAyIDIiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuNDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+Cjwvc3ZnPgo=");
 

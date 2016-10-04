@@ -5,17 +5,19 @@
     {{partial 'partials/navbar'}}
 <!-- NAVBAR NORTH STOP -->
 
+<!-- FRONT PAGE START -->
+    <div class="front-page fade in">
+      <div class="hero">
+        <h1>Sweco Digital Guidelines</h1>
+        <p class="lead">Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.</p>
+        <button class="btn btn-info btn-front-page" {{action 'frontPage'}}>Sweco Digital Guidelines<i class="fa fa-right fa-angle-right"></i></button>
+      </div>
+    </div>
+<!-- FRONT PAGE STOP -->
+
 <!-- NAVBAR SOUTH START -->
     {{partial 'partials/navbar-south'}}
 <!-- NAVBAR SOUTH STOP -->
-
-<!-- FRONT PAGE START
-    <div class="front-page">
-      <div class="hero">
-        <h1>Sweco Digital Guidelines</h1>
-      </div>
-    </div>
-FRONT PAGE STOP -->
 
 <!-- MODAL START -->
     {{#if isModalVisible}}
@@ -30,1023 +32,1069 @@ FRONT PAGE STOP -->
 <!-- CONTENT START -->
     <section class="container" id="content">
 
-      <div class="jumbotron m-y-2">
-        <h1 class="display-3">Sweco Bootstrap</h1>
-        <p class="lead">Sweco Bootstrap is built on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> the world’s most popular framework for building responsive, mobile-first sites and applications. Sweco Bootstrap contains layout options for structuring a Sweco application with Bootstrap 4, including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML <i class="fa fa-html5"></i> elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.</p>
+      <div class="well m-y-2">
+<!-- JUBOTRONE START -->
+        <div class="jumbotron m-y-1">
+          <h1 class="display-3">Sweco Digital Guidelines</h1>
+          <p class="lead">Sweco digital guidelines is built on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> the world’s most popular framework for building responsive, mobile-first sites and applications. Sweco Bootstrap contains layout options for structuring a Sweco application with Bootstrap 4, including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML <i class="fa fa-html5"></i> elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.</p>
+        </div>
+<!-- JUBOTRONE STOP -->
       </div>
 
+      <div class="well">
 <!-- COLORS START -->
-      <h2 id="colors">Sweco brand colors</h2>
-      <hr/>
-      <div class="colors">
-        <p><i class="fa fa-star"></i> Brand colors<i class="fa fa-font m-l-1"></i> Text color. If text color add <code>-color</code> to class <code>.colorname-color</code>.</p>
+        <h2 id="colors">Sweco brand colors</h2>
+        <hr/>
+        <div class="colors">
+          <p><i class="fa fa-star"></i> Brand colors<i class="fa fa-font m-l-1"></i> Text color. If text color add <code>-color</code> to class <code>.colorname-color</code>.</p>
 
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="color-black">
-              <li class="color">.black</li>
-              <li class="ich">.black-ich</li>
-              <li class="light">.black-light (Text)<code>#3a3a3a</code><i class="fa fa-font"></i></li>
-              <li class="lighter">.black-lighter</li>
-              <li class="ultralight">.black-ultralight</li>
-              <li class="superlight">.black-superlight</li>
-            </ul>
+          <div class="row">
+            <div class="col-lg-3">
+              <ul class="color-black">
+                <li class="color">.black</li>
+                <li class="ich">.black-ich</li>
+                <li class="light">.black-light (Text)<code>#3a3a3a</code><i class="fa fa-font"></i></li>
+                <li class="lighter">.black-lighter</li>
+                <li class="ultralight">.black-ultralight</li>
+                <li class="superlight">.black-superlight</li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <ul class="color-dark-gray">
+                <li class="color">.dark-gray<code>#4d535a</code><i class="fa fa-star"></i></li>
+                <li class="ich">.dark-gray-ich</li>
+                <li class="light">.dark-gray-light</li>
+                <li class="lighter">.dark-gray-lighter</li>
+                <li class="ultralight">.dark-gray-ultralight</li>
+                <li class="superlight">.dark-gray-superlight</li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <ul class="color-gray">
+                <li class="color">.gray<code>#a5a5a8</code><i class="fa fa-star"></i></li>
+                <li class="ich">.gray-ich</li>
+                <li class="light">.gray-light</li>
+                <li class="lighter">.gray-lighter</li>
+                <li class="ultralight">.gray-ultralight</li>
+                <li class="superlight">.gray-superlight</li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <ul class="color-light-gray">
+                <li class="color">.light-gray<code>#e2e0da</code><i class="fa fa-star"></i></li>
+                <li class="ich">.light-gray-ich</li>
+                <li class="light">.light-gray-light</li>
+                <li class="lighter">.light-gray-lighter</li>
+                <li class="ultralight">.light-gray-ultralight</li>
+                <li class="superlight">.light-gray-superlight</li>
+              </ul>
+            </div>
           </div>
-          <div class="col-lg-3">
-            <ul class="color-dark-gray">
-              <li class="color">.dark-gray<code>#4d535a</code><i class="fa fa-star"></i></li>
-              <li class="ich">.dark-gray-ich</li>
-              <li class="light">.dark-gray-light</li>
-              <li class="lighter">.dark-gray-lighter</li>
-              <li class="ultralight">.dark-gray-ultralight</li>
-              <li class="superlight">.dark-gray-superlight</li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <ul class="color-gray">
-              <li class="color">.gray<code>#a5a5a8</code><i class="fa fa-star"></i></li>
-              <li class="ich">.gray-ich</li>
-              <li class="light">.gray-light</li>
-              <li class="lighter">.gray-lighter</li>
-              <li class="ultralight">.gray-ultralight</li>
-              <li class="superlight">.gray-superlight</li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <ul class="color-light-gray">
-              <li class="color">.light-gray<code>#e2e0da</code><i class="fa fa-star"></i></li>
-              <li class="ich">.light-gray-ich</li>
-              <li class="light">.light-gray-light</li>
-              <li class="lighter">.light-gray-lighter</li>
-              <li class="ultralight">.light-gray-ultralight</li>
-              <li class="superlight">.light-gray-superlight</li>
-            </ul>
+
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="color-ochre">
+                <li class="dark">.ochre-dark<code>#a4852f</code><i class="fa fa-star"></i><i class="fa fa-font"></i></li>
+                <li class="color">.ochre<code>#dec55b</code><i class="fa fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="color-pink">
+                <li class="dark">.pink-dark<code>#b586a4</code><i class="fa fa-star"></i><i class="fa fa-font"></i></li>
+                <li class="color">.pink<code>#f2b1dc</code><i class="fa fa-star"></i></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul class="color-blue">
+                <li class="dark">.blue-dark<code>#7e8dbb</code><i class="fa fa-star"></i></li>
+                <li class="color">.blue<code>#8aa3b9</code><i class="fa fa-star"></i><i class="fa fa-font"></i></li>
+              </ul>
+            </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <ul class="color-ochre">
-              <li class="dark">.ochre-dark<code>#a4852f</code><i class="fa fa-star"></i><i class="fa fa-font"></i></li>
-              <li class="color">.ochre<code>#dec55b</code><i class="fa fa-star"></i></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="color-pink">
-              <li class="dark">.pink-dark<code>#b586a4</code><i class="fa fa-star"></i><i class="fa fa-font"></i></li>
-              <li class="color">.pink<code>#f2b1dc</code><i class="fa fa-star"></i></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="color-blue">
-              <li class="dark">.blue-dark<code>#7e8dbb</code><i class="fa fa-star"></i></li>
-              <li class="color">.blue<code>#8aa3b9</code><i class="fa fa-star"></i><i class="fa fa-font"></i></li>
-            </ul>
-          </div>
-        </div>
-      </div>
 <!-- COLORS STOP -->
+      </div>
 
+      <div class="well">
 <!-- TYPOGRAPHY START -->
-      <h2 id="typography">Typography</h2>
-      <hr>
+        <h2 id="typography">Typography</h2>
+        <hr>
 
-      <div class="row">
-        <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6">
 
-          <h1>h1. Heading</h1>
-          <h2>h2. Heading</h2>
-          <h3>h3. Heading</h3>
-          <h4>h4. Heading</h4>
-          <h5>h5. Heading</h5>
-          <h6>h6. Heading</h6>
+            <h1>h1. Heading</h1>
+            <h2>h2. Heading</h2>
+            <h3>h3. Heading</h3>
+            <h4>h4. Heading</h4>
+            <h5>h5. Heading</h5>
+            <h6>h6. Heading</h6>
 
-          <p class="lead">This is lead paragraph, sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-          <p>The standared paragraph, raw denim you probably haven't heard of them jean shorts Austin. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Cardigan american.</p>
-          <div class="line-height-computed">Line Height Computed</div>
-          <p><span class="font-size-sm">Font-size-sm</span> Font-size-base <span class="font-size-lg">Font-size-lg</span> <span class="font-size-xl">Font-size-xl</span></p>
+            <p class="lead">This is lead paragraph, sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>The standared paragraph, raw denim you probably haven't heard of them jean shorts Austin. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Cardigan american.</p>
+            <div class="line-height-computed">Line Height Computed</div>
+            <p><span class="font-size-sm">Font-size-sm</span> Font-size-base <span class="font-size-lg">Font-size-lg</span> <span class="font-size-xl">Font-size-xl</span></p>
 
+          </div>
+          <div class="col-md-6">
+
+            <h1 class="display-1">Display 1</h1>
+            <h1 class="display-2">Display 2</h1>
+            <h1 class="display-3">Display 3</h1>
+            <h1 class="display-4">Display 4</h1>
+
+          </div>
         </div>
-        <div class="col-md-6">
 
-          <h1 class="display-1">Display 1</h1>
-          <h1 class="display-2">Display 2</h1>
-          <h1 class="display-3">Display 3</h1>
-          <h1 class="display-4">Display 4</h1>
-
-        </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
+      <div class="well">
 
-          <h2>Lists</h2>
-          <hr>
-          <ul>
-            <li>UL integer molestie lorem at massa</li>
-            <li>Nulla volutpat aliquam velit
-              <ul>
-                <li>Phasellus iaculis neque</li>
-                <li>Purus sodales ultricies</li>
-              </ul>
-            </li>
-            <li>Faucibus porta lacus fringilla vel
-              <ul>
-                <li>Phasellus iaculis neque</li>
-                <li>Purus sodales ultricies</li>
-              </ul>
-            </li>
-            <li>Aenean sit amet erat nunc</li>
-          </ul>
-          <ol>
-            <li>OL integer molestie lorem at massa</li>
-            <li>Nulla volutpat aliquam velit
-              <ul class="list-unstyled">
-                <li>Ul list unstyled</li>
-                <li>Purus sodales ultricies</li>
-              </ul>
-            </li>
-            <li>Faucibus porta lacus fringilla vel</li>
-            <li>Aenean sit amet erat nunc</li>
-          </ol>
-          <dl>
-            <dt>Description lists</dt>
-            <dd>A description list is perfect for defining terms.</dd>
-            <dt>Euismod</dt>
-            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-            <dt>Malesuada porta</dt>
-            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-          </dl>
+        <div class="row">
+          <div class="col-md-6">
 
+            <h2>Lists</h2>
+            <hr>
+            <ul>
+              <li>UL integer molestie lorem at massa</li>
+              <li>Nulla volutpat aliquam velit
+                <ul>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Purus sodales ultricies</li>
+                </ul>
+              </li>
+              <li>Faucibus porta lacus fringilla vel
+                <ul>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Purus sodales ultricies</li>
+                </ul>
+              </li>
+              <li>Aenean sit amet erat nunc</li>
+            </ul>
+            <ol>
+              <li>OL integer molestie lorem at massa</li>
+              <li>Nulla volutpat aliquam velit
+                <ul class="list-unstyled">
+                  <li>Ul list unstyled</li>
+                  <li>Purus sodales ultricies</li>
+                </ul>
+              </li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Aenean sit amet erat nunc</li>
+            </ol>
+            <dl>
+              <dt>Description lists</dt>
+              <dd>A description list is perfect for defining terms.</dd>
+              <dt>Euismod</dt>
+              <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+              <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+              <dt>Malesuada porta</dt>
+              <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+            </dl>
+
+          </div>
+          <div class="col-md-6">
+
+            <h2>Inline text elements</h2>
+            <hr>
+            <ul class="list-unstyled">
+              <li>This line has <a href="#">inline link</a>, how a default link is displayed.</li>
+              <li>You can use the mark tag to <mark>highlight</mark> text.</li>
+              <li>This is <small class="text-muted">muted text</small>.</li>
+              <li><del>This line of text is meant to be treated as deleted text.</del></li>
+              <li><s>This line of text is meant to be treated as no longer accurate.</s></li>
+              <li><ins>This line of text is meant to be treated as an addition to the document.</ins></li>
+              <li><u>This line of text will render as underlined</u></li>
+              <li><small>This line of text is meant to be treated as fine print.</small></li>
+              <li><strong>This line rendered as bold text.</strong></li>
+              <li><em>This line rendered as italicized text.</em></li>
+              <li>This is <abbr title="attribute">attr</abbr>.</li>
+              <li>This is abbreviations <abbr title="HyperText Markup Language" class="initialism">HTML</abbr></li>
+              <li>Variables <var>y</var> = <var>m</var><var>x</var> + <var>b</var></li>
+              <li>User inputs looks like this <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></li>
+              <li>The <code>&lt;code&gt;</code> element.</li>
+              <li>
+                <pre><code>&lt;p&gt;This is how code blocks is displayed&lt;/p&gt;</code></pre>
+              </li>
+            </ul>
+
+            <blockquote class="blockquote">
+              <p class="m-b-0">Blockquote lorem ipsum dolor sit amet.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+
+            <blockquote class="blockquote blockquote-reverse">
+              <p class="m-b-0">Blockquote-reverse consectetur adipiscing elit.</p>
+              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+
+          </div>
         </div>
-        <div class="col-md-6">
-
-          <h2>Inline text elements</h2>
-          <hr>
-          <ul class="list-unstyled">
-            <li>This line has <a href="#">inline link</a>, how a default link is displayed.</li>
-            <li>You can use the mark tag to <mark>highlight</mark> text.</li>
-            <li>This is <small class="text-muted">muted text</small>.</li>
-            <li><del>This line of text is meant to be treated as deleted text.</del></li>
-            <li><s>This line of text is meant to be treated as no longer accurate.</s></li>
-            <li><ins>This line of text is meant to be treated as an addition to the document.</ins></li>
-            <li><u>This line of text will render as underlined</u></li>
-            <li><small>This line of text is meant to be treated as fine print.</small></li>
-            <li><strong>This line rendered as bold text.</strong></li>
-            <li><em>This line rendered as italicized text.</em></li>
-            <li>This is <abbr title="attribute">attr</abbr>.</li>
-            <li>This is abbreviations <abbr title="HyperText Markup Language" class="initialism">HTML</abbr></li>
-            <li>Variables <var>y</var> = <var>m</var><var>x</var> + <var>b</var></li>
-            <li>User inputs looks like this <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></li>
-            <li>The <code>&lt;code&gt;</code> element.</li>
-            <li>
-              <pre><code>&lt;p&gt;This is how code blocks is displayed&lt;/p&gt;</code></pre>
-            </li>
-          </ul>
-
-          <blockquote class="blockquote">
-            <p class="m-b-0">Blockquote lorem ipsum dolor sit amet.</p>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-          </blockquote>
-
-          <blockquote class="blockquote blockquote-reverse">
-            <p class="m-b-0">Blockquote-reverse consectetur adipiscing elit.</p>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-          </blockquote>
-
-        </div>
-      </div>
 <!-- TYPOGRAPHY STOP -->
+      </div>
 
-      <h2 id="tables">Tables</h2>
-      <hr>
+
+      <div class="well">
 <!-- TABLES START -->
-      <div class="table-responsive">
-        <table class="table table-bordered table-striped table-hover">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Column content</td>
-              <td>Column content</td>
-              <td>Column content</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <h2 id="tables">Tables</h2>
+        <hr>
+
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped table-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 <!-- TABLES STOP -->
-
-<!-- FORMS START -->
-    <h2 id="forms">Forms</h2>
-    <hr/>
-
-    <p>Remember, all inputs must have a <code>type</code> attribute and class <code>form-control</code>.</p>
-
-    <div class="row">
-      <div class="col-lg-6">
-<!-- INPUT TYPES START -->
-        <form>
-          <fieldset>
-            <h4>Input</h4>
-            <div class="form-group row">
-              <label for="example-text-input" class="col-xs-4 col-form-label text-xs-right">Text</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="text" placeholder="The placeholder" value="" id="example-text-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-search-input" class="col-xs-4 col-form-label text-xs-right">Search</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="search" placeholder="The placeholder" value="" id="example-search-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-email-input" class="col-xs-4 col-form-label text-xs-right">Email</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="email" value="test@example.com" id="example-email-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-url-input" class="col-xs-4 col-form-label text-xs-right">URL</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="url" value="https://www.w3.org" id="example-url-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-tel-input" class="col-xs-4 col-form-label text-xs-right">Telephone</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-password-input" class="col-xs-4 col-form-label text-xs-right">Password</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="password" value="hunter2" id="example-password-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-number-input" class="col-xs-4 col-form-label text-xs-right">Number</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="number" value="42" id="example-number-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-datetime-local-input" class="col-xs-4 col-form-label text-xs-right">Date and time</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="datetime-local" value="2016-08-19T13:45:00" id="example-datetime-local-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-date-input" class="col-xs-4 col-form-label text-xs-right">Date</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="date" value="2016-08-19" id="example-date-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-month-input" class="col-xs-4 col-form-label text-xs-right">Month</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="month" value="2016-08" id="example-month-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-week-input" class="col-xs-4 col-form-label text-xs-right">Week</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="week" value="2016-W33" id="example-week-input">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="example-time-input" class="col-xs-4 col-form-label text-xs-right">Time</label>
-              <div class="col-xs-8">
-                <input class="form-control" type="time" value="13:45:00" id="example-time-input">
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label for="textArea" class="col-xs-4 col-form-label text-xs-right">Textarea</label>
-              <div class="col-xs-8">
-                <textarea class="form-control" rows="3" id="textArea" placeholder="The placeholder"></textarea>
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label for="exampleSelect1" class="col-xs-4 col-form-label text-xs-right">Select</label>
-              <div class="col-xs-8">
-                <select class="form-control" id="exampleSelect1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="exampleSelect2" class="col-xs-4 col-form-label text-xs-right">Multiple select</label>
-              <div class="col-xs-8">
-                <select multiple class="form-control" id="exampleSelect2">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="row">
-              <label class="col-xs-4 col-form-label text-xs-right">File browser</label>
-              <div class="col-xs-8">
-                <label class="custom-file">
-                  <input type="file" id="file" class="custom-file-input">
-                  <span class="custom-file-control"></span>
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label class="col-xs-4 col-form-label text-xs-right">Checkbox</label>
-              <div class="col-xs-8">
-                <div class="check">
-                  <input type="checkbox" id="check1" value="option1" checked><label for="check1">Checkbox one</label>
-                </div>
-                <div class="check">
-                  <input type="checkbox" id="check2" value="option2"><label for="check2">Checkbox two</label>
-                </div>
-                <div class="check">
-                  <input type="checkbox" id="blankCheckbox" value="option3" aria-label="...">
-                  <label for="blankCheckbox"></label>
-                </div>
-                <div class="check disabled">
-                  <input type="checkbox" id="check4" value="option4" disabled>
-                  <label for="check4">Checkbox disabled</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label class="col-xs-4 col-form-label text-xs-right">Radio</label>
-              <div class="col-xs-8">
-                <div class="radio">
-                  <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                  <label for="exampleRadios1">Radio one</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                  <label for="exampleRadios2">Radio two</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3" aria-label="...">
-                  <label for="exampleRadios3"></label>
-                </div>
-                <div class="radio disabled">
-                  <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4" disabled>
-                  <label for="exampleRadios4">Radio disabled</label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label for="readonlyTextInput" class="col-xs-4 col-form-label text-xs-right">Readonly input</label>
-              <div class="col-xs-8">
-                <input class="form-control" id="readonlyTextInput" type="text" placeholder="Readonly input" readonly>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="disabledTextInput" class="col-xs-4 col-form-label text-xs-right">Disabled input</label>
-              <div class="col-xs-8">
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" disabled>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="disabledSelect" class="col-xs-4 col-form-label text-xs-right">Disabled select</label>
-              <div class="col-xs-8">
-                <select id="disabledSelect" class="form-control" disabled>
-                  <option>Disabled select</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="text-xs-right">
-              <button type="button" class="btn btn-secondary">Cancel</button>
-              <button type="submit" class="btn btn-info">Submit</button>
-            </div>
-
-          </fieldset>
-        </form>
-<!-- INPUT TYPES STOP -->
       </div>
-      <div class="col-lg-6">
+
+      <div class="well">
+<!-- FORMS START -->
+        <h2 id="forms">Forms</h2>
+        <hr/>
+
+        <p>Remember, all inputs must have a <code>type</code> attribute and class <code>form-control</code>.</p>
+
+        <div class="row">
+          <div class="col-lg-6">
+<!-- INPUT TYPES START -->
+            <form>
+              <fieldset>
+                <h4>Input</h4>
+                <div class="form-group row">
+                  <label for="example-text-input" class="col-xs-4 col-form-label text-xs-right">Text</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="text" placeholder="The placeholder" value="" id="example-text-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-search-input" class="col-xs-4 col-form-label text-xs-right">Search</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="search" placeholder="The placeholder" value="" id="example-search-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-email-input" class="col-xs-4 col-form-label text-xs-right">Email</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="email" value="test@example.com" id="example-email-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-url-input" class="col-xs-4 col-form-label text-xs-right">URL</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="url" value="https://www.w3.org" id="example-url-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-tel-input" class="col-xs-4 col-form-label text-xs-right">Telephone</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-password-input" class="col-xs-4 col-form-label text-xs-right">Password</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="password" value="hunter2" id="example-password-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-number-input" class="col-xs-4 col-form-label text-xs-right">Number</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="number" value="42" id="example-number-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-datetime-local-input" class="col-xs-4 col-form-label text-xs-right">Date and time</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="datetime-local" value="2016-08-19T13:45:00" id="example-datetime-local-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-date-input" class="col-xs-4 col-form-label text-xs-right">Date</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="date" value="2016-08-19" id="example-date-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-month-input" class="col-xs-4 col-form-label text-xs-right">Month</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="month" value="2016-08" id="example-month-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-week-input" class="col-xs-4 col-form-label text-xs-right">Week</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="week" value="2016-W33" id="example-week-input">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="example-time-input" class="col-xs-4 col-form-label text-xs-right">Time</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="textArea" class="col-xs-4 col-form-label text-xs-right">Textarea</label>
+                  <div class="col-xs-8">
+                    <textarea class="form-control" rows="3" id="textArea" placeholder="The placeholder"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="exampleSelect1" class="col-xs-4 col-form-label text-xs-right">Select</label>
+                  <div class="col-xs-8">
+                    <select class="form-control" id="exampleSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="exampleSelect2" class="col-xs-4 col-form-label text-xs-right">Multiple select</label>
+                  <div class="col-xs-8">
+                    <select multiple class="form-control" id="exampleSelect2">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <label class="col-xs-4 col-form-label text-xs-right">File browser</label>
+                  <div class="col-xs-8">
+                    <label class="custom-file">
+                      <input type="file" id="file" class="custom-file-input">
+                      <span class="custom-file-control"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-xs-4 col-form-label text-xs-right">Checkbox</label>
+                  <div class="col-xs-8">
+                    <div class="check">
+                      <input type="checkbox" id="check1" value="option1" checked><label for="check1">Checkbox one</label>
+                    </div>
+                    <div class="check">
+                      <input type="checkbox" id="check2" value="option2"><label for="check2">Checkbox two</label>
+                    </div>
+                    <div class="check">
+                      <input type="checkbox" id="blankCheckbox" value="option3" aria-label="...">
+                      <label for="blankCheckbox"></label>
+                    </div>
+                    <div class="check disabled">
+                      <input type="checkbox" id="check4" value="option4" disabled>
+                      <label for="check4">Checkbox disabled</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label class="col-xs-4 col-form-label text-xs-right">Radio</label>
+                  <div class="col-xs-8">
+                    <div class="radio">
+                      <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label for="exampleRadios1">Radio one</label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label for="exampleRadios2">Radio two</label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3" aria-label="...">
+                      <label for="exampleRadios3"></label>
+                    </div>
+                    <div class="radio disabled">
+                      <input type="radio" name="exampleRadios" id="exampleRadios4" value="option4" disabled>
+                      <label for="exampleRadios4">Radio disabled</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="readonlyTextInput" class="col-xs-4 col-form-label text-xs-right">Readonly input</label>
+                  <div class="col-xs-8">
+                    <input class="form-control" id="readonlyTextInput" type="text" placeholder="Readonly input" readonly>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="disabledTextInput" class="col-xs-4 col-form-label text-xs-right">Disabled input</label>
+                  <div class="col-xs-8">
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" disabled>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="disabledSelect" class="col-xs-4 col-form-label text-xs-right">Disabled select</label>
+                  <div class="col-xs-8">
+                    <select id="disabledSelect" class="form-control" disabled>
+                      <option>Disabled select</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="text-xs-right">
+                  <button type="button" class="btn btn-secondary">Cancel</button>
+                  <button type="submit" class="btn btn-info">Submit</button>
+                </div>
+
+              </fieldset>
+            </form>
+<!-- INPUT TYPES STOP -->
+          </div>
+          <div class="col-lg-6">
 <!-- INPUT GROUP START -->
-        <form>
-          <fieldset>
-            <h4>Input-group, sizes and addons</h4>
-            <div class="form-group input-group input-group-lg">
-              <span class="input-group-addon"><i class="fa fa-group" aria-hidden="true"></i></span>
-              <input class="form-control form-control-lg" type="text" placeholder="Large input.form-control-lg">
-              <span class="input-group-btn">
-                <button class="btn btn-info" type="button">Love it</button>
-              </span>
-            </div>
-            <div class="form-group input-group">
-              <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-              <input class="form-control" type="text" placeholder="Default input .form-control">
-              <span class="input-group-btn">
-                <button class="btn btn-info" type="button">Love it</button>
-              </span>
-            </div>
-            <div class="form-group input-group input-group-sm">
-              <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-              <input class="form-control form-control-sm" type="text" placeholder="Small input .form-control-sm">
-              <span class="input-group-btn">
-                <button class="btn btn-info" type="button">Love it</button>
-              </span>
-            </div>
-            <div class="form-group">
-              <select class="form-control form-control-lg">
-                <option>Large select .form-control-lg</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <select class="form-control">
-                <option>Default select .form-control</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <select class="form-control form-control-sm">
-                <option>Small select .form-control-sm</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-              </select>
-            </div>
-          </fieldset>
-        </form>
+            <form>
+              <fieldset>
+                <h4>Input-group, sizes and addons</h4>
+                <div class="form-group input-group input-group-lg">
+                  <span class="input-group-addon"><i class="fa fa-group" aria-hidden="true"></i></span>
+                  <input class="form-control form-control-lg" type="text" placeholder="Large input.form-control-lg">
+                  <span class="input-group-btn">
+                    <button class="btn btn-info" type="button">Love it</button>
+                  </span>
+                </div>
+                <div class="form-group input-group">
+                  <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                  <input class="form-control" type="text" placeholder="Default input .form-control">
+                  <span class="input-group-btn">
+                    <button class="btn btn-info" type="button">Love it</button>
+                  </span>
+                </div>
+                <div class="form-group input-group input-group-sm">
+                  <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                  <input class="form-control form-control-sm" type="text" placeholder="Small input .form-control-sm">
+                  <span class="input-group-btn">
+                    <button class="btn btn-info" type="button">Love it</button>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <select class="form-control form-control-lg">
+                    <option>Large select .form-control-lg</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Default select .form-control</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control form-control-sm">
+                    <option>Small select .form-control-sm</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </fieldset>
+            </form>
 <!-- INPUT GROUP START -->
 <!-- INPUT VALIDATION START -->
-        <form>
-          <fieldset>
-            <h4>Validation</h4>
-            <div class="form-group has-success">
-              <label class="col-form-label" for="inputSuccess1">Input with success</label>
-              <input type="text" class="form-control form-control-success" id="inputSuccess1">
-              <div class="form-control-feedback">Success! You've done it.</div>
-              <small class="form-text text-muted">Example help text that remains unchanged.</small>
-            </div>
-            <div class="form-group has-warning">
-              <label class="col-form-label" for="inputWarning1">Input with warning</label>
-              <input type="text" class="form-control form-control-warning" id="inputWarning1">
-              <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
-              <small class="form-text text-muted">Example help text that remains unchanged.</small>
-            </div>
-            <div class="form-group has-danger">
-              <label class="col-form-label" for="inputDanger1">Input with danger</label>
-              <input type="text" class="form-control form-control-danger" id="inputDanger1">
-              <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
-              <small class="form-text text-muted">Example help text that remains unchanged.</small>
-            </div>
+            <form>
+              <fieldset>
+                <h4>Validation</h4>
+                <div class="form-group has-success">
+                  <label class="col-form-label" for="inputSuccess1">Input with success</label>
+                  <input type="text" class="form-control form-control-success" id="inputSuccess1">
+                  <div class="form-control-feedback">Success! You've done it.</div>
+                  <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                </div>
+                <div class="form-group has-warning">
+                  <label class="col-form-label" for="inputWarning1">Input with warning</label>
+                  <input type="text" class="form-control form-control-warning" id="inputWarning1">
+                  <div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+                  <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                </div>
+                <div class="form-group has-danger">
+                  <label class="col-form-label" for="inputDanger1">Input with danger</label>
+                  <input type="text" class="form-control form-control-danger" id="inputDanger1">
+                  <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+                  <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                </div>
 
-            <div class="form-group">
-              <div class="check has-success">
-                <input type="checkbox" id="checkboxSuccess" value="option1" checked>
-                <label for="checkboxSuccess">Checkbox with success</label>
-              </div>
-              <div class="check has-warning">
-                <input type="checkbox" id="checkboxWarning" value="option1" checked>
-                <label for="checkboxWarning">Checkbox with warning</label>
-              </div>
-              <div class="check has-danger">
-                <input type="checkbox" id="checkboxDanger" value="option1" checked>
-                <label for="checkboxDanger">Checkbox with danger</label>
-              </div>
-            </div>
+                <div class="form-group">
+                  <div class="check has-success">
+                    <input type="checkbox" id="checkboxSuccess" value="option1" checked>
+                    <label for="checkboxSuccess">Checkbox with success</label>
+                  </div>
+                  <div class="check has-warning">
+                    <input type="checkbox" id="checkboxWarning" value="option1" checked>
+                    <label for="checkboxWarning">Checkbox with warning</label>
+                  </div>
+                  <div class="check has-danger">
+                    <input type="checkbox" id="checkboxDanger" value="option1" checked>
+                    <label for="checkboxDanger">Checkbox with danger</label>
+                  </div>
+                </div>
 
 <!-- ALERTS START -->
-            <h4>Alerts</h4>
-            <div class="alert alert-success" role="alert">
-              <button type="button" class="close" data-dismiss="alert"><i class="fa fa-times-circle"></i></button>
-              <strong>Well done!</strong> You successfully read this important alert message.
-            </div>
-            <div class="alert alert-warning" role="alert">
-              <button type="button" class="close" data-dismiss="alert"><i class="fa fa-times-circle"></i></button>
-              <strong>Warning!</strong> Better check yourself. <a href="javascript:;">Alert link</a>.
-            </div>
-            <div class="alert alert-danger" role="alert">
-              <button type="button" class="close" data-dismiss="alert"><i class="fa fa-times-circle"></i></button>
-              <strong>Oh snap!</strong> Change a few things up and try submitting again.
-            </div>
+                <h4>Alerts</h4>
+                <div class="alert alert-success" role="alert">
+                  <button type="button" class="close" data-dismiss="alert"><i class="fa fa-times-circle"></i></button>
+                  <strong>Well done!</strong> You successfully read this important alert message.
+                </div>
+                <div class="alert alert-warning" role="alert">
+                  <button type="button" class="close" data-dismiss="alert"><i class="fa fa-times-circle"></i></button>
+                  <strong>Warning!</strong> Better check yourself. <a href="javascript:;">Alert link</a>.
+                </div>
+                <div class="alert alert-danger" role="alert">
+                  <button type="button" class="close" data-dismiss="alert"><i class="fa fa-times-circle"></i></button>
+                  <strong>Oh snap!</strong> Change a few things up and try submitting again.
+                </div>
 <!-- ALERTS STOP -->
 
-          </fieldset>
-        </form>
+              </fieldset>
+            </form>
 <!-- INPUT VALIDATION STOP -->
 
 <!-- TAG START -->
-        <h4>Tag</h4>
-        <div class="m-b-1">
-          <span class="tag tag-default">Default</span>
-          <span class="tag tag-primary">Primary</span>
-          <span class="tag tag-success">Success</span>
-          <span class="tag tag-info">Info</span>
-          <span class="tag tag-warning">Warning</span>
-          <span class="tag tag-danger">Danger</span>
-        </div>
-        <h4>Tag pill</h4>
-        <div class="m-b-1">
-          <span class="tag tag-pill tag-default">Default</span>
-          <span class="tag tag-pill tag-primary">Primary</span>
-          <span class="tag tag-pill tag-success">Success</span>
-          <span class="tag tag-pill tag-info">Info</span>
-          <span class="tag tag-pill tag-warning">Warning</span>
-          <span class="tag tag-pill tag-danger">Danger</span>
-        </div>
+            <h4>Tag</h4>
+            <div class="m-b-1">
+              <span class="tag tag-default">Default</span>
+              <span class="tag tag-primary">Primary</span>
+              <span class="tag tag-success">Success</span>
+              <span class="tag tag-info">Info</span>
+              <span class="tag tag-warning">Warning</span>
+              <span class="tag tag-danger">Danger</span>
+            </div>
+            <h4>Tag pill</h4>
+            <div class="m-b-1">
+              <span class="tag tag-pill tag-default">Default</span>
+              <span class="tag tag-pill tag-primary">Primary</span>
+              <span class="tag tag-pill tag-success">Success</span>
+              <span class="tag tag-pill tag-info">Info</span>
+              <span class="tag tag-pill tag-warning">Warning</span>
+              <span class="tag tag-pill tag-danger">Danger</span>
+            </div>
 <!-- TAG STOP -->
 
-      </div>
-    </div>
+          </div>
+        </div>
 <!-- FORMS STOP -->
+      </div>
 
+      <div class="well">
 <!-- BUTTONS START -->
-    <h2 id="buttons">Buttons</h2>
-    <hr/>
+        <h2 id="buttons">Buttons</h2>
+        <hr/>
 
-    <div class="row">
-      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-8">
 
-        <h5>Button</h5>
-        <p>
-          <button type="button" class="btn btn-secondary"><i class="fa fa-paper-plane" aria-hidden="true"></i>Secondary (Default)</button>
-          <button type="button" class="btn btn-info"><i class="fa fa-rocket" aria-hidden="true"></i>Info (Standard)</button>
-          <button type="button" class="btn btn-primary"><i class="fa fa-cloud-upload" aria-hidden="true"></i>Primary (Active, selected)</button>
-        </p>
-        <p>
-          <button type="button" class="btn btn-warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Warning</button>
-          <button type="button" class="btn btn-danger"><i class="fa fa-bolt" aria-hidden="true"></i>Danger</button>
-          <!-- button type="button" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>Success</button -->
-        </p>
-        <h5>Button outline</h5>
-        <p>
-          <button type="button" class="btn btn-outline-secondary"><i class="fa fa-paper-plane"></i>Secondary</button>
-          <button type="button" class="btn btn-outline-info"><i class="fa fa-rocket"></i>Info</button>
-          <button type="button" class="btn btn-outline-primary"><i class="fa fa-cloud-upload"></i>Primary</button>
-          <button type="button" class="btn btn-outline-warning"><i class="fa fa-exclamation-triangle"></i>Warning</button>
-          <button type="button" class="btn btn-outline-danger"><i class="fa fa-bolt"></i>Danger</button>
-          <!-- button type="button" class="btn btn-success"><i class="fa fa-check"></i>Success</button -->
-        </p>
+            <h5>Button</h5>
+            <p>
+              <button type="button" class="btn btn-secondary"><i class="fa fa-paper-plane" aria-hidden="true"></i>Secondary (Default)</button>
+              <button type="button" class="btn btn-info"><i class="fa fa-rocket" aria-hidden="true"></i>Info (Standard)</button>
+              <button type="button" class="btn btn-primary"><i class="fa fa-cloud-upload" aria-hidden="true"></i>Primary (Active, selected)</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Warning</button>
+              <button type="button" class="btn btn-danger"><i class="fa fa-bolt" aria-hidden="true"></i>Danger</button>
+              <!-- button type="button" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i>Success</button -->
+            </p>
+            <h5>Button outline</h5>
+            <p>
+              <button type="button" class="btn btn-outline-secondary"><i class="fa fa-paper-plane"></i>Secondary</button>
+              <button type="button" class="btn btn-outline-info"><i class="fa fa-rocket"></i>Info</button>
+              <button type="button" class="btn btn-outline-primary"><i class="fa fa-cloud-upload"></i>Primary</button>
+              <button type="button" class="btn btn-outline-warning"><i class="fa fa-exclamation-triangle"></i>Warning</button>
+              <button type="button" class="btn btn-outline-danger"><i class="fa fa-bolt"></i>Danger</button>
+              <!-- button type="button" class="btn btn-success"><i class="fa fa-check"></i>Success</button -->
+            </p>
 
-        <h5>Button disabled</h5>
-        <p>
-          <button type="button" class="btn btn-secondary disabled"><i class="fa fa-paper-plane" aria-hidden="true"></i>Secondary</button>
-          <button type="button" class="btn btn-info disabled"><i class="fa fa-info-circle" aria-hidden="true"></i>Info</button>
-          <button type="button" class="btn btn-primary disabled"><i class="fa fa-cloud-upload" aria-hidden="true"></i>Primary</button>
-          <button type="button" class="btn btn-warning disabled"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Warning</button>
-          <button type="button" class="btn btn-danger disabled"><i class="fa fa-bolt" aria-hidden="true"></i>Danger</button>
-          <!-- button type="button" class="btn btn-success disabled" aria-hidden="true">Success</button -->
-        </p>
+            <h5>Button disabled</h5>
+            <p>
+              <button type="button" class="btn btn-secondary disabled"><i class="fa fa-paper-plane" aria-hidden="true"></i>Secondary</button>
+              <button type="button" class="btn btn-info disabled"><i class="fa fa-info-circle" aria-hidden="true"></i>Info</button>
+              <button type="button" class="btn btn-primary disabled"><i class="fa fa-cloud-upload" aria-hidden="true"></i>Primary</button>
+              <button type="button" class="btn btn-warning disabled"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Warning</button>
+              <button type="button" class="btn btn-danger disabled"><i class="fa fa-bolt" aria-hidden="true"></i>Danger</button>
+              <!-- button type="button" class="btn btn-success disabled" aria-hidden="true">Success</button -->
+            </p>
 
-        <h5>Button group</h5>
+            <h5>Button group</h5>
 
-        <p>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-default">Secondary</button>
-            <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </div>
+            <p>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-default">Secondary</button>
+                <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
 
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </div>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
 
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </div>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+              </div>
 
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
 <!-- DROPDOWN OVERFLOW MAX-HEIGHT DIV INSIDE START -->
-            <div class="dropdown-menu">
-              <div>
-                <a class="dropdown-item" href="#">Scroll dropdown</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
+                <div class="dropdown-menu">
+                  <div>
+                    <a class="dropdown-item" href="#">Scroll dropdown</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
 <!-- DROPDOWN OVERFLOW MAX-HEIGHT DIV INSIDE STOP -->
-          </div>
-
-        </p>
-
-        <h5>Button sizes</h5>
-        <p>
-          <button type="button" class="btn btn-info btn-lg">Large button</button>
-          <button type="button" class="btn btn-info">Default button</button>
-          <button type="button" class="btn btn-info btn-sm">Small button</button>
-          <button type="button" class="btn btn-info btn-xs">XS button</button>
-        </p>
-
-      </div>
-      <div class="col-md-4">
-
-        <h5>Button block</h5>
-        <p>
-          <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
-        </p>
-
-        <h5>Button group justified</h5>
-        <p class="btn-group btn-group-justified">
-          <a href="#" class="btn btn-secondary"><i class="fa fa-angle-left"></i>Left</a>
-          <a href="#" class="btn btn-secondary">Middle</a>
-          <a href="#" class="btn btn-secondary">Right<i class="fa fa-right fa-angle-right"></i></a>
-        </p>
-
-        <h5>Button toolbar</h5>
-        <p>
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary">1</button>
-          </div>
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary">2</button>
-            <div class="btn-group">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item active" href="#">Active item</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
               </div>
-            </div>
-            <div class="btn-group dropup">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
-            </div>
+
+            </p>
+
+            <h5>Button sizes</h5>
+            <p>
+              <button type="button" class="btn btn-info btn-lg">Large button</button>
+              <button type="button" class="btn btn-info">Default button</button>
+              <button type="button" class="btn btn-info btn-sm">Small button</button>
+              <button type="button" class="btn btn-info btn-xs">XS button</button>
+            </p>
+
           </div>
-        </p>
+          <div class="col-md-4">
 
-        <h5>Button group vertical</h5>
-        <p class="btn-group-vertical">
-          <button type="button" class="btn btn-secondary">Button</button>
-          <button type="button" class="btn btn-secondary">Button</button>
-        </p>
+            <h5>Button block</h5>
+            <p>
+              <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button>
+            </p>
 
-      </div>
-    </div>
+            <h5>Button group justified</h5>
+            <p class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-secondary"><i class="fa fa-angle-left"></i>Left</a>
+              <a href="#" class="btn btn-secondary">Middle</a>
+              <a href="#" class="btn btn-secondary">Right<i class="fa fa-right fa-angle-right"></i></a>
+            </p>
+
+            <h5>Button toolbar</h5>
+            <p>
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">1</button>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary">2</button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item active" href="#">Active item</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+                <div class="btn-group dropup">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropup</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+              </div>
+            </p>
+
+            <h5>Button group vertical</h5>
+            <p class="btn-group-vertical">
+              <button type="button" class="btn btn-secondary">Button</button>
+              <button type="button" class="btn btn-secondary">Button</button>
+            </p>
+
+          </div>
+        </div>
 <!-- BUTTONS STOP -->
+      </div>
 
+      <div class="well">
 <!-- NAVIGATION START -->
-    <h2 id="forms">Navigation</h2>
-    <hr/>
+        <h2 id="forms">Navigation</h2>
+        <hr/>
 
-    <div class="row">
-      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-6">
 
 <!-- NAV TABS STOP -->
-        <h4>Tabs</h4>
-        <div class="m-b-1">
-          <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
+            <h4>Tabs</h4>
+            <div class="m-b-1">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
 <!-- NAV TABS STOP -->
 
 <!-- NAV PILLS START -->
-        <h4>Pills</h4>
-        <div class="m-b-1">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
+            <h4>Pills</h4>
+            <div class="m-b-1">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
 <!-- NAV PILLS STOP -->
 
 <!-- NAV PILLS STACKED START -->
-        <h4>Pills Stacked</h4>
-        <div class="m-b-1">
-          <ul class="nav nav-pills nav-stacked">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
+            <h4>Pills Stacked</h4>
+            <div class="m-b-1">
+              <ul class="nav nav-pills nav-stacked">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+            </div>
 <!-- NAV PILLS STACKED STOP -->
 
-      </div>
-      <div class="col-lg-6">
+          </div>
+          <div class="col-lg-6">
 
 <!-- BREADCRUMB START -->
-        <h4>Breadcrumb</h4>
-        <nav class="breadcrumb">
-          <a class="breadcrumb-item" href="#">Home</a>
-          <a class="breadcrumb-item" href="#">Library</a>
-          <a class="breadcrumb-item" href="#">Data</a>
-          <span class="breadcrumb-item active">Bootstrap</span>
-        </nav>
+            <h4>Breadcrumb</h4>
+            <nav class="breadcrumb">
+              <a class="breadcrumb-item" href="#">Home</a>
+              <a class="breadcrumb-item" href="#">Library</a>
+              <a class="breadcrumb-item" href="#">Data</a>
+              <span class="breadcrumb-item active">Bootstrap</span>
+            </nav>
 <!-- BREADCRUMB STOP -->
 
-        <h4>Pagination</h4>
+            <h4>Pagination</h4>
 <!-- PAGINATION LG START -->
-        <nav aria-label="...">
-          <ul class="pagination pagination-lg">
-            <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
-                <span aria-hidden="true" class="fa fa-angle-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-            <li class="page-item active">
-              <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true" class="fa fa-angle-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+            <nav aria-label="...">
+              <ul class="pagination pagination-lg">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
+                    <span aria-hidden="true" class="fa fa-angle-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true" class="fa fa-angle-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
 <!-- PAGINATION LG STOP -->
 
 <!-- PAGINATION START -->
-        <nav aria-label="...">
-          <ul class="pagination">
-            <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
-                <span aria-hidden="true" class="fa fa-angle-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-            <li class="page-item active">
-              <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true" class="fa fa-angle-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
+                    <span aria-hidden="true" class="fa fa-angle-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true" class="fa fa-angle-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
 <!-- PAGINATION STOP -->
 
 <!-- PAGINATION SM START -->
-        <nav aria-label="...">
-          <ul class="pagination pagination-sm">
-            <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
-                <span aria-hidden="true" class="fa fa-angle-left"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-            <li class="page-item active">
-              <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true" class="fa fa-angle-right"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+            <nav aria-label="...">
+              <ul class="pagination pagination-sm">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
+                    <span aria-hidden="true" class="fa fa-angle-left"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true" class="fa fa-angle-right"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
 <!-- PAGINATION SM STOP -->
 
-      </div>
-    </div>
+          </div>
+        </div>
 <!-- NAVIGATION STOP -->
+      </div>
 
+      <div class="well">
 <!-- LIST GROUP START -->
-    <h2 id="list-group">List group</h2>
-    <hr/>
+        <h2 id="list-group">List group</h2>
+        <hr/>
 
-    <div class="row">
-      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-4">
 
-        <div class="list-group">
-          <a href="#" class="list-group-item">Cras justo odio</a>
-          <a href="#" class="list-group-item active">Dapibus ac facilisis in</a>
-          <a href="#" class="list-group-item">Morbi leo risus</a>
-          <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item">Eget risus varius blandit</a>
-          <a href="#" class="list-group-item disabled">Vestibulum at eros</a>
+            <div class="list-group">
+              <a href="#" class="list-group-item">Cras justo odio</a>
+              <a href="#" class="list-group-item active">Dapibus ac facilisis in</a>
+              <a href="#" class="list-group-item">Morbi leo risus</a>
+              <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+              <a href="#" class="list-group-item">Eget risus varius blandit</a>
+              <a href="#" class="list-group-item disabled">Vestibulum at eros</a>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active">Cras justo odio <span class="tag tag-warning tag-pill pull-xs-right">14</span></a>
+              <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in <span class="tag tag-warning tag-pill pull-xs-right">3</span></a>
+              <a href="#" class="list-group-item list-group-item-action">Morbi leo risus <span class="tag tag-warning tag-pill pull-xs-right">1</span></a>
+              <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+              <a href="#" class="list-group-item list-group-item-action">Eget risus varius blandit</a>
+              <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="list-group-item-heading">List group item heading</h5>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action active">
+                <h5 class="list-group-item-heading">List group item heading</h5>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <h5 class="list-group-item-heading">List group item heading</h5>
+                <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit. Vestibulum at eros.</p>
+              </a>
+            </div>
+
+          </div>
         </div>
-
-      </div>
-      <div class="col-md-4">
-
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action active">Cras justo odio <span class="tag tag-warning tag-pill pull-xs-right">14</span></a>
-          <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in <span class="tag tag-warning tag-pill pull-xs-right">3</span></a>
-          <a href="#" class="list-group-item list-group-item-action">Morbi leo risus <span class="tag tag-warning tag-pill pull-xs-right">1</span></a>
-          <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-          <a href="#" class="list-group-item list-group-item-action">Eget risus varius blandit</a>
-          <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
-        </div>
-
-      </div>
-      <div class="col-md-4">
-
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="list-group-item-heading">List group item heading</h5>
-            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action active">
-            <h5 class="list-group-item-heading">List group item heading</h5>
-            <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            <h5 class="list-group-item-heading">List group item heading</h5>
-            <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit. Vestibulum at eros.</p>
-          </a>
-        </div>
-
-      </div>
-    </div>
 <!-- LIST GROUP STOP -->
+      </div>
 
+      <div class="well">
 <!-- WELL START -->
-    <h2 id="well">Well</h2>
-    <hr/>
+        <h2 id="well">Well</h2>
+        <hr/>
 
-    <div class="row">
-      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6">
 
-        <div class="well well-default">
-          <h4>Well default</h4>
-          <p>Look, I'm in a well default, with a <a href="#">link</a>. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+            <div class="well well-secondary">
+              <h4>Well secondary</h4>
+              <p>Look, I'm in a well secondary, with a <a href="#">link</a>. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+
+            <div class="well well-info">
+              <h4>Well info</h4>
+              <p>Look, I'm in a well info, with a <a href="#">link</a>. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+            </div>
+
+          </div>
         </div>
-
-      </div>
-      <div class="col-md-6">
-
-        <div class="well well-info">
-          <h4>Well info</h4>
-          <p>Look, I'm in a well info, with a <a href="#">link</a>. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-        </div>
-
-      </div>
-    </div>
 <!-- WELL STOP -->
-
-<!-- CARD START -->
-    <h2 id="card">Card</h2>
-    <hr/>
-
-    <div class="card-deck-wrapper">
-      <div class="card-deck">
-
-        <div class="card">
-          <img src="/img/sweco-demo.jpg" alt="">
-          <div class="card-block">
-            <h4 class="card-title">Card default</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-secondary"><i class="fa fa-rocket" aria-hidden="true"></i>Do something</a>
-            <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="/img/sweco-demo.jpg" alt="">
-          <div class="card-block">
-            <h4 class="card-title">Card default</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="card card-info">
-          <img src="/img/sweco-demo.jpg" alt="">
-          <div class="card-block">
-            <h4 class="card-title">Card info</h4>
-            <p class="card-text">Some quick example text to build less of the card's content.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="card card-info">
-          <img src="/img/sweco-demo.jpg" alt="">
-          <div class="card-block">
-            <h4 class="card-title">Card info</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
       </div>
-    </div>
+
+      <div class="well">
+        <h2 id="card">Card</h2>
+        <hr/>
+        <p>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. Read more about <a href="http://v4-alpha.getbootstrap.com/components/card/" target="_blank">cards</a>.</p>
+      </div>
+<!-- ROW FLEX START -->
+      <div class="row row-flex">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+<!-- CARD START -->
+          <div class="card">
+            <div class="card-img-block">
+              <img src="/img/sweco-demo.jpg" alt="">
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">Card default</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-secondary"><i class="fa fa-rocket" aria-hidden="true"></i>Do stuff</a>
+              <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
 <!-- CARD STOP -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+<!-- CARD START -->
+          <div class="card">
+            <div class="card-img-block">
+              <img src="/img/sweco-demo.jpg" alt="">
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">Card default</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+<!-- CARD STOP -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+<!-- CARD START -->
+          <div class="card card-info">
+            <div class="card-img-block">
+              <img src="/img/sweco-demo.jpg" alt="">
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">Card info</h4>
+              <p class="card-text">Some quick example text to build less of the card's content.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+<!-- CARD STOP -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+<!-- CARD START -->
+          <div class="card card-info">
+            <div class="card-img-block">
+              <img src="/img/sweco-demo.jpg" alt="">
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">Card info</h4>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+<!-- CARD STOP -->
+        </div>
+      </div>
+<!-- ROW FLEX STOP -->
+
 
 <!-- TODO: CONTACT CARD START -->
 <!-- TODO: MODALS START -->
