@@ -338,33 +338,18 @@ h1, h2, h3, h4, h5, h6,
 .navbar
 {
   background: $navbar-bg;
+  .container,
+  .container-fluid
+  {
+    position: relative;
+  }
   &.navbar-north
   {
     min-height: $navbar-north-height;
     box-shadow: 0 5px $box-shadow-size $box-shadow;
-    .container
-    {
-      position: relative;
-    }
-    // Logotype
     .logotype
     {
-      display: block;
-      width: 120px;
-      height: 60px;
       margin-left: -$spacer-x;
-      img
-      {
-        width: 120px;
-        height: 60px;
-      }
-      &:hover,
-      &:focus,
-      &:active
-      {
-        text-decoration: none;
-        outline: 0;
-      }
     }
   }
   .search
