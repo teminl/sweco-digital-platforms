@@ -44,6 +44,10 @@ body
 body.navbarNorth #content
 {
   padding-top: $navbar-north-height;
+  @include media-breakpoint-down(sm)
+  {
+    padding-top: (($navbar-north-height * 2) - 10px);
+  }
 }
 
 // If navbar-south add class to body
@@ -450,6 +454,10 @@ h1, h2, h3, h4, h5, h6,
     display: none;
     position: relative;
     margin: 10px 0;
+    @include media-breakpoint-down(sm)
+    {
+      margin-top: 0;
+    }
     .form-control
     {
       background-clip: border-box !important;
@@ -854,8 +862,8 @@ ul.dropdown-menu
 fieldset
 {
   @include clearfix;
-  padding: $card-spacer-x !important;
-  margin-bottom: $card-spacer-y !important;
+  padding: $spacer-y $spacer-x !important;
+  margin-bottom: $spacer-y !important;
   background-color: $fieldset-bg !important;
 }
 
@@ -1527,8 +1535,8 @@ select.form-control[multiple]
       @extend .btn-block;
       @include hover-focus
       {
-        color: $btn-primary-color !important;
-        background-color: $btn-primary-bg !important;
+        color: $btn-info-color !important;
+        background-color: darken($btn-info-bg, 10%) !important;
       }
       border-width: 1px 0 0 0;
       margin-top: 0 !important;
@@ -1617,7 +1625,7 @@ select.form-control[multiple]
 .download
 {
   @extend .well;
-  @extend .well-secondary;
+  @extend .well-warning;
   margin-bottom: $spacer-y;
   .fa
   {
