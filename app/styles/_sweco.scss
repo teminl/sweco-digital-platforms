@@ -394,7 +394,8 @@ h1, h2, h3, h4, h5, h6,
           text-decoration: none;
           background-color: transparent;
         }
-        &:after
+        &:after,
+        &:focus:after
         {
           position: absolute;
           bottom: 0px;
@@ -407,11 +408,16 @@ h1, h2, h3, h4, h5, h6,
           transition: height .2s, opacity .2s, transform .2s;
           transform: translateY(-5px);
         }
-        &:hover:after
+        &:hover:after,
+        &:focus:after
         {
           height: 2px;
           opacity: 1;
           transform: translateY(0)
+        }
+        .fa
+        {
+          margin-right: 10px;
         }
       }
     }
@@ -500,10 +506,27 @@ h1, h2, h3, h4, h5, h6,
     @extend .white-text;
     h1
     {
+      @include media-breakpoint-down(lg)
+      {
+        font-size: $font-size-h3;
+      }
       @include media-breakpoint-down(sm)
       {
         font-size: $font-size-h4;
       }
+    }
+    .lead
+    {
+      @include media-breakpoint-down(sm)
+      {
+        font-size: $font-size-base;
+      }
+    }
+    .jumbo
+    {
+      background-color: $navbar-bg;
+      @extend .white-text;
+      padding: ($spacer-y * 2) ($spacer-x * 2);
     }
   }
 }
@@ -1445,7 +1468,7 @@ select.form-control[multiple]
   display: flex !important;
   flex-direction: column !important;
   border: 0 !important;
-  margin-bottom: $spacer-y !important;
+  margin-bottom: ($spacer-y * 2) !important;
   img
   {
     object-fit: cover;
@@ -1538,3 +1561,42 @@ select.form-control[multiple]
     width: 100%;
   }
 }
+
+// Flexbox horizontal
+.flexbox-row
+{
+  display: flex;
+  flex-direction: row;
+}
+
+// Flexbox vertical
+.flexbox-col
+{
+  display: flex;
+  flex-direction: column;
+}
+
+// Flex stretch
+.flexbox-stretch
+{
+  align-items: stretch;
+}
+
+// Flexbox no flex
+.flexbox-0
+{
+  flex: 0 auto;
+}
+
+// Download
+.download
+{
+  @extend .well;
+  @extend .well-warning;
+  .fa
+  {
+    @extend .fa-lg;
+    margin-right: 10px;
+  }
+}
+
