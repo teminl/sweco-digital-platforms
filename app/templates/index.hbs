@@ -1132,23 +1132,88 @@
 <!-- TODO: Grid system START -->
       <div class="well">
 <!-- QUICK START OPTIONS START -->
-        <h2 id="forms">Quick start options</h2>
+        <h2 id="quick-start-options">Quick start options</h2>
         <hr/>
         <div class="row">
           <div class="col-xs-12">
+            <h4>Download options</h4>
             <div class="download">
-              <h4>Download options</h4>
               <p><i class="fa fa-download" aria-hidden="true"></i><a href="https://github.com/sweco/sweco-digital-guidelines/archive/master.zip" aria-label="Download latest distributed release as zip-archive sweco/sweco-digital-guidelines to your computer and use it." download="Sweco Digital Guidelines zip-archive">Download the latest distributed release</a></p>
               <p><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/sweco/sweco-digital-guidelines/fork" target="_blank" aria-label="Fork sweco/sweco-digital-guidelines on GitHub.">Fork this repository on GitHub</a></p>
               <p><i class="fa fa-github" aria-hidden="true"></i>Clone the repo: <code>git clone git://github.com/sweco/sweco-digital-guidelines.git</code></p>
-              <p><i class="fa fa-terminal" aria-hidden="true"></i>Install with Bower: <code>bower install sweco-bootstrap</code></p>
+              <p class="m-b-0"><i class="fa fa-terminal" aria-hidden="true"></i>Install with Bower: <code>bower install sweco-bootstrap</code></p>
             </div>
           </div>
         </div>
-      </div>
-<!-- QUICK START OPTIONS STOP -->
+        <div class="row">
+          <div class="col-xs-12">
+            <h4 id="starter-template">Starter template</h4>
+            <p>Be sure to have your pages set up with the latest design and development standards. That means:</p>
+            <ul>
+              <li>Using an HTML5 doctype</li>
+              <li>Forcing Internet Explorer to use its latest rendering mode</li>
+              <li>And, utilizing the viewport meta tag.</li>
+            </ul>
+            <p>Put it all together and your pages should look like this:</p>
 
-  </section>
+<figure class="html"><pre><code class="language-html" data-lang="html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+    &lt;head&gt;
+  &lt;!-- META START --&gt;
+      &lt;meta charset="utf-8"&gt;
+      &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+      &lt;meta http-equiv="Content-Language" content="sv"&gt;
+      &lt;meta http-equiv="cleartype" content="on"&gt;
+      &lt;meta http-equiv="imagetoolbar" content="no"&gt;
+  &lt;!-- APPLICATION NAME START --&gt;
+      &lt;title&gt;Sweco - Your-Application-Name&lt;/title&gt;
+      &lt;meta name="Application-name" content="Sweco - Your-Application-Name"&gt;
+  &lt;!-- APPLICATION NAME STOP --&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"&gt;
+      &lt;meta name="apple-mobile-web-app-status-bar-style" content="black"&gt;
+      &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+      &lt;meta name="msapplication-TileColor" content="#4d535a"&gt;
+      &lt;meta name="msapplication-TileImage" content="/img/mstile-144x144.png"&gt;
+  &lt;!-- META STOP --&gt;
+  &lt;!-- ICO START --&gt;
+      &lt;link rel="shortcut icon" href="/img/favicon.ico"&gt;
+      &lt;link rel="apple-touch-icon" href="/img/apple-touch-icon.png"&gt;
+      &lt;link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png"&gt;
+      &lt;link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png"&gt;
+      &lt;link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png"&gt;
+      &lt;link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192x192.png"&gt;
+  &lt;!-- ICO STOP --&gt;
+  &lt;!-- CSS START --&gt;
+      &lt;link rel="stylesheet" href="css/sweco-bootstrap.css"&gt;
+      &lt;link rel="stylesheet" href="css/Your-Application-Styles.css"&gt;
+  &lt;!-- CSS STOP --&gt;
+  &lt;!-- SCRIPT START --&gt;
+      &lt;script src="scripts/sweco-bootstrap.js"&gt;&lt;/script&gt;
+      &lt;script src="scripts/Your-Application-Scripts.js"&gt;&lt;/script&gt;
+  &lt;!-- SCRIPT STOP --&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+&lt;!-- PAGE START --&gt;
+      &lt;div id="page"&gt;
+&lt;!-- CONTENT START --&gt;
+        &lt;section class="container" id="content"&gt;
+          &lt;h1&gt;Hello, world!&lt;/h1&gt;
+        &lt;/section&gt;
+&lt;!-- CONTENT STOP --&gt;
+      &lt;/div&gt;
+&lt;!-- PAGE STOP --&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+
+</code></pre></figure>
+
+          </div>
+        </div>
+<!-- QUICK START OPTIONS STOP -->
+      </div>
+
+    </section>
 <!-- CONTENT STOP -->
 
   </div>
