@@ -368,6 +368,48 @@ h1, h2, h3, h4, h5, h6,
   {
     position: relative;
   }
+  // Nav
+  .nav,
+  .nav.navbar-nav
+  {
+    padding-top: 15px;
+    .nav-item
+    {
+      .nav-link
+      {
+        position: relative;
+        color: $white;
+        padding-top: 5px !important;
+        padding-bottom: 2px !important;
+        min-height: 30px !important;
+        @include hover-focus-active
+        {
+          color: $white;
+          text-decoration: none;
+          background-color: transparent;
+        }
+        &:after
+        {
+          position: absolute;
+          bottom: 0px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: $white;
+          content: '';
+          opacity: 0;
+          transition: height .2s, opacity .2s, transform .2s;
+          transform: translateY(-5px);
+        }
+        &:hover:after
+        {
+          height: 2px;
+          opacity: 1;
+          transform: translateY(0)
+        }
+      }
+    }
+  }
   &.navbar-north
   {
     min-height: $navbar-north-height;
@@ -804,6 +846,42 @@ fieldset
   {
     font-size: $font-size-base !important;
     font-size: $input-line-height !important;
+  }
+}
+
+// Input group
+.input-group
+{
+  .form-control
+  {
+    min-height: $input-height;
+    &.form-control-lg
+    {
+      min-height: $input-height-lg;
+    }
+    &.form-control-sm
+    {
+      min-height: $input-height-sm;
+    }
+  }
+  &.input-group-lg
+  {
+    .btn
+    {
+      min-height: $input-height-lg;
+    }
+  }
+}
+.ie .input-group .form-control
+{
+  min-height: 41px;
+  &.form-control-lg
+  {
+    min-height: $input-height-lg;
+  }
+  &.form-control-sm
+  {
+    min-height: $input-height-sm;
   }
 }
 
