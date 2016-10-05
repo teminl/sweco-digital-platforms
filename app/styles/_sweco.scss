@@ -283,6 +283,31 @@ samp
   font-size: $font-size-sm !important;
 }
 
+// White text
+.white-text
+{
+  color: $white;
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6,
+  legend,
+  label,
+  p, li, dt, dd, th, td,
+  .lead,
+  blockquote
+  {
+    color: inherit;
+  }
+  a
+  {
+    text-decoration: underline;
+    color: $white;
+    @include hover-focus
+    {
+      color: $white;
+    }
+  }
+}
+
 // Table
 .table
 {
@@ -424,9 +449,9 @@ h1, h2, h3, h4, h5, h6,
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    @extend .white-text;
     h1
     {
-      color: $white;
       @include media-breakpoint-down(sm)
       {
         font-size: $font-size-h4;
@@ -440,6 +465,7 @@ h1, h2, h3, h4, h5, h6,
 {
   transition: $transition;
   text-transform: uppercase;
+  text-decoration: none;
   outline: 0 !important;
   &.btn-secondary
   {
@@ -742,24 +768,7 @@ ul.dropdown-menu
   &.well-info,
   &.well-warning
   {
-    color: $white;
-    h1, h2, h3, h4, h5, h6,
-    .h1, .h2, .h3, .h4, .h5, .h6,
-    legend,
-    label,
-    dt, th
-    {
-      color: inherit;
-    }
-    a
-    {
-      text-decoration: underline;
-      color: $white;
-      @include hover-focus
-      {
-        color: $white;
-      }
-    }
+    @extend .white-text;
   }
 }
 
@@ -850,8 +859,7 @@ select.form-control[multiple]
     &:after
     {
       @extend label;
-      color: $input-color-placeholder;
-      text-transform: none !important;
+      color: $input-color-placeholder !important;
     }
     &:before
     {
@@ -1051,24 +1059,7 @@ select.form-control[multiple]
 // Jumbotron
 .jumbotron
 {
-  color: $jumbotron-color;
-  h1, h2, h3, h4, h5, h6,
-  .h1, .h2, .h3, .h4, .h5, .h6,
-  legend,
-  label,
-  dt, th
-  {
-    color: inherit;
-  }
-  a
-  {
-    color: $jumbotron-color;
-    text-decoration: underline;
-    @include hover-focus
-    {
-      color: $jumbotron-color;
-    }
-  }
+  @extend .white-text;
 }
 
 // Navs, includes shim for BS 3
@@ -1428,27 +1419,12 @@ select.form-control[multiple]
   &.card-info
   {
     background-color: $brand-info;
-    color: $white;
-    h1, h2, h3, h4, h5, h6,
-    .h1, .h2, .h3, .h4, .h5, .h6,
-    legend,
-    label,
-    dt, th
-    {
-      color: inherit;
-    }
-    .card-block a
-    {
-      color: $white;
-      @include hover-focus
-      {
-        color: $white;
-      }
-    }
+    @extend .white-text;
     .card-footer
     {
       .btn
       {
+        @extend .btn;
         @extend .btn-info;
         @include hover-focus
         {
