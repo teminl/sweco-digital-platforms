@@ -38,7 +38,15 @@ body
 {
   position: relative;
   min-height: 100%;
+}
+
+body.navbarNorth #content
+{
   padding-top: $navbar-north-height;
+}
+
+body.navbarSouth #content
+{
   padding-bottom: $navbar-south-height;
 }
 
@@ -1592,7 +1600,7 @@ select.form-control[multiple]
 .download
 {
   @extend .well;
-  @extend .well-warning;
+  @extend .well-secondary;
   .fa
   {
     @extend .fa-lg;
