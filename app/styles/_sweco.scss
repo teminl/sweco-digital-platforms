@@ -262,9 +262,13 @@ h6,
 blockquote
 {
   font-family: $font-family-base;
-  font-size: $font-size-lg;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: $font-size-base !important;
+  @include media-breakpoint-up(sm)
+  {
+    font-size: $font-size-lg !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }
 
 .text-muted
@@ -523,13 +527,6 @@ h1, h2, h3, h4, h5, h6,
       @include media-breakpoint-down(sm)
       {
         font-size: $font-size-h4;
-      }
-    }
-    .lead
-    {
-      @include media-breakpoint-down(sm)
-      {
-        font-size: $font-size-base;
       }
     }
     .jumbo
@@ -1177,9 +1174,21 @@ select.form-control[multiple]
 .jumbotron
 {
   @extend .white-text;
+  h1
+  {
+    @include media-breakpoint-down(lg)
+    {
+      font-size: $display4-size;
+    }
+    @include media-breakpoint-down(sm)
+    {
+      font-size: $font-size-h2;
+    }
+  }
   .well
   {
     @extend .well-info;
+    margin-bottom: 0;
     background-color: transparent;
     border: 1px solid $white;
   }
