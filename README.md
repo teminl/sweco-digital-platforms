@@ -18,10 +18,8 @@ Within the download you'll find the following directories and files, logically g
 dist/
 ├── css/
 │   ├── sweco-bootstrap.css
-│   ├── sweco-bootstrap.css.map
-│   ├── sweco-bootstrap.min.css
-│   └── sweco-bootstrap.min.css.map
-├── js/
+│   └── sweco-bootstrap.min.css
+├── scripts/
 │   ├── sweco-bootstrap.js
 │   └── sweco-bootstrap.min.js
 ├── fonts/

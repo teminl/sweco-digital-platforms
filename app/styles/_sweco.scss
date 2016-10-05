@@ -40,11 +40,13 @@ body
   min-height: 100%;
 }
 
+// If navbar-north add class to body
 body.navbarNorth #content
 {
   padding-top: $navbar-north-height;
 }
 
+// If navbar-south add class to body
 body.navbarSouth #content
 {
   padding-bottom: $navbar-south-height;
@@ -1175,6 +1177,12 @@ select.form-control[multiple]
 .jumbotron
 {
   @extend .white-text;
+  .well
+  {
+    @extend .well-info;
+    background-color: transparent;
+    border: 1px solid $white;
+  }
 }
 
 // Navs, includes shim for BS 3
@@ -1601,6 +1609,7 @@ select.form-control[multiple]
 {
   @extend .well;
   @extend .well-secondary;
+  margin-bottom: $spacer-y;
   .fa
   {
     @extend .fa-lg;

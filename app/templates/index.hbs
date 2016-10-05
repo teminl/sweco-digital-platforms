@@ -44,7 +44,16 @@
 <!-- JUBOTRONE START -->
         <div class="jumbotron m-y-1">
           <h1 class="display-3">Sweco Digital Guidelines</h1>
-          <p class="lead">Sweco digital guidelines is built on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> the world’s most popular framework for building responsive, mobile-first sites and applications. Sweco Bootstrap contains layout options for structuring a Sweco application with Bootstrap 4, including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML <i class="fa fa-html5"></i> elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.</p>
+          <div class="row">
+            <div class="col-lg-8">
+              <p class="lead">Sweco digital guidelines is built on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> the world’s most popular framework for building responsive, mobile-first sites and applications. Sweco Bootstrap contains layout options for structuring a Sweco application with Bootstrap 4, including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML <i class="fa fa-html5"></i> elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="well well-info">
+                <p class="m-t-1">Part of Sweco digital guidelines job is to provide an elegant, consistent, and simple Sweco styles baseline to build upon. You can use Sweco digital guidelines without the Bootstrap HTML and classes. We use Reboot, a collection of element-specific CSS changes in a single file, to kickstart that. <a href="http://v4-alpha.getbootstrap.com/content/reboot/#content" target="_blank">Read more about Reboot</a>.</p>
+              </div>
+            </div>
+          </div>
         </div>
 <!-- JUBOTRONE STOP -->
       </div>
@@ -1138,11 +1147,40 @@
           <div class="col-xs-12">
             <h4>Download options</h4>
             <div class="download">
-              <p><i class="fa fa-download" aria-hidden="true"></i><a href="https://github.com/sweco/sweco-digital-guidelines/archive/master.zip" aria-label="Download latest distributed release as zip-archive sweco/sweco-digital-guidelines to your computer and use it." download="Sweco Digital Guidelines zip-archive">Download the latest distributed release</a></p>
-              <p><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/sweco/sweco-digital-guidelines/fork" target="_blank" aria-label="Fork sweco/sweco-digital-guidelines on GitHub.">Fork this repository on GitHub</a></p>
-              <p><i class="fa fa-github" aria-hidden="true"></i>Clone the repo: <code>git clone git://github.com/sweco/sweco-digital-guidelines.git</code></p>
-              <p class="m-b-0"><i class="fa fa-terminal" aria-hidden="true"></i>Install with Bower: <code>bower install sweco-bootstrap</code></p>
+              <p class="m-b-0"><i class="fa fa-download" aria-hidden="true"></i><a href="https://github.com/sweco/sweco-digital-guidelines/archive/master.zip" aria-label="Download latest distributed release as zip-archive sweco/sweco-digital-guidelines to your computer and use it." download="Sweco Digital Guidelines zip-archive">Download the latest distributed zip</a></p>
             </div>
+
+            <h4>What's included in the distributed zip</h4>
+<figure class="html"><pre><code>
+  dist/
+  ├── css/
+  │   ├── sweco-bootstrap.css
+  │   └── sweco-bootstrap.min.css
+  ├── scripts/
+  │   ├── sweco-bootstrap.js
+  │   └── sweco-bootstrap.min.js
+  ├── fonts/
+  │   ├── SwecoSans-Regular.*
+  │   ├── SwecoSans-Medium.*
+  │   ├── SwecoSans-Bold.*
+  │   ├── fontawesome-webfont.*
+  └── img/
+      ├── apple-touch-icon.png
+      ├── favicon-*.png
+      ├── mstile-*.png
+      ├── logotype.svg
+      ├── logotype-black.svg
+      └── sweco-front.png
+
+</code></pre></figure>
+
+            <h4>Clone or Fork</h4>
+            <div class="download">
+              <p><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/sweco/sweco-digital-guidelines/fork" target="_blank" aria-label="Fork sweco/sweco-digital-guidelines on GitHub.">Fork the repository on GitHub</a></p>
+              <p><i class="fa fa-github" aria-hidden="true"></i>Clone the repository: <code>git clone git://github.com/sweco/sweco-digital-guidelines.git</code></p>
+              <p class="m-b-0"><i class="fa fa-terminal" aria-hidden="true"></i>Install with Bower: <code>bower install sweco-digital-guidelines</code></p>
+            </div>
+
           </div>
         </div>
         <div class="row">
@@ -1156,7 +1194,7 @@
             </ul>
             <p>Put it all together and your pages should look like this:</p>
 
-<figure class="html"><pre><code class="language-html" data-lang="html">
+<figure class="html"><pre><code>
   &lt;!DOCTYPE html&gt;
   &lt;html lang="en"&gt;
     &lt;head&gt;
@@ -1185,11 +1223,11 @@
       &lt;link rel="icon" type="image/png" sizes="192x192" href="/img/favicon-192x192.png"&gt;
   &lt;!-- ICO STOP --&gt;
   &lt;!-- CSS START --&gt;
-      &lt;link rel="stylesheet" href="css/sweco-bootstrap.css"&gt;
+      &lt;link rel="stylesheet" href="css/sweco-bootstrap.min.css"&gt;
       &lt;link rel="stylesheet" href="css/Your-Application-Styles.css"&gt;
   &lt;!-- CSS STOP --&gt;
   &lt;!-- SCRIPT START --&gt;
-      &lt;script src="scripts/sweco-bootstrap.js"&gt;&lt;/script&gt;
+      &lt;script src="scripts/sweco-bootstrap.min.js"&gt;&lt;/script&gt;
       &lt;script src="scripts/Your-Application-Scripts.js"&gt;&lt;/script&gt;
   &lt;!-- SCRIPT STOP --&gt;
     &lt;/head&gt;
