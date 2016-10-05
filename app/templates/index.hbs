@@ -43,25 +43,32 @@
       <div class="well m-y-2">
 <!-- JUBOTRONE START -->
         <div class="jumbotron m-y-1">
-          <div class="row">
-            <div class="col-lg-8">
-              <h1 class="display-3">Sweco digital guidelines</h1>
-              <p class="lead">Sweco digital guidelines is built on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> the world’s most popular framework for building responsive, mobile-first sites and applications. Sweco Bootstrap contains layout options for structuring a Sweco application with Bootstrap 4, including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML <i class="fa fa-html5"></i> elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.</p>
-            </div>
-            <div class="col-lg-4">
-              <div class="well well-info">
-                <p class="m-t-1">Part of Sweco digital guidelines job is to provide an elegant, consistent, and simple Sweco styles baseline to build upon. You can use Sweco digital guidelines without the Bootstrap HTML and classes. We use Reboot, a collection of element-specific CSS changes in a single file, to kickstart that. <a href="http://v4-alpha.getbootstrap.com/content/reboot/#content" target="_blank">Read more about Reboot</a>.</p>
-                <p>Looking to quickly add Sweco digital guidelines to your project? <a href="#quick-start-options">Read quick start options</a></p>
-              </div>
-            </div>
-          </div>
+          <h1 class="display-3">Sweco digital guidelines</h1>
+          <p class="lead">Sweco digital guidelines is built on <a href="http://v4-alpha.getbootstrap.com/" target="_blank">Bootstrap 4</a> the world’s most popular framework for building responsive, mobile-first sites and applications. Sweco digital guidelines contains layout options for structuring a Sweco application with Bootstrap 4, including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML <i class="fa fa-html5"></i> elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.</p>
         </div>
 <!-- JUBOTRONE STOP -->
       </div>
 
       <div class="well">
+<!-- INTRODUCTION START -->
+        <h2 id="colors">Introduction</h2>
+        <hr/>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Quick start</h4>
+            <p>Sweco digital guidelines can come in one of two forms, as precompiled or source code. Looking to quickly add Sweco digital guidelines to your project? <a href="#download">Download precompiled code</a>. For more advanced usage <a href="#download-source">Read source code download, clone or fork</a>.</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Sweco digital guidelines without Bootstrap</h4>
+            <p>Part of Sweco digital guidelines job is to provide an elegant, consistent, and simple Sweco styles baseline to build upon. You can use Sweco digital guidelines without Bootstrap HTML, classes and scripts. We use a collection of element-specific CSS changes to kickstart that. <a href="http://v4-alpha.getbootstrap.com/content/reboot/#content" target="_blank">Read more about Reboot</a>.</p>
+         </div>
+        </div>
+<!-- INTRODUCTION STOP -->
+      </div>
+
+      <div class="well">
 <!-- LOGOTYPE START -->
-        <h2 id="colors">Sweco logotype</h2>
+        <h2 id="logotype">Sweco logotype</h2>
         <hr/>
         <p>The Sweco logotype is included in the css <code>.logotype</code> and black <code>.logotype-black</code>. Sizes included <code>.logotype-md</code> and <code>.logotype-lg</code>. SVG:s is also included in package.</p>
         <div class="row">
@@ -1135,23 +1142,25 @@
       </div>
 <!-- ROW FLEX STOP -->
 
+<!-- TODO: GRID START -->
+<!-- TODO: FONT AWESOME ICONS START -->
 <!-- TODO: MODALS START -->
 <!-- TODO: POPOVERS START -->
 <!-- TODO: TOOLTIP START -->
 <!-- TODO: CONTACT CARD START -->
-<!-- TODO: Grid system START -->
+
       <div class="well">
-<!-- QUICK START OPTIONS START -->
-        <h2 id="quick-start-options">Quick start options</h2>
+<!-- DOWNLOAD START -->
+        <h2 id="download">Download options</h2>
         <hr/>
         <div class="row">
           <div class="col-xs-12">
-            <h4>Download options</h4>
+            <h4>Download precompiled code</h4>
             <div class="download">
-              <p class="m-b-0"><i class="fa fa-download" aria-hidden="true"></i><a href="https://github.com/sweco/sweco-digital-guidelines/archive/master.zip" aria-label="Download latest distributed release as zip-archive sweco/sweco-digital-guidelines to your computer and use it." download="Sweco Digital Guidelines zip-archive">Download the latest distributed zip</a></p>
+              <p class="m-b-0"><i class="fa fa-download" aria-hidden="true"></i><a href="https://github.com/sweco/sweco-digital-guidelines/archive/master.zip" aria-label="Download latest distributed release as zip-archive sweco/sweco-digital-guidelines to your computer and use it." download="Sweco Digital Guidelines zip-archive">Download Sweco digital guidelines precompiled code</a></p>
             </div>
 
-            <h4>What's included in the distributed zip</h4>
+            <h4>What's included in the distributed precompiled folder</h4>
 <figure class="html"><pre><code>
   dist/
   ├── css/
@@ -1175,18 +1184,41 @@
 
 </code></pre></figure>
 
-            <h4>Clone or Fork</h4>
+            <h4 id="download-source">Source code download, clone or fork</h4>
+            <p>The source code download includes the precompiled CSS and JavaScript assets, along with source Sass, JavaScripts and more. <a href="https://github.com/sweco/sweco-digital-guidelines/blob/master/README.md" target="_blank">Read more about running and develop Sweco digital guidelines as an Ember.js application.</a></p>
             <div class="download">
               <p><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/sweco/sweco-digital-guidelines/fork" target="_blank" aria-label="Fork sweco/sweco-digital-guidelines on GitHub.">Fork the repository on GitHub</a></p>
               <p><i class="fa fa-github" aria-hidden="true"></i>Clone the repository: <code>git clone git://github.com/sweco/sweco-digital-guidelines.git</code></p>
               <p class="m-b-0"><i class="fa fa-terminal" aria-hidden="true"></i>Install with Bower: <code>bower install sweco-digital-guidelines</code></p>
             </div>
+            <h4>Using Sass</h4>
+            <p>Requires a Sass compiler, <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a>, <a href="https://github.com/luisrudge/postcss-flexbugs-fixes" target="_blank">postcss-flexbugs-fixes</a> (included in th package).</p>
+            <p>Your application Scss file should look something like this:</p>
+<figure class="html"><pre><code>
+  // Bootstrap mixins
+  @import "bootstrap/scss/_mixins";
 
+  // Your application variables
+  @import "variables";
+
+  // Your application custom SCSS
+  @import "application";
+
+  // Sweco digital guidelines
+  @import "sweco-digital-guidelines/scss/sweco-bootstrap";
+
+</code></pre></figure>
           </div>
         </div>
+<!-- DOWNLOAD STOP -->
+      </div>
+
+      <div class="well">
+<!-- STARTER TEMPLATE START -->
+        <h2 id="starter-template">Starter template</h2>
+        <hr/>
         <div class="row">
           <div class="col-xs-12">
-            <h4 id="starter-template">Starter template</h4>
             <p>Be sure to have your pages set up with the latest design and development standards. That means:</p>
             <ul>
               <li>Using an HTML5 doctype</li>
@@ -1233,15 +1265,15 @@
   &lt;!-- SCRIPT STOP --&gt;
     &lt;/head&gt;
     &lt;body&gt;
-&lt;!-- PAGE START --&gt;
+  &lt;!-- PAGE START --&gt;
       &lt;div id="page"&gt;
-&lt;!-- CONTENT START --&gt;
+  &lt;!-- CONTENT START --&gt;
         &lt;section class="container" id="content"&gt;
           &lt;h1&gt;Hello, world!&lt;/h1&gt;
         &lt;/section&gt;
-&lt;!-- CONTENT STOP --&gt;
+  &lt;!-- CONTENT STOP --&gt;
       &lt;/div&gt;
-&lt;!-- PAGE STOP --&gt;
+  &lt;!-- PAGE STOP --&gt;
     &lt;/body&gt;
   &lt;/html&gt;
 
@@ -1249,7 +1281,7 @@
 
           </div>
         </div>
-<!-- QUICK START OPTIONS STOP -->
+<!-- STARTER TEMPLATE STOP -->
       </div>
 
     </section>
