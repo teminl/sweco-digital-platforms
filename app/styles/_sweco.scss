@@ -373,6 +373,12 @@ h1, h2, h3, h4, h5, h6,
   .nav.navbar-nav
   {
     padding-top: 15px;
+    &.nav-top-right
+    {
+      position: absolute;
+      top: 0;
+      right: $spacer-y;
+    }
     .nav-item
     {
       .nav-link
