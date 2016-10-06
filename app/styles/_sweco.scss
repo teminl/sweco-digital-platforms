@@ -1535,8 +1535,8 @@ select.form-control[multiple]
       @extend .btn-block;
       @include hover-focus
       {
-        color: $btn-info-color !important;
-        background-color: darken($btn-info-bg, 10%) !important;
+        color: $btn-primary-color !important;
+        background-color: $btn-primary-bg !important;
       }
       border-width: 1px 0 0 0;
       margin-top: 0 !important;
