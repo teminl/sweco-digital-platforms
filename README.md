@@ -92,10 +92,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Publish to Github gh-pages
-
-* `npm run deploy`
-
 ## Editing
 If using Sublime Text, exclude node_modules, add e.g. the following to Settings / User:
 ```
