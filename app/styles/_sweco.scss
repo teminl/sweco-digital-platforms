@@ -40,7 +40,16 @@ body
   min-height: 100%;
 }
 
-// If navbar-north add class to body
+// If front page add .body-front-page class to body
+body.body-front-page
+{
+  #content
+  {
+    display: none;
+  }
+}
+
+// If .navbar-north add .navbarNorth class to body
 body.navbarNorth #content
 {
   padding-top: $navbar-north-height;
@@ -50,7 +59,7 @@ body.navbarNorth #content
   }
 }
 
-// If navbar-south add class to body
+// If .navbar-south add .navbarSouth class to body
 body.navbarSouth #content
 {
   padding-bottom: $navbar-south-height;
