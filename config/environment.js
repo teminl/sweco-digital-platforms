@@ -19,6 +19,10 @@ module.exports = function(environment) {
     }
   };
 
+  if (environment === 'gh-pages') {
+    ENV.rootURL = '/sweco-digital-guidelines/';
+  }
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
