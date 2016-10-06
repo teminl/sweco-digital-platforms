@@ -74,6 +74,9 @@ body {
   position: relative;
   min-height: 100%; }
 
+body.body-front-page #content {
+  display: none; }
+
 body.navbarNorth #content {
   padding-top: 60px; }
   @media (max-width: 767px) {
