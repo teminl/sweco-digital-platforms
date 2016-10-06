@@ -40,15 +40,6 @@ body
   min-height: 100%;
 }
 
-// If front page add .body-front-page class to body
-body.body-front-page
-{
-  #content
-  {
-    display: none;
-  }
-}
-
 // If .navbar-north add .navbarNorth class to body
 body.navbarNorth #content
 {
@@ -509,6 +500,10 @@ h1, h2, h3, h4, h5, h6,
 .body-front-page
 {
   @extend .body-fixed;
+  #content
+  {
+    display: none;
+  }
 }
 
 .front-page
