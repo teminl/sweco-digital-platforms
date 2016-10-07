@@ -5,11 +5,14 @@
 // Sweco fonts (/fonts)
 @import "fonts";
 
-// Bootstrap mixins
-@import "bower_components/bootstrap/scss/_mixins";
+// Font Awesome (/fonts)
+@import "bower_components/font-awesome/scss/font-awesome";
 
 // Sweco variables
 @import "variables";
+
+// Bootstrap
+@import "bower_components/bootstrap/scss/bootstrap";
 
 // Sweco logotype
 @import "logotype";
@@ -23,8 +26,5 @@
 // Sweco - for development
 @import "sweco-dev";
 
-// Bootstrap
-@import "bower_components/bootstrap/scss/bootstrap";
 
-// Font Awesome (/fonts)
-@import "bower_components/font-awesome/scss/font-awesome";
+

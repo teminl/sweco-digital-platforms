@@ -1495,6 +1495,16 @@ select.form-control[multiple]
       content: "\f105" !important;
       border: 0 !important;
     }
+    &.active
+    {
+      color: $component-active-color;
+      @include hover-focus-active
+      {
+        background-color: $component-active-bg;
+        color: $component-active-color;
+        cursor: default;
+      }
+    }
     &.list-group-item-action
     {
       &:after
