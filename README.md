@@ -1,7 +1,5 @@
 ***
-
 <img src="https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg" width="180px" height="90px" style="margin-left: -30px;" alt="">
-
 ***
 # Sweco Digital Guidelines
 
