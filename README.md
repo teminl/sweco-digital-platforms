@@ -1,4 +1,4 @@
-![Sweco](/public/img/logotype-black.svg)
+![Sweco](https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg)
 
 # Sweco Digital Guidelines
 
