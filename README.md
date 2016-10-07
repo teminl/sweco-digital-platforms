@@ -1,4 +1,4 @@
-![Sweco](https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg)
+![Sweco](https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg =240x120)
 
 # Sweco Digital Guidelines
 
