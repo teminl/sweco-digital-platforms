@@ -46,7 +46,6 @@
     "node-sass": "3.10.0",
     "ember-cli-sass": "5.5.1",
     "ember-cli-autoprefixer": "0.0.3",
-    "liquid-fire": "0.25.0",
     "postcss-cli": "2.6.0",
     "postcss-flexbugs-fixes": "2.0.0"
   },
