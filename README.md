@@ -1,5 +1,5 @@
 <img src="https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg" width="180px" height="90px" style="margin-left: -30px;" alt="">
-_
+___
 # Sweco Digital Guidelines
 
 Containing the Sweco Digital Guidelines with typography, colors, application icons and logotype svg:s.
