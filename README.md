@@ -1,3 +1,5 @@
+![Sweco](public/img/logotype-black.svg)
+
 # Sweco Digital Guidelines
 
 Containing the Sweco Digital Guidelines with typography, colors, application icons and logotype svg:s.
