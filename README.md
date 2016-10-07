@@ -1,4 +1,5 @@
-![Sweco](https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg {width=240px height=120px})
+![Sweco](https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg)
+<img src="https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg" width="240px">
 
 # Sweco Digital Guidelines
 
