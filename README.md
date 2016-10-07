@@ -1,14 +1,14 @@
 <img src="https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg" width="180px" height="90px" style="margin-left: -30px;" alt="">
-
+---
 # Sweco Digital Guidelines
 
 Containing the Sweco Digital Guidelines with typography, colors, application icons and logotype svg:s.
 
 ### Example page
 
-[Sweco Digital Guidelines example page](http://sweco.github.io/sweco-digital-guidelines/) containing HTML example elements.
+[Sweco Digital Guidelines example page](http://sweco.github.io/sweco-digital-guidelines/)
 
-## Sweco Bootstrap
+## Sweco digital guidelines
 
 Sweco digital guidelines is built on [Bootstrap 4](http://v4-alpha.getbootstrap.com/) the world’s most popular framework for building responsive, mobile-first sites and applications. Sweco digital guidelines contains layout options for structuring a Sweco application with [Bootstrap 4](http://v4-alpha.getbootstrap.com/), including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML 5 elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.
 
