@@ -880,6 +880,17 @@ fieldset
 .form-control
 {
   transition: $transition;
+  // ios fix
+  &[type="date"],
+  &[type="month"],
+  &[type="week"],
+  &[type="time"],
+  &[type="datetime-local"]
+  {
+    -webkit-appearance: textfield;
+    min-height: $input-height;
+    padding: .52rem $input-padding-x;
+  }
   &[disabled],
   &[readonly],
   fieldset[disabled] &
@@ -893,7 +904,7 @@ fieldset
   &.form-control-sm
   {
     font-size: $font-size-base !important;
-    font-size: $input-line-height !important;
+    line-height: $input-line-height !important;
   }
 }
 
@@ -902,14 +913,14 @@ fieldset
 {
   .form-control
   {
-    min-height: $input-height;
+    min-height: 2.67rem;
     &.form-control-lg
     {
-      min-height: $input-height-lg;
+      min-height: 3.34rem;
     }
     &.form-control-sm
     {
-      min-height: $input-height-sm;
+      min-height: 2rem;
     }
   }
   &.input-group-lg
