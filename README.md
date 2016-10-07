@@ -1,4 +1,8 @@
-![Sweco](https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg =240x120)
+
+\begin{figure}
+ \includegraphics[width=240 px, height = 120 px]{https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg}
+\end{figure}
+
 
 # Sweco Digital Guidelines
 
