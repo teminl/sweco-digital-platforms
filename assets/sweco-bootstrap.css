@@ -74,9 +74,6 @@ body {
   position: relative;
   min-height: 100%; }
 
-body.body-front-page #content {
-  display: none; }
-
 body.navbarNorth #content {
   padding-top: 60px; }
   @media (max-width: 767px) {
@@ -553,6 +550,9 @@ h1 > .fa, h2 > .fa, h3 > .fa, h4 > .fa, h5 > .fa, h6 > .fa,
     .navbar.navbar-south.fade:not(.in) {
       transform: translate3d(0, 100%, 0); }
 
+.body-front-page #content {
+  display: none; }
+
 .front-page {
   position: fixed;
   top: 0;
@@ -797,6 +797,10 @@ fieldset {
 
 .form-control {
   transition: all 0.4s ease; }
+  .form-control[type="date"], .form-control[type="month"], .form-control[type="week"], .form-control[type="time"], .form-control[type="datetime-local"] {
+    -webkit-appearance: textfield;
+    min-height: 2.69rem;
+    padding: 0.52rem 0.75rem; }
   .form-control[disabled], .form-control[readonly],
   fieldset[disabled] .form-control {
     background-clip: border-box !important; }
@@ -807,18 +811,18 @@ fieldset {
   .input-group-sm > .input-group-btn > .form-control.btn, .card.card-info .card-footer
   .input-group-sm > .input-group-btn > .form-control.btn {
     font-size: 1rem !important;
-    font-size: 1.25 !important; }
+    line-height: 1.25 !important; }
 
 .input-group .form-control {
-  min-height: 2.69rem; }
+  min-height: 2.67rem; }
   .input-group .form-control.form-control-lg, .input-group .input-group-lg > .form-control, .input-group
   .input-group-lg > .input-group-btn > .form-control.btn, .input-group .card.card-info .card-footer
   .input-group-lg > .input-group-btn > .form-control.btn {
-    min-height: 3.36rem; }
+    min-height: 3.34rem; }
   .input-group .form-control.form-control-sm, .input-group .input-group-sm > .form-control, .input-group
   .input-group-sm > .input-group-btn > .form-control.btn, .input-group .card.card-info .card-footer
   .input-group-sm > .input-group-btn > .form-control.btn {
-    min-height: 2.03rem; }
+    min-height: 2rem; }
 
 .input-group.input-group-lg .btn, .input-group.input-group-lg .card.card-info .card-footer .btn, .card.card-info .card-footer .input-group.input-group-lg .btn {
   min-height: 3.36rem; }
