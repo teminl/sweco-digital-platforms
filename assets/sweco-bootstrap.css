@@ -8617,6 +8617,9 @@ select.form-control[multiple] {
 .flexbox-stretch {
   align-items: stretch; }
 
+.flexbox-center {
+  justify-content: center; }
+
 .flexbox-0 {
   flex: 0 auto; }
 
