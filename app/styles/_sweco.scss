@@ -1640,6 +1640,12 @@ select.form-control[multiple]
   align-items: stretch;
 }
 
+// Flex center
+.flexbox-center
+{
+  justify-content: center;
+}
+
 // Flexbox no flex
 .flexbox-0
 {
