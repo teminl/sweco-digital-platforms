@@ -5,6 +5,9 @@ var nodeSass = require('node-sass');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    fingerprint: {
+      enabled: false
+    },
 
     // Sass
     sassOptions: {
