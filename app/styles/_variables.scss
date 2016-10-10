@@ -602,7 +602,7 @@ $jumbotron-color:             $white;
 
 // Close
 $close-font-weight:           normal;
-$close-color:                 $brand-primary;
+$close-color:                 $white;
 $close-text-shadow:           none;
 
 // Code
@@ -637,6 +637,35 @@ $tag-padding-x:                         .5em;
 $tag-padding-y:                         .3em;
 $tag-pill-padding-x:                    .6em;
 $tag-pill-border-radius:                10rem;
+
+// Modals
+$modal-inner-padding:                   0;
+
+$modal-dialog-margin:                   10px;
+$modal-dialog-sm-up-margin-y:           90px;
+
+$modal-title-padding:                   $spacer-x;
+$modal-title-line-height:               $line-height-base;
+
+$modal-header-bg:                       $brand-primary;
+$modal-header-color:                    $white;
+
+$modal-content-bg:                      $white;
+$modal-content-border-color:            $border-color;
+$modal-content-border-width:            0;
+$modal-content-xs-box-shadow:           0 5px $box-shadow-size $box-shadow;
+$modal-content-sm-up-box-shadow:        0 5px $box-shadow-size $box-shadow;
+
+$modal-backdrop-bg:                     $black;
+$modal-backdrop-opacity:                .8;
+$modal-header-border-color:             $modal-content-border-color;
+$modal-footer-border-color:             $modal-header-border-color;
+$modal-header-border-width:             $modal-content-border-width;
+$modal-footer-border-width:             $modal-header-border-width;
+
+$modal-lg:                              900px;
+$modal-md:                              600px;
+$modal-sm:                              300px;
 
 // List group
 $list-group-bg:                         $white;
