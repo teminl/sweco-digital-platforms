@@ -1698,11 +1698,18 @@ select.form-control[multiple]
       {
         @extend .close-icon;
         position: absolute;
-        top: 19px;
+        top: 15px;
         right: $spacer-x;
         z-index: ($zindex-modal + 1);
         color: $white;
         margin: 0;
+        @include media-breakpoint-up(sm)
+        {
+          &:before
+          {
+            font-size: $font-size-h2;
+          }
+        }
       }
       @include media-breakpoint-down(xs)
       {
@@ -1721,10 +1728,22 @@ select.form-control[multiple]
     .modal-body
     {
       padding: $spacer-y $spacer-x;
-      h5
+      .dialog
       {
-        text-align: center;
-        margin: 0;
+        width: 100%;
+        min-height: 90px;
+        display: table;
+        .dialog-body
+        {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          h1, h2, h3, h4, h5
+          {
+            font-size: $font-size-h5;
+            margin: 0;
+          }
+        }
       }
     }
     .modal-footer
@@ -1776,59 +1795,40 @@ select.form-control[multiple]
       max-width: 100% !important;
       margin-left: 0 !important;
     }
-    .modal-header
+    .modal-content
     {
-      .project-modal-header-btn-group
+      height: 100vh;
+      min-height: 100%;
+      @extend .flexbox-col;
+      padding: 0;
+      overflow: hidden;
+      .modal-header
       {
-        position: absolute;
-        top: 10px !important;
-        left: $spacer-x !important;
-        /*
-        @media (max-width: @screen-sm)
+        @include media-breakpoint-up(md)
         {
-          left: 0 !important;
+          padding-left: ($spacer-x * 2);
+          padding-right: ($spacer-x * 2);
         }
-        */
-        .btn
+        .modal-header-btn-group
         {
-          @extend .btn-link;
-          color: $white;
-          outline: 0;
-          &:focus,
-          &:active
+          position: absolute;
+          top: 10px !important;
+          left: $spacer-x !important;
+          .btn
           {
-            text-decoration: none;
-          }
-          &:hover,
-          &:focus,
-          &:active,
-          &.active
-          {
-            color: $white;
-            outline: 0;
-          }
-          &:hover
-          {
-            text-decoration: underline;
-          }
-          .fa
-          {
-            margin-top: -2px;
-            vertical-align: inherit;
-            &:before
-            {
-              font-size: $font-size-lg !important;
-            }
+            @extend .btn-link;
+            @extend .white-text;
           }
         }
       }
-    }
-    .modal-content
-    {
-      padding: 0;
       .modal-body
       {
-        padding: 0;
+        flex: 1;
+        @extend .inner-y;
+        @include media-breakpoint-up(md)
+        {
+          padding: ($spacer-y * 2) ($spacer-x * 2);
+        }
       }
     }
   }
@@ -1837,16 +1837,6 @@ select.form-control[multiple]
 .modal.fade:not(.in).modal-page .modal-dialog
 {
   transform: translate3d(25%, 0, 0);
-  .modal-header
-  {
-    /*
-    &.modal-header-ie
-    {
-      opacity: 0;
-      position: absolute;
-    }
-    */
-  }
   .project-header
   {
     opacity: 0;
