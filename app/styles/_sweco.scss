@@ -597,6 +597,7 @@ h1, h2, h3, h4, h5, h6,
     &:focus,
     &:active
     {
+      color: $btn-primary-color;
       box-shadow: inset $btn-outline-box-width 0 0 0 $btn-primary-bg;
       border-color: $btn-primary-bg;
     }
@@ -817,9 +818,11 @@ ul.dropdown-menu
 {
   transition: $transition;
   opacity: 1 !important;
-  &:hover
+  outline: 0;
+  @include hover-focus-active
   {
     opacity: .6 !important;
+    outline: 0;
   }
   .fa
   {
@@ -839,6 +842,46 @@ ul.dropdown-menu
     color: $close-color;
     font-size: $font-size-xl;
   }
+}
+
+// Popover
+.popover
+{
+  box-shadow: $popover-box-shadow;
+  border: 0;
+  &.bs-tether-target-attached-bottom
+  {
+    .popover-arrow:after
+    {
+      border-bottom-color: $popover-title-bg !important;
+    }
+  }
+  .popover-title
+  {
+    color: $white;
+    position: relative;
+    padding-right: ($spacer-x * 3);
+  }
+  .popover-content
+  {
+    position: relative;
+    font-size: $font-size-base;
+    @extend .inner-y;
+    max-height: $popover-content-max-height;
+  }
+  .close
+  {
+    position: absolute;
+    top: 8px;
+    z-index: ($zindex-popover + 1);
+    right: $spacer-x;
+  }
+}
+
+// Tooltip
+.tooltip
+{
+  font-size: $font-size-sm;
 }
 
 // Panels and wells
@@ -1246,17 +1289,12 @@ select.form-control[multiple]
       transition: $transition;
       color: $nav-link-color;
       min-height: 40px;
-      &:hover,
-      &:active,
-      &:focus
+      @include hover-focus-active
       {
-        @include hover-focus-active
-        {
-          color: $nav-link-hover-color;
-          text-decoration: none;
-          background-color: $nav-link-hover-bg;
-          outline: 0;
-        }
+        color: $nav-link-hover-color;
+        text-decoration: none;
+        background-color: $nav-link-hover-bg;
+        outline: 0;
       }
     }
   }
@@ -1336,7 +1374,7 @@ select.form-control[multiple]
       &:before
       {
         position: absolute;
-        top: 10px;
+        top: 9px;
         left: $spacer-x;
         display: inline-block;
         font-family: FontAwesome;

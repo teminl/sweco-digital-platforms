@@ -1142,14 +1142,15 @@
       </div>
 <!-- ROW FLEX STOP -->
 
-      <div class="well">
-<!-- MODAL START -->
-        <h2 id="modal">Modal</h2>
-        <hr/>
+      <div class="row">
+        <div class="col-lg-4">
 
-        <div class="row">
-          <div class="col-sm-6">
-            <button type="button" class="btn btn-info btn-lg btn-block m-y-1" data-toggle="modal" data-target="#standardModal">
+          <div class="well">
+<!-- MODAL START -->
+            <h2 id="modal">Modal</h2>
+            <hr/>
+
+            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="modal" data-target="#standardModal">
               Launch standard modal
             </button>
 <!-- MODAL STANDARD START -->
@@ -1179,9 +1180,8 @@
               </div>
             </div>
 <!-- MODAL STANDARD STOP -->
-          </div>
-          <div class="col-sm-6">
-            <button type="button" class="btn btn-info btn-lg btn-block m-y-1" data-toggle="modal" data-target="#pageModal">
+
+            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="modal" data-target="#pageModal">
               Launch page modal
             </button>
 <!-- MODAL PAGE START -->
@@ -1211,16 +1211,36 @@
               </div>
             </div>
 <!-- MODAL PAGE STOP -->
+<!-- MODAL STOP -->
           </div>
         </div>
-<!-- MODAL STOP -->
-      </div>
+        <div class="col-lg-4">
+          <div class="well">
+<!-- POPOVER START -->
+            <h2 id="popover">Popover</h2>
+            <hr/>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="top" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus" {{action 'popOver'}}>Popover on top</button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="right" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus" {{action 'popOver'}}>Popover on right</button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="Vivamus
+            sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus" {{action 'popOver'}}>Popover on bottom</button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="left" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus" {{action 'popOver'}}>Popover on left</button>
+<!-- POPOVER STOP -->
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="well">
+<!-- TOOLTIP START -->
+            <h2 id="tooltip">Tooltip</h2>
+            <hr/>
 
-<!-- TODO: GRID START -->
-<!-- TODO: MODALS START -->
-<!-- TODO: POPOVERS START -->
-<!-- TODO: TOOLTIP START -->
-<!-- TODO: CONTACT CARD START -->
+            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+<!-- TOOLTIP STOP -->
+          </div>
+        </div>
+      </div>
 
       <div class="well">
 <!-- DOWNLOAD START -->

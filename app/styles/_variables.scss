@@ -667,6 +667,35 @@ $modal-lg:                              900px;
 $modal-md:                              600px;
 $modal-sm:                              300px;
 
+// Tooltips
+$tooltip-max-width:                     200px;
+$tooltip-color:                         $white;
+$tooltip-bg:                            rgba(0,0,0,.8);
+$tooltip-opacity:                       1;
+$tooltip-padding-y:                     5px;
+$tooltip-padding-x:                     10px;
+$tooltip-margin:                        1px;
+$tooltip-arrow-width:                   5px;
+$tooltip-arrow-color:                   $tooltip-bg;
+
+// Popovers
+$popover-inner-padding:                 0;
+$popover-bg:                            $white;
+$popover-max-width:                     280px;
+$popover-border-width:                  $border-width;
+$popover-border-color:                  transparent;
+$popover-box-shadow:                    0 5px $box-shadow-size $box-shadow;
+$popover-title-bg:                      $brand-primary;
+$popover-title-padding-x:               $spacer-x;
+$popover-title-padding-y:               9px;
+$popover-content-padding-x:             $spacer-x;
+$popover-content-padding-y:             $spacer-y;
+$popover-content-max-height:            280px;
+$popover-arrow-width:                   10px;
+$popover-arrow-color:                   $popover-bg;
+$popover-arrow-outer-width:             ($popover-arrow-width + 1px);
+$popover-arrow-outer-color:             fade-in($popover-border-color, .05);
+
 // List group
 $list-group-bg:                         $white;
 $list-group-border-color:               $component-bg-hover;

@@ -26,6 +26,10 @@ export default Ember.Controller.extend({
 
     closeModal: function() {
       this.set('isModalVisible', false);
+    },
+
+    popOver: function() {
+      $('.popover-title').append('<button type="button" class="close"><i class="fa fa-times-circle"></i></button>');
     }
 
   }
