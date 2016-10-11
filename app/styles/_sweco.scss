@@ -3,9 +3,8 @@
 html,
 body
 {
-  min-height: 100%;
-  height: auto;
   height: 100%;
+  min-height: 100%;
 }
 
 // Fixed body for non scroll content
@@ -56,11 +55,14 @@ body.navbarSouth #content
   padding-bottom: $navbar-south-height;
 }
 
-// Modal open fix scrollbar jumps IE
-.ie body.modal-open .navbar-fixed-top,
-.ie body.modal-open .navbar-fixed-bottom
+// Modal open fix scrollbar jumps IE and if body height is higher than vh so scrollbar is visible
+.ie body.modal-open
 {
-  margin-left: -16px !important;
+  .navbar-fixed-top,
+  .navbar-fixed-bottom
+  {
+    margin-left: -17px !important;
+  }
 }
 
 // Remove IE clear and reveal on inputs
