@@ -4278,28 +4278,28 @@ fieldset[disabled] a.btn {
   .btn-outline-danger.disabled:hover, .btn-outline-danger:disabled:hover {
     border-color: #ff3366; }
 
-.btn-link {
+.btn-link, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn {
   font-weight: normal;
   color: #b586a4;
   border-radius: 0; }
-  .btn-link, .btn-link:active, .btn-link.active, .btn-link:disabled {
+  .btn-link, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn, .btn-link:active, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn:active, .btn-link.active, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .active.btn, .btn-link:disabled, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn:disabled {
     background-color: transparent; }
-  .btn-link, .btn-link:focus, .btn-link:active {
+  .btn-link, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn, .btn-link:focus, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn:focus, .btn-link:active, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn:active {
     border-color: transparent; }
-  .btn-link:hover {
+  .btn-link:hover, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn:hover {
     border-color: transparent; }
-  .btn-link:focus {
+  .btn-link:focus, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn:focus {
     color: #b586a4;
     text-decoration: underline;
     background-color: transparent; }
-  .btn-link:hover {
+  .btn-link:hover, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn:hover {
     color: #b586a4;
     text-decoration: underline;
     background-color: transparent; }
-  .btn-link:disabled:focus {
+  .btn-link:disabled:focus, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn:disabled:focus {
     color: #a5a5a8;
     text-decoration: none; }
-  .btn-link:disabled:hover {
+  .btn-link:disabled:hover, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn:disabled:hover {
     color: #a5a5a8;
     text-decoration: none; }
 
@@ -4311,18 +4311,20 @@ fieldset[disabled] a.btn {
   padding: 0.44rem 0.5rem;
   font-size: 0.8rem; }
 
-.btn-block, .card .card-footer .btn, .card.card-info .card-footer .btn {
+.btn-block, .card .card-footer .btn, .card.card-info .card-footer .btn, .modal .modal-content .modal-footer .btn {
   display: block;
   width: 100%; }
 
-.btn-block + .btn-block, .card .card-footer .btn + .btn-block, .card .card-footer .btn-block + .btn, .card .card-footer .btn + .btn {
+.btn-block + .btn-block, .card .card-footer .btn + .btn-block, .modal .modal-content .modal-footer .btn + .btn-block, .card .card-footer .btn-block + .btn, .card .card-footer .btn + .btn, .modal .modal-content .modal-footer .btn-block + .btn, .modal .modal-content .modal-footer .btn + .btn {
   margin-top: 0.5rem; }
 
-input[type="submit"].btn-block, .card .card-footer input[type="submit"].btn,
+input[type="submit"].btn-block, .card .card-footer input[type="submit"].btn, .modal .modal-content .modal-footer input[type="submit"].btn,
 input[type="reset"].btn-block,
 .card .card-footer input[type="reset"].btn,
+.modal .modal-content .modal-footer input[type="reset"].btn,
 input[type="button"].btn-block,
-.card .card-footer input[type="button"].btn {
+.card .card-footer input[type="button"].btn,
+.modal .modal-content .modal-footer input[type="button"].btn {
   width: 100%; }
 
 .fade {
@@ -6209,16 +6211,16 @@ button.list-group-item-danger {
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 1;
-  color: #4d535a;
+  color: #fff;
   text-shadow: none;
   opacity: .2; }
   .close:focus {
-    color: #4d535a;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
     opacity: .5; }
   .close:hover {
-    color: #4d535a;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
     opacity: .5; }
@@ -6263,7 +6265,7 @@ button.close {
   position: relative;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 0 solid #a5a5a8;
   outline: 0; }
 
 .modal-backdrop {
@@ -6277,11 +6279,11 @@ button.close {
   .modal-backdrop.fade {
     opacity: 0; }
   .modal-backdrop.in {
-    opacity: 0.5; }
+    opacity: 0.8; }
 
 .modal-header {
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5; }
+  padding: 1rem;
+  border-bottom: 0 solid #a5a5a8; }
   .modal-header::after {
     content: "";
     display: table;
@@ -6296,12 +6298,12 @@ button.close {
 
 .modal-body {
   position: relative;
-  padding: 15px; }
+  padding: 0; }
 
 .modal-footer {
-  padding: 15px;
+  padding: 0;
   text-align: right;
-  border-top: 1px solid #e5e5e5; }
+  border-top: 0 solid #a5a5a8; }
   .modal-footer::after {
     content: "";
     display: table;
@@ -6317,7 +6319,7 @@ button.close {
 @media (min-width: 544px) {
   .modal-dialog {
     max-width: 600px;
-    margin: 30px auto; }
+    margin: 90px auto; }
   .modal-sm {
     max-width: 300px; } }
 
@@ -7310,14 +7312,14 @@ body.navbarSouth #content {
   -webkit-user-select: all;
   user-select: all; }
 
-.inner, .inner-y, .dropdown-menu > div, select.form-control[multiple], .inner-x {
+.inner, .inner-y, .dropdown-menu > div, select.form-control[multiple], .modal-page .modal-dialog .modal-content .modal-body, .inner-x {
   width: 100%;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
   overflow-scrolling: touch; }
 
-.inner-y, .dropdown-menu > div, select.form-control[multiple] {
+.inner-y, .dropdown-menu > div, select.form-control[multiple], .modal-page .modal-dialog .modal-content .modal-body {
   overflow-x: hidden; }
 
 .inner-x {
@@ -7447,78 +7449,78 @@ samp {
 
 .white-text, .front-page .hero, .front-page .hero .jumbo, .panel.well-info, .panel.well-warning, .panel.download,
 .well.well-info, .jumbotron .well, .jumbotron .download, .well-info.download,
-.well.well-warning, .download, .jumbotron, .card.card-info {
+.well.well-warning, .download, .jumbotron, .card.card-info, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn {
   color: #fff; }
   .white-text h1, .front-page .hero h1, .front-page .hero .jumbo h1, .panel.well-info h1, .panel.well-warning h1, .panel.download h1,
   .well.well-info h1, .jumbotron .well h1, .jumbotron .download h1, .well-info.download h1,
-  .well.well-warning h1, .download h1, .jumbotron h1, .card.card-info h1, .white-text h2, .front-page .hero h2, .front-page .hero .jumbo h2, .panel.well-info h2, .panel.well-warning h2, .panel.download h2,
+  .well.well-warning h1, .download h1, .jumbotron h1, .card.card-info h1, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn h1, .white-text h2, .front-page .hero h2, .front-page .hero .jumbo h2, .panel.well-info h2, .panel.well-warning h2, .panel.download h2,
   .well.well-info h2, .jumbotron .well h2, .jumbotron .download h2, .well-info.download h2,
-  .well.well-warning h2, .download h2, .jumbotron h2, .card.card-info h2, .white-text h3, .front-page .hero h3, .front-page .hero .jumbo h3, .panel.well-info h3, .panel.well-warning h3, .panel.download h3,
+  .well.well-warning h2, .download h2, .jumbotron h2, .card.card-info h2, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn h2, .white-text h3, .front-page .hero h3, .front-page .hero .jumbo h3, .panel.well-info h3, .panel.well-warning h3, .panel.download h3,
   .well.well-info h3, .jumbotron .well h3, .jumbotron .download h3, .well-info.download h3,
-  .well.well-warning h3, .download h3, .jumbotron h3, .card.card-info h3, .white-text h4, .front-page .hero h4, .front-page .hero .jumbo h4, .panel.well-info h4, .panel.well-warning h4, .panel.download h4,
+  .well.well-warning h3, .download h3, .jumbotron h3, .card.card-info h3, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn h3, .white-text h4, .front-page .hero h4, .front-page .hero .jumbo h4, .panel.well-info h4, .panel.well-warning h4, .panel.download h4,
   .well.well-info h4, .jumbotron .well h4, .jumbotron .download h4, .well-info.download h4,
-  .well.well-warning h4, .download h4, .jumbotron h4, .card.card-info h4, .white-text h5, .front-page .hero h5, .front-page .hero .jumbo h5, .panel.well-info h5, .panel.well-warning h5, .panel.download h5,
+  .well.well-warning h4, .download h4, .jumbotron h4, .card.card-info h4, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn h4, .white-text h5, .front-page .hero h5, .front-page .hero .jumbo h5, .panel.well-info h5, .panel.well-warning h5, .panel.download h5,
   .well.well-info h5, .jumbotron .well h5, .jumbotron .download h5, .well-info.download h5,
-  .well.well-warning h5, .download h5, .jumbotron h5, .card.card-info h5, .white-text h6, .front-page .hero h6, .front-page .hero .jumbo h6, .panel.well-info h6, .panel.well-warning h6, .panel.download h6,
+  .well.well-warning h5, .download h5, .jumbotron h5, .card.card-info h5, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn h5, .white-text h6, .front-page .hero h6, .front-page .hero .jumbo h6, .panel.well-info h6, .panel.well-warning h6, .panel.download h6,
   .well.well-info h6, .jumbotron .well h6, .jumbotron .download h6, .well-info.download h6,
-  .well.well-warning h6, .download h6, .jumbotron h6, .card.card-info h6,
+  .well.well-warning h6, .download h6, .jumbotron h6, .card.card-info h6, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn h6,
   .white-text .h1, .front-page .hero .h1, .panel.well-info .h1, .panel.well-warning .h1,
   .well.well-info .h1,
-  .well.well-warning .h1, .download .h1, .jumbotron .h1, .card.card-info .h1, .white-text .h2, .front-page .hero .h2, .panel.well-info .h2, .panel.well-warning .h2,
+  .well.well-warning .h1, .download .h1, .jumbotron .h1, .card.card-info .h1, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn .h1, .white-text .h2, .front-page .hero .h2, .panel.well-info .h2, .panel.well-warning .h2,
   .well.well-info .h2,
-  .well.well-warning .h2, .download .h2, .jumbotron .h2, .card.card-info .h2, .white-text .h3, .front-page .hero .h3, .panel.well-info .h3, .panel.well-warning .h3,
+  .well.well-warning .h2, .download .h2, .jumbotron .h2, .card.card-info .h2, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn .h2, .white-text .h3, .front-page .hero .h3, .panel.well-info .h3, .panel.well-warning .h3,
   .well.well-info .h3,
-  .well.well-warning .h3, .download .h3, .jumbotron .h3, .card.card-info .h3, .white-text .h4, .front-page .hero .h4, .panel.well-info .h4, .panel.well-warning .h4,
+  .well.well-warning .h3, .download .h3, .jumbotron .h3, .card.card-info .h3, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn .h3, .white-text .h4, .front-page .hero .h4, .panel.well-info .h4, .panel.well-warning .h4,
   .well.well-info .h4,
-  .well.well-warning .h4, .download .h4, .jumbotron .h4, .card.card-info .h4, .white-text .h5, .front-page .hero .h5, .panel.well-info .h5, .panel.well-warning .h5,
+  .well.well-warning .h4, .download .h4, .jumbotron .h4, .card.card-info .h4, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn .h4, .white-text .h5, .front-page .hero .h5, .panel.well-info .h5, .panel.well-warning .h5,
   .well.well-info .h5,
-  .well.well-warning .h5, .download .h5, .jumbotron .h5, .card.card-info .h5, .white-text .h6, .front-page .hero .h6, .panel.well-info .h6, .panel.well-warning .h6,
+  .well.well-warning .h5, .download .h5, .jumbotron .h5, .card.card-info .h5, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn .h5, .white-text .h6, .front-page .hero .h6, .panel.well-info .h6, .panel.well-warning .h6,
   .well.well-info .h6,
-  .well.well-warning .h6, .download .h6, .jumbotron .h6, .card.card-info .h6,
+  .well.well-warning .h6, .download .h6, .jumbotron .h6, .card.card-info .h6, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn .h6,
   .white-text legend, .front-page .hero legend, .front-page .hero .jumbo legend, .panel.well-info legend, .panel.well-warning legend, .panel.download legend,
   .well.well-info legend, .jumbotron .well legend, .jumbotron .download legend, .well-info.download legend,
-  .well.well-warning legend, .download legend, .jumbotron legend, .card.card-info legend,
+  .well.well-warning legend, .download legend, .jumbotron legend, .card.card-info legend, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn legend,
   .white-text label, .front-page .hero label, .front-page .hero .jumbo label, .panel.well-info label, .panel.well-warning label, .panel.download label,
   .well.well-info label, .jumbotron .well label, .jumbotron .download label, .well-info.download label,
-  .well.well-warning label, .download label, .jumbotron label, .card.card-info label,
+  .well.well-warning label, .download label, .jumbotron label, .card.card-info label, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn label,
   .white-text .custom-file .custom-file-control:after, .custom-file
   .white-text .custom-file-control:after, .front-page .hero .custom-file .custom-file-control:after, .custom-file .front-page .hero .custom-file-control:after, .panel.well-info .custom-file .custom-file-control:after, .custom-file .panel.well-info .custom-file-control:after, .panel.well-warning .custom-file .custom-file-control:after, .custom-file .panel.well-warning .custom-file-control:after,
   .well.well-info .custom-file .custom-file-control:after, .custom-file
   .well.well-info .custom-file-control:after,
   .well.well-warning .custom-file .custom-file-control:after, .custom-file
-  .well.well-warning .custom-file-control:after, .download .custom-file .custom-file-control:after, .custom-file .download .custom-file-control:after, .jumbotron .custom-file .custom-file-control:after, .custom-file .jumbotron .custom-file-control:after, .card.card-info .custom-file .custom-file-control:after, .custom-file .card.card-info .custom-file-control:after,
+  .well.well-warning .custom-file-control:after, .download .custom-file .custom-file-control:after, .custom-file .download .custom-file-control:after, .jumbotron .custom-file .custom-file-control:after, .custom-file .jumbotron .custom-file-control:after, .card.card-info .custom-file .custom-file-control:after, .custom-file .card.card-info .custom-file-control:after, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn .custom-file .custom-file-control:after, .custom-file .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn .custom-file-control:after,
   .white-text p, .front-page .hero p, .front-page .hero .jumbo p, .panel.well-info p, .panel.well-warning p, .panel.download p,
   .well.well-info p, .jumbotron .well p, .jumbotron .download p, .well-info.download p,
-  .well.well-warning p, .download p, .jumbotron p, .card.card-info p, .white-text li, .front-page .hero li, .front-page .hero .jumbo li, .panel.well-info li, .panel.well-warning li, .panel.download li,
+  .well.well-warning p, .download p, .jumbotron p, .card.card-info p, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn p, .white-text li, .front-page .hero li, .front-page .hero .jumbo li, .panel.well-info li, .panel.well-warning li, .panel.download li,
   .well.well-info li, .jumbotron .well li, .jumbotron .download li, .well-info.download li,
-  .well.well-warning li, .download li, .jumbotron li, .card.card-info li, .white-text dt, .front-page .hero dt, .front-page .hero .jumbo dt, .panel.well-info dt, .panel.well-warning dt, .panel.download dt,
+  .well.well-warning li, .download li, .jumbotron li, .card.card-info li, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn li, .white-text dt, .front-page .hero dt, .front-page .hero .jumbo dt, .panel.well-info dt, .panel.well-warning dt, .panel.download dt,
   .well.well-info dt, .jumbotron .well dt, .jumbotron .download dt, .well-info.download dt,
-  .well.well-warning dt, .download dt, .jumbotron dt, .card.card-info dt, .white-text dd, .front-page .hero dd, .front-page .hero .jumbo dd, .panel.well-info dd, .panel.well-warning dd, .panel.download dd,
+  .well.well-warning dt, .download dt, .jumbotron dt, .card.card-info dt, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn dt, .white-text dd, .front-page .hero dd, .front-page .hero .jumbo dd, .panel.well-info dd, .panel.well-warning dd, .panel.download dd,
   .well.well-info dd, .jumbotron .well dd, .jumbotron .download dd, .well-info.download dd,
-  .well.well-warning dd, .download dd, .jumbotron dd, .card.card-info dd, .white-text th, .front-page .hero th, .front-page .hero .jumbo th, .panel.well-info th, .panel.well-warning th, .panel.download th,
+  .well.well-warning dd, .download dd, .jumbotron dd, .card.card-info dd, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn dd, .white-text th, .front-page .hero th, .front-page .hero .jumbo th, .panel.well-info th, .panel.well-warning th, .panel.download th,
   .well.well-info th, .jumbotron .well th, .jumbotron .download th, .well-info.download th,
-  .well.well-warning th, .download th, .jumbotron th, .card.card-info th, .white-text td, .front-page .hero td, .front-page .hero .jumbo td, .panel.well-info td, .panel.well-warning td, .panel.download td,
+  .well.well-warning th, .download th, .jumbotron th, .card.card-info th, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn th, .white-text td, .front-page .hero td, .front-page .hero .jumbo td, .panel.well-info td, .panel.well-warning td, .panel.download td,
   .well.well-info td, .jumbotron .well td, .jumbotron .download td, .well-info.download td,
-  .well.well-warning td, .download td, .jumbotron td, .card.card-info td,
+  .well.well-warning td, .download td, .jumbotron td, .card.card-info td, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn td,
   .white-text .lead, .front-page .hero .lead, .panel.well-info .lead, .panel.well-warning .lead,
   .well.well-info .lead,
-  .well.well-warning .lead, .download .lead, .jumbotron .lead, .card.card-info .lead,
+  .well.well-warning .lead, .download .lead, .jumbotron .lead, .card.card-info .lead, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn .lead,
   .white-text blockquote, .front-page .hero blockquote, .front-page .hero .jumbo blockquote, .panel.well-info blockquote, .panel.well-warning blockquote, .panel.download blockquote,
   .well.well-info blockquote, .jumbotron .well blockquote, .jumbotron .download blockquote, .well-info.download blockquote,
-  .well.well-warning blockquote, .download blockquote, .jumbotron blockquote, .card.card-info blockquote {
+  .well.well-warning blockquote, .download blockquote, .jumbotron blockquote, .card.card-info blockquote, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn blockquote {
     color: inherit; }
   .white-text a, .front-page .hero a, .front-page .hero .jumbo a, .panel.well-info a, .panel.well-warning a, .panel.download a,
   .well.well-info a, .jumbotron .well a, .jumbotron .download a, .well-info.download a,
-  .well.well-warning a, .download a, .jumbotron a, .card.card-info a {
+  .well.well-warning a, .download a, .jumbotron a, .card.card-info a, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn a {
     text-decoration: underline;
     color: #fff; }
     .white-text a:focus, .front-page .hero a:focus, .panel.well-info a:focus, .panel.well-warning a:focus,
     .well.well-info a:focus,
-    .well.well-warning a:focus, .download a:focus, .jumbotron a:focus, .card.card-info a:focus {
+    .well.well-warning a:focus, .download a:focus, .jumbotron a:focus, .card.card-info a:focus, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn a:focus {
       color: #fff; }
     .white-text a:hover, .front-page .hero a:hover, .panel.well-info a:hover, .panel.well-warning a:hover,
     .well.well-info a:hover,
-    .well.well-warning a:hover, .download a:hover, .jumbotron a:hover, .card.card-info a:hover {
+    .well.well-warning a:hover, .download a:hover, .jumbotron a:hover, .card.card-info a:hover, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn a:hover {
       color: #fff; }
 
 .table.table-bordered thead th {
@@ -7922,6 +7924,20 @@ ul.dropdown-menu {
     opacity: .6 !important; }
   .close .fa {
     margin: 0; }
+
+.close-icon, .modal .modal-content .modal-header .close {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0;
+  color: transparent; }
+  .close-icon:before, .modal .modal-content .modal-header .close:before {
+    content: "";
+    color: #fff;
+    font-size: 1.7rem; }
 
 .panel,
 .well,
@@ -8606,11 +8622,11 @@ select.form-control[multiple] {
 .row-flex .card {
   width: 100%; }
 
-.flexbox-row {
+.flexbox-row, .modal .modal-content .modal-footer {
   display: flex;
   flex-direction: row; }
 
-.flexbox-col {
+.flexbox-col, .modal-page .modal-dialog .modal-content {
   display: flex;
   flex-direction: column; }
 
@@ -8627,6 +8643,105 @@ select.form-control[multiple] {
   margin-bottom: 1rem; }
   .download .fa {
     margin-right: 10px; }
+
+.modal .modal-content .modal-header {
+  position: relative;
+  background-color: #4d535a; }
+  .modal .modal-content .modal-header .modal-title {
+    color: #fff;
+    margin: 0; }
+  .modal .modal-content .modal-header .close {
+    position: absolute;
+    top: 15px;
+    right: 1rem;
+    z-index: 1071;
+    color: #fff;
+    margin: 0; }
+    @media (min-width: 544px) {
+      .modal .modal-content .modal-header .close:before {
+        font-size: 2rem; } }
+  @media (max-width: 543px) {
+    .modal .modal-content .modal-header {
+      padding-top: 9px;
+      padding-bottom: 9px; }
+      .modal .modal-content .modal-header .modal-title {
+        font-size: 1rem; }
+      .modal .modal-content .modal-header .close {
+        top: 8px; } }
+
+.modal .modal-content .modal-body {
+  padding: 1rem 1rem; }
+  .modal .modal-content .modal-body .dialog {
+    width: 100%;
+    min-height: 90px;
+    display: table; }
+    .modal .modal-content .modal-body .dialog .dialog-body {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+      .modal .modal-content .modal-body .dialog .dialog-body h1, .modal .modal-content .modal-body .dialog .dialog-body h2, .modal .modal-content .modal-body .dialog .dialog-body h3, .modal .modal-content .modal-body .dialog .dialog-body h4, .modal .modal-content .modal-body .dialog .dialog-body h5 {
+        font-size: 1rem;
+        margin: 0; }
+
+.modal .modal-content .modal-footer {
+  border-top: 1px #a5a5a8 solid;
+  padding: 0; }
+  .modal .modal-content .modal-footer .btn {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+    border: 0; }
+  .modal .modal-content .modal-footer .btn + .btn, .modal .modal-content .modal-footer .card.card-info .card-footer .btn + .btn {
+    margin: 0; }
+  .modal .modal-content .modal-footer::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.modal .modal-content .dropdown-menu {
+  z-index: 1080; }
+
+.modal-page {
+  height: 100vh;
+  min-height: 100%; }
+  .modal-page .modal-dialog {
+    position: relative;
+    height: 100vh;
+    min-height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0; }
+    @media (min-width: 992px) {
+      .modal-page .modal-dialog {
+        max-width: 960px !important; } }
+    @media (max-width: 1199px) {
+      .modal-page .modal-dialog {
+        max-width: 100% !important;
+        margin-left: 0 !important; } }
+    .modal-page .modal-dialog .modal-content {
+      height: 100vh;
+      min-height: 100%;
+      padding: 0;
+      overflow: hidden; }
+      @media (min-width: 768px) {
+        .modal-page .modal-dialog .modal-content .modal-header {
+          padding-left: 2rem;
+          padding-right: 2rem; } }
+      .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group {
+        position: absolute;
+        top: 10px !important;
+        left: 1rem !important; }
+      .modal-page .modal-dialog .modal-content .modal-body {
+        flex: 1; }
+        @media (min-width: 768px) {
+          .modal-page .modal-dialog .modal-content .modal-body {
+            padding: 2rem 2rem; } }
+
+.modal.fade:not(.in).modal-page .modal-dialog {
+  transform: translate3d(25%, 0, 0); }
+  .modal.fade:not(.in).modal-page .modal-dialog .project-header {
+    opacity: 0; }
 
 .black {
   background-color: #000; }
