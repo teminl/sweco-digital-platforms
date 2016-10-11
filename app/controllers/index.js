@@ -4,6 +4,7 @@ export default Ember.Controller.extend({
 
   actions: {
 
+    // Front-page
     frontPage: function() {
       $('.front-page').fadeOut(200);
       window.scrollTo(0,0);
@@ -20,6 +21,7 @@ export default Ember.Controller.extend({
       $('.navbar-south').addClass('in');
     },
 
+    // Modal
     openModal: function() {
       this.set('isModalVisible', true);
     },
@@ -28,8 +30,12 @@ export default Ember.Controller.extend({
       this.set('isModalVisible', false);
     },
 
-    popOver: function() {
+    // Popover
+    popover: function() {
       $('.popover-title').append('<button type="button" class="close"><i class="fa fa-times-circle"></i></button>');
+      $('.popover .close').click(function() {
+        $('.popover').popover('hide');
+      });
     }
 
   }

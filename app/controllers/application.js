@@ -18,6 +18,16 @@ export default Ember.Controller.extend({
       $('[data-toggle="popover"]').popover();
     });
 
+    // ProgressJS
+    $(function () {
+      $('.progressjs-example').click(function() {
+        progressJs().start().autoIncrease(1, 100);
+        setTimeout(function() {
+          progressJs().end();
+        }, 5000);
+      });
+    });
+
   }
 
 });

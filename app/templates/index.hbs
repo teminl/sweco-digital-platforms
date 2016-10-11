@@ -1068,6 +1068,7 @@
       </div>
 
       <div class="well">
+<!-- CARD START -->
         <h2 id="card">Card</h2>
         <hr/>
         <p>A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. Read more about <a href="http://v4-alpha.getbootstrap.com/components/card/" target="_blank">cards</a>.</p>
@@ -1075,7 +1076,7 @@
 <!-- ROW FLEX START -->
       <div class="row row-flex">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-<!-- CARD START -->
+<!-- CARD 1 START -->
           <div class="card">
             <div class="card-img-block">
               <img src="img/sweco-demo.jpg" alt="">
@@ -1089,10 +1090,10 @@
               <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
           </div>
-<!-- CARD STOP -->
+<!-- CARD 1 STOP -->
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-<!-- CARD START -->
+<!-- CARD 2 START -->
           <div class="card">
             <div class="card-img-block">
               <img src="img/sweco-demo.jpg" alt="">
@@ -1105,10 +1106,10 @@
               <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
           </div>
-<!-- CARD STOP -->
+<!-- CARD 2 STOP -->
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-<!-- CARD START -->
+<!-- CARD 3 START -->
           <div class="card card-info">
             <div class="card-img-block">
               <img src="img/sweco-demo.jpg" alt="">
@@ -1121,10 +1122,10 @@
               <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
           </div>
-<!-- CARD STOP -->
+<!-- CARD 3 STOP -->
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-<!-- CARD START -->
+<!-- CARD 4 START -->
           <div class="card card-info">
             <div class="card-img-block">
               <img src="img/sweco-demo.jpg" alt="">
@@ -1137,22 +1138,25 @@
               <a href="#" class="btn btn-secondary">Go somewhere<i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
           </div>
-<!-- CARD STOP -->
+<!-- CARD 4 STOP -->
         </div>
+<!-- CARD STOP -->
       </div>
 <!-- ROW FLEX STOP -->
 
-      <div class="row">
-        <div class="col-lg-4">
+      <div class="well">
+<!-- COMPONENTS START -->
+        <h2 id="components">Components</h2>
+        <hr/>
 
-          <div class="well">
+        <div class="row">
+          <div class="col-lg-4">
+
 <!-- MODAL START -->
-            <h2 id="modal">Modal</h2>
-            <hr/>
+            <h4 id="modal">Modals</h4>
+            <p>Read more about <a href="http://v4-alpha.getbootstrap.com/components/modal/" target="_blank">modals</a>.</p>
 
-            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="modal" data-target="#standardModal">
-              Launch standard modal
-            </button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="modal" data-target="#standardModal">Launch modal</button>
 <!-- MODAL STANDARD START -->
             <div class="modal fade" id="standardModal" tabindex="-1" role="dialog" aria-labelledby="standardModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
@@ -1181,9 +1185,7 @@
             </div>
 <!-- MODAL STANDARD STOP -->
 
-            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="modal" data-target="#pageModal">
-              Launch page modal
-            </button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="modal" data-target="#pageModal">Launch page modal</button>
 <!-- MODAL PAGE START -->
             <div class="modal modal-page fade" id="pageModal" tabindex="-1" role="dialog" aria-labelledby="pageModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
@@ -1212,34 +1214,44 @@
             </div>
 <!-- MODAL PAGE STOP -->
 <!-- MODAL STOP -->
+
+<!-- PROGRESS START -->
+            <h4 id="progress">Progress</h4>
+            <p>Read more about <a href="https://github.com/usablica/progress.js" target="_blank">Progress JS</a>.</p>
+
+            <button type="button" class="btn btn-info btn-block m-y-1 progressjs-example">Progress example</button>
+<!-- PROGRESS STOP -->
+
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="well">
+          <div class="col-lg-4">
+
 <!-- POPOVER START -->
-            <h2 id="popover">Popover</h2>
-            <hr/>
-            <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="top" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus" {{action 'popOver'}}>Popover on top</button>
-            <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="right" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus" {{action 'popOver'}}>Popover on right</button>
+            <h4 id="popover">Popovers</h4>
+            <p>Read more about <a href="http://v4-alpha.getbootstrap.com/components/popovers/" target="_blank">popovers</a>.</p>
+
+            <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="top" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on top</button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="right" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on right</button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="left" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on left</button>
             <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="Vivamus
-            sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus" {{action 'popOver'}}>Popover on bottom</button>
-            <button type="button" class="btn btn-info btn-block m-y-1" data-container="body" data-toggle="popover" data-placement="left" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus" {{action 'popOver'}}>Popover on left</button>
+            sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on bottom</button>
 <!-- POPOVER STOP -->
+
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="well">
+          <div class="col-lg-4">
+
 <!-- TOOLTIP START -->
-            <h2 id="tooltip">Tooltip</h2>
-            <hr/>
+            <h4 id="tooltip">Tooltips</h4>
+            <p>Read more about <a href="http://v4-alpha.getbootstrap.com/components/tooltips/" target="_blank">tooltips</a>.</p>
 
             <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
             <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
-            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
             <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+            <button type="button" class="btn btn-info btn-block m-y-1" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
 <!-- TOOLTIP STOP -->
+
           </div>
         </div>
+<!-- COMPONENTS START -->
       </div>
 
       <div class="well">

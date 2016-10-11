@@ -56,6 +56,13 @@ body.navbarSouth #content
   padding-bottom: $navbar-south-height;
 }
 
+// Modal open fix scrollbar jumps IE
+.ie body.modal-open .navbar-fixed-top,
+.ie body.modal-open .navbar-fixed-bottom
+{
+  margin-left: -16px !important;
+}
+
 // Remove IE clear and reveal on inputs
 ::-ms-clear
 {
@@ -1888,3 +1895,31 @@ select.form-control[multiple]
   }
 }
 
+// Progress JS
+.progressjs-navbar
+{
+  position: relative;
+  .progressjs-progress
+  {
+    position: absolute !important;
+    top: 0 !important;
+    z-index: $zindex-progressjs;
+  }
+  .progressjs-inner
+  {
+    color: $text-color;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-out;
+    background-color: $blue-dark;
+  }
+  .progressjs-end
+  {
+    transition: all 0.2s ease-out;
+    opacity: 0;
+  }
+  .progressjs-percent
+  {
+    display: none;
+  }
+}
