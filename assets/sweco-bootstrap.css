@@ -7260,6 +7260,10 @@ body.navbarNorth #content {
 body.navbarSouth #content {
   padding-bottom: 60px; }
 
+.ie body.modal-open .navbar-fixed-top,
+.ie body.modal-open .navbar-fixed-bottom {
+  margin-left: -16px !important; }
+
 ::-ms-clear {
   display: none; }
 
