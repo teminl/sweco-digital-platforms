@@ -6327,7 +6327,7 @@ button.close {
 
 .tooltip {
   position: absolute;
-  z-index: 1070;
+  z-index: 1020;
   display: block;
   font-family: "SwecoSans-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
@@ -6356,7 +6356,7 @@ button.close {
       left: 50%;
       margin-left: -5px;
       border-width: 5px 5px 0;
-      border-top-color: rgba(0, 0, 0, 0.8); }
+      border-top-color: rgba(0, 0, 0, 0.77); }
   .tooltip.tooltip-right, .tooltip.bs-tether-element-attached-left {
     padding: 0 5px;
     margin-left: 1px; }
@@ -6365,7 +6365,7 @@ button.close {
       left: 0;
       margin-top: -5px;
       border-width: 5px 5px 5px 0;
-      border-right-color: rgba(0, 0, 0, 0.8); }
+      border-right-color: rgba(0, 0, 0, 0.77); }
   .tooltip.tooltip-bottom, .tooltip.bs-tether-element-attached-top {
     padding: 5px 0;
     margin-top: 1px; }
@@ -6374,7 +6374,7 @@ button.close {
       left: 50%;
       margin-left: -5px;
       border-width: 0 5px 5px;
-      border-bottom-color: rgba(0, 0, 0, 0.8); }
+      border-bottom-color: rgba(0, 0, 0, 0.77); }
   .tooltip.tooltip-left, .tooltip.bs-tether-element-attached-right {
     padding: 0 5px;
     margin-left: -1px; }
@@ -6383,14 +6383,14 @@ button.close {
       right: 0;
       margin-top: -5px;
       border-width: 5px 0 5px 5px;
-      border-left-color: rgba(0, 0, 0, 0.8); }
+      border-left-color: rgba(0, 0, 0, 0.77); }
 
 .tooltip-inner {
   max-width: 200px;
   padding: 5px 10px;
   color: #fff;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.77); }
 
 .tooltip-arrow {
   position: absolute;
@@ -6403,7 +6403,7 @@ button.close {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1060;
+  z-index: 1020;
   display: block;
   max-width: 280px;
   padding: 0;
@@ -7959,7 +7959,7 @@ ul.dropdown-menu {
   .popover .close {
     position: absolute;
     top: 8px;
-    z-index: 1061;
+    z-index: 1021;
     right: 1rem; }
 
 .tooltip {
@@ -8741,6 +8741,24 @@ select.form-control[multiple] {
   transform: translate3d(25%, 0, 0); }
   .modal.fade:not(.in).modal-page .modal-dialog .project-header {
     opacity: 0; }
+
+.progressjs-navbar {
+  position: relative; }
+  .progressjs-navbar .progressjs-progress {
+    position: absolute !important;
+    top: 0 !important;
+    z-index: 3000; }
+  .progressjs-navbar .progressjs-inner {
+    color: #3a3a3a;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-out;
+    background-color: #7e8dab; }
+  .progressjs-navbar .progressjs-end {
+    transition: all 0.2s ease-out;
+    opacity: 0; }
+  .progressjs-navbar .progressjs-percent {
+    display: none; }
 
 .black {
   background-color: #000; }
