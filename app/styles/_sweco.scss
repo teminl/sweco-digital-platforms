@@ -173,37 +173,37 @@ dt, th
 h1,
 .h1
 {
-  line-height: $line-height-h1 !important;
+  line-height: $line-height-h1;
 }
 
 h2,
 .h2
 {
-  line-height: $line-height-h2 !important;
+  line-height: $line-height-h2;
 }
 
 h3,
 .h3
 {
-  line-height: $line-height-h3 !important;
+  line-height: $line-height-h3;
 }
 
 h4,
 .h4
 {
-  line-height: $line-height-h4 !important;
+  line-height: $line-height-h4;
 }
 
 h5,
 .h5
 {
-  line-height: $line-height-h5 !important;
+  line-height: $line-height-h5;
 }
 
 h6,
 .h6
 {
-  line-height: $line-height-h6 !important;
+  line-height: $line-height-h6;
 }
 
 // Typography size class
@@ -239,22 +239,22 @@ h6,
 
 .display-1
 {
-  line-height: $line-height-display-1 !important;
+  line-height: $line-height-display-1;
 }
 
 .display-2
 {
-  line-height: $line-height-display-2 !important;
+  line-height: $line-height-display-2;
 }
 
 .display-3
 {
-  line-height: $line-height-display-3 !important;
+  line-height: $line-height-display-3;
 }
 
 .display-4
 {
-  line-height: $line-height-display-4 !important;
+  line-height: $line-height-display-4;
 }
 
 .page-header
@@ -293,12 +293,12 @@ pre
 {
   background-color: $code-bg;
   padding: $code-padding-y $code-padding-x;
-  margin: $spacer-y 0 !important;
+  margin: $spacer-y 0;
 }
 
 samp
 {
-  font-size: $font-size-sm !important;
+  font-size: $font-size-sm;
 }
 
 // White text
@@ -1307,6 +1307,7 @@ select.form-control[multiple]
     .nav-link,
     a
     {
+      position: relative;
       padding: $nav-link-padding;
       border-right: 1px solid $nav-border-color;
       &.disabled,
@@ -1324,7 +1325,8 @@ select.form-control[multiple]
     .nav-link.active,
     .open a
     {
-      border-right: 1px solid $nav-border-color !important;
+      border-right: 1px solid $nav-border-color;
+      padding-left: ($spacer-x * 2);
       @include plain-hover-focus
       {
         color: $nav-pills-active-link-color;
@@ -1333,6 +1335,9 @@ select.form-control[multiple]
       }
       &:before
       {
+        position: absolute;
+        top: 10px;
+        left: $spacer-x;
         display: inline-block;
         font-family: FontAwesome;
         color: inherit;
@@ -1490,6 +1495,7 @@ select.form-control[multiple]
     text-align: inherit;
     text-transform: uppercase;
     transition: $transition;
+    padding-right: ($spacer-x * 2);
     @include hover-focus
     {
       color: $list-group-link-hover-color;
@@ -1521,6 +1527,7 @@ select.form-control[multiple]
     }
     &.list-group-item-action
     {
+      padding-right: $spacer-x;
       &:after
       {
         display: none;
@@ -1748,15 +1755,16 @@ select.form-control[multiple]
     }
     .modal-footer
     {
+      width: 100%;
       border-top: 1px $modal-footer-border-color solid;
       padding: 0;
       @extend .flexbox-row;
+      @include clearfix;
       .btn
       {
-        @extend .btn-block;
-        display: flex;
         flex: 1;
         justify-content: center;
+        text-align: center;
         margin: 0;
         border: 0;
       }
@@ -1764,7 +1772,6 @@ select.form-control[multiple]
       {
         margin: 0;
       }
-      @include clearfix;
     }
     .dropdown-menu
     {
