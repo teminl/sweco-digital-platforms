@@ -8755,7 +8755,7 @@ select.form-control[multiple] {
   .progressjs-navbar .progressjs-inner {
     color: #3a3a3a;
     width: 0;
-    height: 2px;
+    height: 3px;
     transition: all 0.3s ease-out;
     background-color: #7e8dab; }
   .progressjs-navbar .progressjs-end {
