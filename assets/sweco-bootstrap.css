@@ -8685,11 +8685,15 @@ select.form-control[multiple] {
 
 .modal .modal-content .modal-footer {
   border-top: 1px #a5a5a8 solid;
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
+  .modal .modal-content .modal-footer .btn-group {
+    width: 100%; }
   .modal .modal-content .modal-footer .btn {
     display: flex;
     flex: 1;
     justify-content: center;
+    text-align: center;
     margin: 0;
     border: 0; }
   .modal .modal-content .modal-footer .btn + .btn, .modal .modal-content .modal-footer .card.card-info .card-footer .btn + .btn {
