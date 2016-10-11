@@ -4311,20 +4311,18 @@ fieldset[disabled] a.btn {
   padding: 0.44rem 0.5rem;
   font-size: 0.8rem; }
 
-.btn-block, .card .card-footer .btn, .card.card-info .card-footer .btn, .modal .modal-content .modal-footer .btn {
+.btn-block, .card .card-footer .btn, .card.card-info .card-footer .btn {
   display: block;
   width: 100%; }
 
-.btn-block + .btn-block, .card .card-footer .btn + .btn-block, .modal .modal-content .modal-footer .btn + .btn-block, .card .card-footer .btn-block + .btn, .card .card-footer .btn + .btn, .modal .modal-content .modal-footer .btn-block + .btn, .modal .modal-content .modal-footer .btn + .btn {
+.btn-block + .btn-block, .card .card-footer .btn + .btn-block, .card .card-footer .btn-block + .btn, .card .card-footer .btn + .btn {
   margin-top: 0.5rem; }
 
-input[type="submit"].btn-block, .card .card-footer input[type="submit"].btn, .modal .modal-content .modal-footer input[type="submit"].btn,
+input[type="submit"].btn-block, .card .card-footer input[type="submit"].btn,
 input[type="reset"].btn-block,
 .card .card-footer input[type="reset"].btn,
-.modal .modal-content .modal-footer input[type="reset"].btn,
 input[type="button"].btn-block,
-.card .card-footer input[type="button"].btn,
-.modal .modal-content .modal-footer input[type="button"].btn {
+.card .card-footer input[type="button"].btn {
   width: 100%; }
 
 .fade {
@@ -8684,25 +8682,22 @@ select.form-control[multiple] {
         margin: 0; }
 
 .modal .modal-content .modal-footer {
+  width: 100%;
   border-top: 1px #a5a5a8 solid;
-  padding: 0;
-  text-align: center; }
-  .modal .modal-content .modal-footer .btn-group {
-    width: 100%; }
+  padding: 0; }
   .modal .modal-content .modal-footer .btn {
-    display: flex;
     flex: 1;
-    align-items: center;
     justify-content: center;
     text-align: center;
     margin: 0;
     border: 0; }
   .modal .modal-content .modal-footer .btn + .btn, .modal .modal-content .modal-footer .card.card-info .card-footer .btn + .btn {
     margin: 0; }
-  .modal .modal-content .modal-footer::after {
-    content: "";
-    display: table;
-    clear: both; }
+
+.modal .modal-content::after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .modal .modal-content .dropdown-menu {
   z-index: 1080; }
