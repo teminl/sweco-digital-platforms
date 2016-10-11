@@ -8692,6 +8692,7 @@ select.form-control[multiple] {
   .modal .modal-content .modal-footer .btn {
     display: flex;
     flex: 1;
+    align-items: center;
     justify-content: center;
     text-align: center;
     margin: 0;
