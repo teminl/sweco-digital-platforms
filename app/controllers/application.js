@@ -11,12 +11,12 @@ export default Ember.Controller.extend({
     // Tooltip
     $(function () {
       $('[data-toggle="tooltip"]').tooltip();
-    })
+    });
 
     // Popover
     $(function () {
       $('[data-toggle="popover"]').popover();
-    })
+    });
 
   }
 
