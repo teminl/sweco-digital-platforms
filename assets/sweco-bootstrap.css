@@ -7229,9 +7229,8 @@ a.text-danger:hover {
 
 html,
 body {
-  min-height: 100%;
-  height: auto;
-  height: 100%; }
+  height: 100%;
+  min-height: 100%; }
 
 .body-fixed, .body-front-page {
   overflow: hidden; }
@@ -7262,7 +7261,7 @@ body.navbarSouth #content {
 
 .ie body.modal-open .navbar-fixed-top,
 .ie body.modal-open .navbar-fixed-bottom {
-  margin-left: -16px !important; }
+  margin-left: -17px !important; }
 
 ::-ms-clear {
   display: none; }
