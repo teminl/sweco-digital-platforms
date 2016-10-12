@@ -488,7 +488,7 @@ h1, h2, h3, h4, h5, h6,
     .btn-search-reset
     {
       position: absolute;
-      top: 10px;
+      top: 9px;
       right: 60px;
       z-index: ($zindex-navbar-fixed + 5);
     }
@@ -548,6 +548,10 @@ h1, h2, h3, h4, h5, h6,
       @include media-breakpoint-down(sm)
       {
         font-size: $font-size-h4;
+      }
+      @include media-breakpoint-down(xs)
+      {
+        font-size: $font-size-h5;
       }
     }
     .jumbo
@@ -884,6 +888,11 @@ ul.dropdown-menu
     top: 8px;
     z-index: ($zindex-popover + 1);
     right: $spacer-x;
+    color: $white;
+    &:before
+    {
+      color: $white;
+    }
   }
 }
 
@@ -1755,8 +1764,12 @@ select.form-control[multiple]
         top: 15px;
         right: $spacer-x;
         z-index: ($zindex-modal + 1);
-        color: $white;
         margin: 0;
+        color: $white;
+        &:before
+        {
+          color: $white;
+        }
         @include media-breakpoint-up(sm)
         {
           &:before
