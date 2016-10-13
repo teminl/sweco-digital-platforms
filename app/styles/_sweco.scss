@@ -577,6 +577,61 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+// Header image
+header.header-image
+{
+  height: 40vw;
+  min-height: 280px;
+  max-height: 480px;
+  overflow: hidden;
+  margin-bottom: ($spacer-y * 2);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  .navbarNorth &
+  {
+    margin-top: -$navbar-north-height;
+    .content-b
+    {
+      padding-top: $navbar-north-height;
+    }
+    @include media-breakpoint-down(sm)
+    {
+      margin-top: -(($navbar-north-height * 2) - 10px);
+      .content-b
+      {
+        padding-top: (($navbar-north-height * 2) - 10px);
+      }
+    }
+  }
+  > .content-a
+  {
+    display: table;
+    width: 100%;
+    height: inherit;
+    min-height: inherit;
+    max-height: inherit;
+    background-image: $overlay-pattern;
+    background-repeat: repeat;
+    > .content-b
+    {
+      display: table-cell;
+      position: relative;
+      vertical-align: middle;
+      text-align: left;
+      @extend .white-text;
+      @include media-breakpoint-down(sm)
+      {
+        h1
+        {
+          font-size: $font-size-h4;
+          line-height: $line-height-h4;
+        }
+      }
+    }
+  }
+}
+
 // Button
 .btn
 {
