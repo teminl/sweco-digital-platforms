@@ -2450,7 +2450,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "SwecoSans-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SwecoSans-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.35;
   color: #3a3a3a;
@@ -2619,7 +2619,7 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "SwecoSans-Medium";
+  font-family: "SwecoSans-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.35;
   color: #3a3a3a; }
@@ -2699,12 +2699,12 @@ mark,
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   font-size: 1.35rem;
-  border-left: 0.25rem solid #e2e0da; }
+  border-left: 0 solid #e2e0da; }
 
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: #bfbfc1; }
+  color: #a5a5a8; }
   .blockquote-footer::before {
     content: "\2014 \00A0"; }
 
@@ -2712,7 +2712,7 @@ mark,
   padding-right: 1rem;
   padding-left: 0;
   text-align: right;
-  border-right: 0.25rem solid #e2e0da;
+  border-right: 0 solid #e2e0da;
   border-left: 0; }
 
 .blockquote-reverse .blockquote-footer::before {
@@ -6329,7 +6329,7 @@ button.close {
   position: absolute;
   z-index: 1020;
   display: block;
-  font-family: "SwecoSans-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SwecoSans-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6407,7 +6407,7 @@ button.close {
   display: block;
   max-width: 280px;
   padding: 0;
-  font-family: "SwecoSans-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "SwecoSans-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7244,33 +7244,27 @@ body {
 .body-fixed, .body-front-page {
   overflow: hidden; }
 
-#page {
-  position: relative;
-  min-height: 100%;
-  height: 100%; }
-
-@media (min-width: 544px) {
-  .container,
-  .container-fluid {
-    padding-left: 30px !important;
-    padding-right: 30px !important; } }
-
-#content {
-  position: relative;
-  min-height: 100%; }
-
-body.navbarNorth #content {
+body.navbarNorth {
   padding-top: 60px; }
   @media (max-width: 767px) {
-    body.navbarNorth #content {
+    body.navbarNorth {
       padding-top: 110px; } }
 
-body.navbarSouth #content {
+body.navbarSouth {
   padding-bottom: 60px; }
 
 .ie body.modal-open .navbar-fixed-top,
 .ie body.modal-open .navbar-fixed-bottom {
   margin-left: -17px !important; }
+
+.container,
+.container-fluid {
+  position: relative; }
+  @media (min-width: 544px) {
+    .container,
+    .container-fluid {
+      padding-left: 30px !important;
+      padding-right: 30px !important; } }
 
 ::-ms-clear {
   display: none; }
@@ -7347,7 +7341,7 @@ label,
 strong, b, dt, th,
 .btn,
 .card.card-info .card-footer .btn, .nav, .pagination, .tag, .breadcrumb, .list-group {
-  font-family: "SwecoSans-Medium";
+  font-family: "SwecoSans-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   font-weight: normal !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -7433,14 +7427,34 @@ h6,
 
 .lead,
 blockquote {
-  font-family: "SwecoSans-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem !important; }
+  font-family: "SwecoSans-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1rem !important;
+  line-height: 1.35 !important;
+  border: 0 !important; }
   @media (min-width: 544px) {
     .lead,
     blockquote {
       font-size: 1.35rem !important;
+      line-height: 1.25 !important;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; } }
+  .lead .blockquote-footer,
+  blockquote .blockquote-footer {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem; }
+    .lead .blockquote-footer:before, .lead .blockquote-footer:after,
+    blockquote .blockquote-footer:before,
+    blockquote .blockquote-footer:after {
+      content: "" !important; }
+
+address,
+cite {
+  font-style: normal; }
+
+cite {
+  text-transform: uppercase; }
+  cite:before {
+    content: "\002D \00A0"; }
 
 .text-muted {
   font-size: inherit; }
@@ -8021,7 +8035,7 @@ ul.dropdown-menu {
     background-color: #b586a4; }
 
 fieldset {
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   margin-bottom: 2rem;
   background-color: #eee; }
   fieldset::after {
@@ -9064,8 +9078,8 @@ select.form-control[multiple] {
   font-size: 0.8rem;
   height: 1.35rem;
   vertical-align: middle;
-  border-top: 1px solid #a5a5a8;
-  border-bottom: 1px solid #a5a5a8; }
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
 
 .colors div.row + div.row {
   margin-top: 1rem; }
