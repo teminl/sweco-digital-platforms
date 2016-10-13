@@ -13,34 +13,8 @@ body
   overflow: hidden;
 }
 
-// Page
-#page
-{
-  position: relative;
-  min-height: 100%;
-  height: 100%;
-}
-
-// Container
-.container,
-.container-fluid
-{
-  @include media-breakpoint-up(sm)
-  {
-    padding-left: $grid-gutter-width !important;
-    padding-right: $grid-gutter-width !important;
-  }
-}
-
-// Content
-#content
-{
-  position: relative;
-  min-height: 100%;
-}
-
 // If .navbar-north add .navbarNorth class to body
-body.navbarNorth #content
+body.navbarNorth
 {
   padding-top: $navbar-north-height;
   @include media-breakpoint-down(sm)
@@ -50,7 +24,7 @@ body.navbarNorth #content
 }
 
 // If .navbar-south add .navbarSouth class to body
-body.navbarSouth #content
+body.navbarSouth
 {
   padding-bottom: $navbar-south-height;
 }
@@ -62,6 +36,18 @@ body.navbarSouth #content
   .navbar-fixed-bottom
   {
     margin-left: -17px !important;
+  }
+}
+
+// Container
+.container,
+.container-fluid
+{
+  position: relative;
+  @include media-breakpoint-up(sm)
+  {
+    padding-left: $grid-gutter-width !important;
+    padding-right: $grid-gutter-width !important;
   }
 }
 
@@ -277,12 +263,38 @@ blockquote
   font-family: $font-family-base;
   font-size: $font-size-base !important;
   line-height: $line-height-base !important;
+  border: 0 !important;
   @include media-breakpoint-up(sm)
   {
     font-size: $font-size-lg !important;
     line-height: $lead-line-height !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .blockquote-footer
+  {
+    margin-left: ($spacer-x / 2);
+    margin-right: ($spacer-x / 2);
+    &:before,
+    &:after
+    {
+      content: "" !important;
+    }
+  }
+}
+
+address,
+cite
+{
+  font-style: normal;
+}
+
+cite
+{
+  text-transform: uppercase;
+  &:before
+  {
+    content: "\002D \00A0";
   }
 }
 
@@ -943,7 +955,7 @@ ul.dropdown-menu
 fieldset
 {
   @include clearfix;
-  padding: $spacer-y $spacer-x;
+  padding: $spacer-y ($spacer-x * 2);
   margin-bottom: ($spacer-y * 2);
   background-color: $fieldset-bg;
 }

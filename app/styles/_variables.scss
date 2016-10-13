@@ -228,10 +228,10 @@ $hr-border-color:         $border-color;
 $hr-border-width:         $border-width;
 
 // Blockquote
-$blockquote-small-color:  $gray-light;
+$blockquote-small-color:  $text-muted;
 $blockquote-font-size:    $font-size-lg;
 $blockquote-border-color: $light-gray;
-$blockquote-border-width: .25rem;
+$blockquote-border-width: 0;
 
 // Content
 $mark-padding:            .2em;
