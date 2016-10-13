@@ -32,7 +32,6 @@ $spacers: (
     y: ($spacer-y * 3)
   )
 );
-$border-width: 1px;
 
 // White
 $white:                 #fff;
@@ -101,6 +100,10 @@ $red:                   #c03;
 
 // Green, validation and states
 $green:                 #093;
+
+// Border
+$border-color:          $gray;
+$border-width:          1px;
 
 // Colors for use across Bootstrap
 $brand-primary:         $dark-gray;
@@ -218,9 +221,6 @@ $abbr-border-color:       $gray;
 // Highlight & shadows
 $box-shadow-size:         15px;
 $box-shadow:              rgba(0,0,0,.3);
-
-// Border
-$border-color:            $gray; // rgba(0,0,0,.1)
 
 // Hr
 $hr-border-color:         $border-color;

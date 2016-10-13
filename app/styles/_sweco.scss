@@ -1607,10 +1607,10 @@ select.form-control[multiple]
 // Card
 .card
 {
-  display: flex !important;
-  flex-direction: column !important;
-  border: 0 !important;
-  margin-bottom: ($spacer-y * 2) !important;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  margin-bottom: ($spacer-y * 2);
   img
   {
     object-fit: cover;
