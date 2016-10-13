@@ -276,9 +276,11 @@ blockquote
 {
   font-family: $font-family-base;
   font-size: $font-size-base !important;
+  line-height: $line-height-base !important;
   @include media-breakpoint-up(sm)
   {
     font-size: $font-size-lg !important;
+    line-height: $lead-line-height !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

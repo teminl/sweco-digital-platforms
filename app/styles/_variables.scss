@@ -151,7 +151,7 @@ $grid-gutter-width:     30px;
 $font-family-regular:     "SwecoSans-Regular";
 $font-family-medium:      "SwecoSans-Medium";
 $font-family-heavy:       "SwecoSans-Bold";
-$font-family-sans-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-sans-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 $font-family-base:        $font-family-regular, $font-family-sans-serif;
 
 // Font-size for scale all typography
@@ -191,7 +191,7 @@ $line-height-display-4:   1.37;
 
 // Headings
 $headings-margin-bottom:  ($spacer / 2);
-$headings-font-family:    $font-family-medium;
+$headings-font-family:    $font-family-medium, $font-family-sans-serif;
 $headings-font-weight:    normal;
 $headings-color:          $black-light;
 $headings-line-height:    1.35;
@@ -205,6 +205,7 @@ $line-height-h6:          1.25;
 
 // Lead
 $lead-font-size:          1.25rem;
+$lead-line-height:        1.25;
 $lead-font-weight:        normal;
 
 // Small
