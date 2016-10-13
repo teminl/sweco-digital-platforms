@@ -8584,10 +8584,10 @@ select.form-control[multiple] {
       color: #a5a5a8; }
 
 .card {
-  display: flex !important;
-  flex-direction: column !important;
-  border: 0 !important;
-  margin-bottom: 2rem !important; }
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  margin-bottom: 2rem; }
   .card img {
     object-fit: cover; }
   .card .card-img-block {
