@@ -680,7 +680,7 @@ h1, h2, h3, h4, h5, h6,
 // Dropdowns
 .dropdown-menu
 {
-  box-shadow: $dropdown-box-shadow !important;
+  box-shadow: $dropdown-box-shadow;
   &:before,
   &:after
   {
@@ -709,24 +709,24 @@ h1, h2, h3, h4, h5, h6,
   }
   .dropdown-item
   {
-    padding: $dropdown-item-padding-y $dropdown-item-padding-x !important;
+    padding: $dropdown-item-padding-y $dropdown-item-padding-x;
     white-space: nowrap;
     &.active
     {
       &:hover
       {
-        background-color: $dropdown-link-active-hover-bg !important;
+        background-color: $dropdown-link-active-hover-bg;
       }
     }
   }
   .dropdown-divider
   {
-    margin: 0 !important;
+    margin: 0;
   }
   > div
   {
     @extend .inner-y;
-    max-height: $dropdown-max-height !important;
+    max-height: $dropdown-max-height;
   }
 }
 
@@ -941,9 +941,9 @@ ul.dropdown-menu
 fieldset
 {
   @include clearfix;
-  padding: $spacer-y $spacer-x !important;
-  margin-bottom: $spacer-y !important;
-  background-color: $fieldset-bg !important;
+  padding: $spacer-y $spacer-x;
+  margin-bottom: ($spacer-y * 2);
+  background-color: $fieldset-bg;
 }
 
 .col-form-label
@@ -1552,6 +1552,8 @@ select.form-control[multiple]
     text-transform: uppercase;
     transition: $transition;
     padding-right: ($spacer-x * 2);
+    border-left: 0;
+    border-right: 0;
     @include hover-focus
     {
       color: $list-group-link-hover-color;
@@ -1593,6 +1595,11 @@ select.form-control[multiple]
     {
       font-family: $font-family-regular;
       text-transform: none;
+    }
+    &.disabled,
+    &[disabled]
+    {
+      color: $list-group-disabled-color;
     }
   }
 }
