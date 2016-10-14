@@ -7765,7 +7765,6 @@ h1 > .fa, h2 > .fa, h3 > .fa, h4 > .fa, h5 > .fa, h6 > .fa,
   min-width: 100%;
   height: 100vh;
   display: table;
-  background-image: url("../img/sweco-front.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -7776,7 +7775,7 @@ h1 > .fa, h2 > .fa, h3 > .fa, h4 > .fa, h5 > .fa, h6 > .fa,
     background-repeat: repeat;
     display: table-cell;
     vertical-align: middle;
-    text-align: center; }
+    text-align: left; }
     @media (max-width: 1199px) {
       .front-page .hero h1 {
         font-size: 1.7rem; } }
