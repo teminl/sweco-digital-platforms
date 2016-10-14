@@ -1,16 +1,27 @@
 <img src="https://sweco.github.io/sweco-digital-guidelines/img/logotype-black.svg" width="180px" height="90px" style="margin-left: -30px;" alt="">
 
-# Sweco Digital Guidelines
+# Sweco visual identity manual - digital platforms
 
-Containing the Sweco Digital Guidelines with typography, colors, application icons and logotype svg:s.
+The brand's visual identity is an important tool for creating differentiation and consistency. The visual identity manual regulates how we use Sweco's logotype, typography and other visual building blocks. Sweco's visual identity manual for digital platforms must be followed in all digital platforms connected to the Sweco brand. Not all platforms allow a design change in line with all the guidelines. If there are limitations prioritize according to the following order:
+
+1. The Sweco logotype
+1. Sweco colors
+1. Sweco typography
+
+The final design of digital platforms for Sweco group has to be approved by the group Communication department. Digital platforms for local markets must be approved by the country Communication department.
 
 ### Example page
 
-[Sweco Digital Guidelines example page](http://sweco.github.io/sweco-digital-guidelines/)
+[Sweco visual identity manual - digital platforms](http://sweco.github.io/sweco-digital-platforms/)
 
-## Sweco digital guidelines
+## Sweco visual identity manual - digital platforms
 
-Sweco digital guidelines is built on [Bootstrap 4](http://v4-alpha.getbootstrap.com/) the world’s most popular framework for building responsive, mobile-first sites and applications. Sweco digital guidelines contains layout options for structuring a Sweco application with [Bootstrap 4](http://v4-alpha.getbootstrap.com/), including global styles, required scaffolding, grid system. Containing styles for displaying content and HTML 5 elements, including normalization, typography, tables, and more. Over a dozen components built to provide buttons, dropdowns, input groups, navigation and much more.
+The guidelines contain layout options for structuring a Sweco application with [Bootstrap 4](http://v4-alpha.getbootstrap.com/), including global styles, required scaffolding and grid system. It also covers styles for displaying content and HTML 5 elements, including normalization, typography, tables and more. Over a dozen components are provided to build buttons, dropdowns, input groups, navigation and much more.
+
+Sweco's visual guidelines for digital platforms are provided in two forms, as precompiled code and as source code. Download precompiled code to quickly add Sweco's visual identity to your project. Download source code, clone or fork for more advanced usage. To be sure to have your pages set up with the latest design and development standards use the starter template.
+
+### Sweco's digital platforms without Bootstrap
+You can use Sweco's digital platforms without Bootstrap HTML, classes and scripts. We use a collection of CSS to provide an elegant, consistent, and simple baseline to build upon. [Read more about Reboot](http://v4-alpha.getbootstrap.com/content/reboot/#content).
 
 ### What's included
 
@@ -19,10 +30,8 @@ Within the download you'll find the following directories and files, logically g
 ```
 dist/
 ├── css/
-│   ├── sweco-bootstrap.css
 │   └── sweco-bootstrap.min.css
 ├── scripts/
-│   ├── sweco-bootstrap.js
 │   └── sweco-bootstrap.min.js
 ├── fonts/
 │   ├── SwecoSans-Regular.*
@@ -34,11 +43,10 @@ dist/
     ├── favicon-*.png
     ├── mstile-*.png
     ├── logotype.svg
-    ├── logotype-black.svg
-    └── sweco-front.png
+    └── logotype-black.svg
 ```
 
-We provide compiled CSS and JS (`sweco-bootstrap.*`), as well as compiled and minified CSS and JS (`sweco-bootstrap.min.*`).
+We provide precompiled CSS and JS (`sweco-bootstrap.*`).
 
 ### Frameworks and dependencies
 
@@ -52,11 +60,11 @@ The sweco-bootstrap.js includes a handful of JavaScript to help bring some of ou
 * [Progress.js](http://usablica.github.io/progress.js/)
 * [Tether](http://tether.io/)
 
-Dependency versions see: [bower.json](https://github.com/sweco/sweco-digital-guidelines/blob/master/bower.json)
+Dependency versions see: [bower.json](https://github.com/sweco/sweco-digital-platforms/blob/master/bower.json)
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [existing issues](https://github.com/sweco/6613-sweco-bootstrap/issues) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/sweco/6613-sweco-bootstrap/new).
+Have a bug or a feature request? Please first read the [existing issues](https://github.com/sweco/sweco-digital-platforms/issues) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/sweco/sweco-digital-platforms/new).
 
 ## Prerequisites
 
@@ -70,7 +78,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-1. `git clone https://github.com/sweco/6613-sweco-bootstrap.git` this repository
+1. `git clone https://github.com/sweco/sweco-digital-platforms.git` this repository
 1. Change into the new directory
 1. `npm install`
 1. `bower install`
