@@ -20,7 +20,7 @@ module.exports = function(environment) {
   };
 
   if (environment === 'gh-pages') {
-    ENV.rootURL = '/sweco-digital-guidelines/';
+    ENV.rootURL = '/sweco-digital-platforms/';
   }
 
   if (environment === 'development') {
