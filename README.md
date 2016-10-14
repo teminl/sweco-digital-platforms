@@ -25,7 +25,7 @@ You can use Sweco's digital platforms without Bootstrap HTML, classes and script
 
 ### What's included
 
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+Within the download you'll find the following directories and files, logically grouping common assets precompiled and minified. You'll see something like this:
 
 ```
   dist/
@@ -46,9 +46,6 @@ Within the download you'll find the following directories and files, logically g
   │   └── logotype-black.svg
   └── starter-template.html
 ```
-
-We provide precompiled CSS and JS (`sweco-bootstrap.*`).
-
 ### Frameworks and dependencies
 
 The sweco-bootstrap.js includes a handful of JavaScript to help bring some of our components to life.
