@@ -28,22 +28,23 @@ You can use Sweco's digital platforms without Bootstrap HTML, classes and script
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
 ```
-dist/
-├── css/
-│   └── sweco-bootstrap.min.css
-├── scripts/
-│   └── sweco-bootstrap.min.js
-├── fonts/
-│   ├── SwecoSans-Regular.*
-│   ├── SwecoSans-Medium.*
-│   ├── SwecoSans-Bold.*
-│   ├── fontawesome-webfont.*
-└── img/
-    ├── apple-touch-icon.png
-    ├── favicon-*.png
-    ├── mstile-*.png
-    ├── logotype.svg
-    └── logotype-black.svg
+  dist/
+  ├── css/
+  │   └── sweco-bootstrap.min.css
+  ├── scripts/
+  │   └── sweco-bootstrap.min.js
+  ├── fonts/
+  │   ├── SwecoSans-Regular.*
+  │   ├── SwecoSans-Medium.*
+  │   ├── SwecoSans-Bold.*
+  │   ├── fontawesome-webfont.*
+  ├── img/
+  │   ├── apple-touch-icon.png
+  │   ├── favicon-*.png
+  │   ├── mstile-*.png
+  │   ├── logotype.svg
+  │   └── logotype-black.svg
+  └── starter-template.html
 ```
 
 We provide precompiled CSS and JS (`sweco-bootstrap.*`).
