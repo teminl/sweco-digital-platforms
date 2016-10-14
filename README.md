@@ -10,11 +10,7 @@ The brand's visual identity is an important tool for creating differentiation an
 
 The final design of digital platforms for Sweco group has to be approved by the group Communication department. Digital platforms for local markets must be approved by the country Communication department.
 
-### Example page
-
-[Sweco visual identity manual - digital platforms](http://sweco.github.io/sweco-digital-platforms/)
-
-## Sweco visual identity manual - digital platforms
+### The guidelines
 
 The guidelines contain layout options for structuring a Sweco application with [Bootstrap 4](http://v4-alpha.getbootstrap.com/), including global styles, required scaffolding and grid system. It also covers styles for displaying content and HTML 5 elements, including normalization, typography, tables and more. Over a dozen components are provided to build buttons, dropdowns, input groups, navigation and much more.
 
@@ -22,6 +18,10 @@ Sweco's visual guidelines for digital platforms are provided in two forms, as pr
 
 ### Sweco's digital platforms without Bootstrap
 You can use Sweco's digital platforms without Bootstrap HTML, classes and scripts. We use a collection of CSS to provide an elegant, consistent, and simple baseline to build upon. [Read more about Reboot](http://v4-alpha.getbootstrap.com/content/reboot/#content).
+
+### Example page
+
+[Sweco visual identity manual - digital platforms](http://sweco.github.io/sweco-digital-platforms/)
 
 ### What's included
 
