@@ -7770,12 +7770,15 @@ h1 > .fa, h2 > .fa, h3 > .fa, h4 > .fa, h5 > .fa, h6 > .fa,
   background-attachment: fixed;
   background-size: cover;
   background-color: #eee; }
+  .front-page.front-page-img-topLeft {
+    background-position: 0 0; }
   .front-page .hero {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIHZpZXdCb3g9IjAgMCAyIDIiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIG9wYWNpdHk6IDAuNDsKICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+Cjwvc3ZnPgo=");
     background-repeat: repeat;
     display: table-cell;
     vertical-align: middle;
-    text-align: left; }
+    text-align: left;
+    margin-top: -60px; }
     @media (max-width: 1199px) {
       .front-page .hero h1 {
         font-size: 1.7rem; } }
@@ -8077,6 +8080,10 @@ fieldset {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 543px) {
+    fieldset {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important; } }
 
 .col-form-label {
   padding-right: 0 !important; }
