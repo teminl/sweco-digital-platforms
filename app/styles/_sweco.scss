@@ -29,13 +29,18 @@ body.navbarSouth
   padding-bottom: $navbar-south-height;
 }
 
-// Modal open fix scrollbar jumps IE and if body height is higher than vh so scrollbar is visible
-.ie body.modal-open
+// IE fix for scroll on fixed-navbars on scroll and modal open
+.ie
 {
   .navbar-fixed-top,
   .navbar-fixed-bottom
   {
-    margin-left: -17px !important;
+    padding-left: calc(100vw - 100%) !important;
+    .container > .row
+    {
+      margin-left: - 25px !important;
+      margin-right: - 5px !important;
+    }
   }
 }
 
@@ -476,10 +481,11 @@ h1, h2, h3, h4, h5, h6,
   {
     display: none;
     position: relative;
-    margin: 10px 0;
+    margin-top: 10px;
     @include media-breakpoint-down(sm)
     {
       margin-top: 0;
+      margin-bottom: 10px;
     }
     .form-control
     {
@@ -544,6 +550,10 @@ h1, h2, h3, h4, h5, h6,
   background-attachment: fixed;
   background-size: cover;
   background-color: $body-bg;
+  &.front-page-img-topLeft
+  {
+    background-position: 0 0;
+  }
   .hero
   {
     background-image: $overlay-pattern;
