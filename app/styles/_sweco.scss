@@ -30,16 +30,21 @@ body.navbarSouth
 }
 
 // IE fix for scroll on fixed-navbars on scroll and modal open
-.ie
+.ie-9,
+.ie-10,
+.ie-11
 {
-  .navbar-fixed-top,
-  .navbar-fixed-bottom
+  @include media-breakpoint-up(sm)
   {
-    padding-left: calc(100vw - 100%) !important;
-    .container > .row
+    .navbar-fixed-top,
+    .navbar-fixed-bottom
     {
-      margin-left: - 25px !important;
-      margin-right: - 5px !important;
+      padding-left: calc(100vw - 100%) !important;
+      .container > .row
+      {
+        margin-left: - 25px !important;
+        margin-right: - 5px !important;
+      }
     }
   }
 }
