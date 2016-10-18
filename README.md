@@ -25,7 +25,7 @@ You can use Sweco's digital platforms without Bootstrap HTML, classes and script
 
 ### What's included
 
-Within the download you'll find the following directories and files, logically grouping common assets precompiled and minified. You'll see something like this:
+Within the precompiled download you'll find the following directories and files, logically grouping common assets precompiled and minified. You'll see something like this:
 
 ```
   dist/
