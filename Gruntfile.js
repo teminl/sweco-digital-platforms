@@ -12,6 +12,8 @@ module.exports = function(grunt) {
       img: { expand: true, cwd: 'dist', src: 'img/*', dest: 'dist.tmp' },
       script: { expand: true, cwd: 'dist/assets', src: 'vendor.js', dest: 'dist.tmp/scripts' },
       css: { expand: true, cwd: 'dist/assets', src: 'sweco-bootstrap.css', dest: 'dist.tmp/css' },
+      scriptApp: { expand: true, cwd: 'dist/scripts', src: 'application.js', dest: 'dist.tmp/scripts' },
+      cssApp: { expand: true, cwd: 'dist/css', src: 'application.css', dest: 'dist.tmp/css' },
       html: { expand: true, cwd: 'dist', src: 'starter-template.html', dest: 'dist.tmp' }
     },
 
