@@ -15,10 +15,7 @@ module.exports = function(defaults) {
 
     // Sass
     sassOptions: {
-      nodeSass: nodeSass,
-      includePaths: [
-        'bower_components/bootstrap/scss'
-      ]
+      nodeSass: nodeSass
     },
 
     // Autoprefixer https://github.com/postcss/autoprefixer
