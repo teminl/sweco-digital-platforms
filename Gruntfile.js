@@ -3,9 +3,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     shell: {
         buildEmber: 'ember build --environment=production',
-        makeTmpDir: 'mkdir sweco-bootstrap',
-        removeTmpDir: 'rm -rf sweco-bootstrap',
-        removeDevScss: 'rm -rf sweco-bootstrap/scss/_sweco-dev.scss'
+        makeDir: 'mkdir sweco-bootstrap',
+        removeDir: 'rm -rf sweco-bootstrap'
     },
 
     copy: {
@@ -36,6 +35,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-rename');
   grunt.loadNpmTasks('grunt-contrib-compress');
 
-  grunt.registerTask('default', ['shell:buildEmber', 'shell:removeTmpDir', 'shell:makeTmpDir', 'copy', 'rename', 'shell:removeDevScss', 'compress']);
+  grunt.registerTask('default', ['shell:buildEmber', 'shell:removeDir', 'shell:makeDir', 'copy', 'rename', 'compress']);
 
 };
