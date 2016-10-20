@@ -40,7 +40,8 @@ body.navbarSouth
     .navbar-fixed-bottom
     {
       padding-left: calc(100vw - 100%) !important;
-      .container > .row
+      .container > .row,
+      .progressjs-navbar
       {
         margin-left: - 25px !important;
         margin-right: - 5px !important;
@@ -1138,8 +1139,17 @@ textarea.form-control
 select.form-control:not([size]):not([multiple])
 {
   @extend .custom-select;
+  &.form-control
+  {
+    height: 2.67rem;
+  }
+  &.form-control-lg
+  {
+    height: 3.34rem;
+  }
   &.form-control-sm
   {
+    height: 2rem;
     padding-top: .36rem;
     padding-bottom: .36rem;
   }

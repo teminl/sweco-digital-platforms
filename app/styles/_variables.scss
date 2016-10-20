@@ -561,7 +561,7 @@ $dropdown-link-active-bg:        $component-active-bg;
 $dropdown-link-active-hover-bg:  darken($component-active-bg, 5%);
 
 $dropdown-link-disabled-color:   $disabled-color;
-$dropdown-item-padding-x:        10px;
+$dropdown-item-padding-x:        $spacer-x;
 $dropdown-item-padding-y:        5px;
 $dropdown-header-color:          $headings-color;
 
