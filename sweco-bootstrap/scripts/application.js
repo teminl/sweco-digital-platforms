@@ -1,0 +1,1 @@
+$(function(){$.browserDetection({addClasses:!0}),$('[data-toggle="tooltip"]').tooltip(),$('[data-toggle="popover"]').popover()});

@@ -3,29 +3,29 @@ module.exports = function(grunt) {
   grunt.initConfig({
     shell: {
         buildEmber: 'ember build --environment=production',
-        makeTmpDir: 'mkdir dist.tmp',
-        removeTmpDir: 'rm -rf dist.tmp'
+        makeTmpDir: 'mkdir sweco-bootstrap',
+        removeTmpDir: 'rm -rf sweco-bootstrap'
     },
 
     copy: {
-      fonts: { expand: true, cwd: 'dist', src: 'fonts/*', dest: 'dist.tmp' },
-      img: { expand: true, cwd: 'dist', src: 'img/*', dest: 'dist.tmp' },
-      script: { expand: true, cwd: 'dist/assets', src: 'vendor.js', dest: 'dist.tmp/scripts' },
-      css: { expand: true, cwd: 'dist/assets', src: 'sweco-bootstrap.css', dest: 'dist.tmp/css' },
-      scriptApp: { expand: true, cwd: 'dist/scripts', src: 'application.js', dest: 'dist.tmp/scripts' },
-      cssApp: { expand: true, cwd: 'dist/css', src: 'application.css', dest: 'dist.tmp/css' },
-      html: { expand: true, cwd: 'dist', src: 'starter-template.html', dest: 'dist.tmp' }
+      fonts: { expand: true, cwd: 'dist', src: 'fonts/*', dest: 'sweco-bootstrap' },
+      img: { expand: true, cwd: 'dist', src: 'img/*', dest: 'sweco-bootstrap' },
+      script: { expand: true, cwd: 'dist/assets', src: 'vendor.js', dest: 'sweco-bootstrap/scripts' },
+      css: { expand: true, cwd: 'dist/assets', src: 'sweco-bootstrap.css', dest: 'sweco-bootstrap/css' },
+      scriptApp: { expand: true, cwd: 'dist/scripts', src: 'application.js', dest: 'sweco-bootstrap/scripts' },
+      cssApp: { expand: true, cwd: 'dist/css', src: 'application.css', dest: 'sweco-bootstrap/css' },
+      html: { expand: true, cwd: 'dist', src: 'starter-template.html', dest: 'sweco-bootstrap' }
     },
 
     rename: {
-      script: { src: 'dist.tmp/scripts/vendor.js', dest: 'dist.tmp/scripts/sweco-bootstrap.min.js' },
-      css: { src: 'dist.tmp/css/sweco-bootstrap.css', dest: 'dist.tmp/css/sweco-bootstrap.min.css' }
+      script: { src: 'sweco-bootstrap/scripts/vendor.js', dest: 'sweco-bootstrap/scripts/sweco-bootstrap.min.js' },
+      css: { src: 'sweco-bootstrap/css/sweco-bootstrap.css', dest: 'sweco-bootstrap/css/sweco-bootstrap.min.css' }
     },
 
     compress: {
       main: {
         options: { archive: 'dist.zip' },
-        files: [ { src: ['dist.tmp/**'], dest: '' } ]
+        files: [ { src: ['sweco-bootstrap/**'], dest: '' } ]
       }
     }
   });
