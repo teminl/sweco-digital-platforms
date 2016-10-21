@@ -1,31 +1,43 @@
 module.exports = function(grunt) {
 
+  var destinationFolder = 'sweco-bootstrap';
+
   grunt.initConfig({
     shell: {
-        buildEmber: 'ember build --environment=production',
-        makeDir: 'mkdir sweco-bootstrap',
-        removeDir: 'rm -rf sweco-bootstrap'
+      buildEmber: 'ember build --environment=production',
+      makeDir: 'mkdir sweco-bootstrap',
+      removeDir: 'rm -rf sweco-bootstrap'
     },
 
     copy: {
-      fonts: { expand: true, cwd: 'dist', src: 'fonts/*', dest: 'sweco-bootstrap' },
-      img: { expand: true, cwd: 'dist', src: 'img/*', dest: 'sweco-bootstrap' },
-      css: { expand: true, cwd: 'dist/assets', src: 'sweco-bootstrap.css', dest: 'sweco-bootstrap/css' },
-      script: { expand: true, cwd: 'dist/assets', src: 'vendor.js', dest: 'sweco-bootstrap/scripts' },
-      scriptApp: { expand: true, cwd: 'dist/scripts', src: 'application.js', dest: 'sweco-bootstrap/scripts' },
-      cssApp: { expand: true, cwd: 'dist/css', src: 'application.css', dest: 'sweco-bootstrap/css' },
-      html: { expand: true, cwd: 'dist', src: 'starter-template.html', dest: 'sweco-bootstrap' }
+      app: {
+        files: [
+          { expand: true, cwd: 'bower_components', src: 'bootstrap/scss/**', dest: 'app/styles' },
+          { expand: true, cwd: 'bower_components', src: 'font-awesome/scss/**', dest: 'app/styles' }
+        ]
+      },
+      build: {
+        files: [
+          { expand: true, cwd: 'dist', src: 'fonts/*', dest: destinationFolder + '' },
+          { expand: true, cwd: 'dist', src: 'img/*', dest: destinationFolder + '' },
+          { expand: true, cwd: 'dist/assets', src: 'sweco-bootstrap.css', dest: destinationFolder + '/css' },
+          { expand: true, cwd: 'dist/assets', src: 'vendor.js', dest: destinationFolder + '/scripts' },
+          { expand: true, cwd: 'dist/scripts', src: 'application.js', dest: destinationFolder + '/scripts' },
+          { expand: true, cwd: 'dist/css', src: 'application.css', dest: destinationFolder + '/css' },
+          { expand: true, cwd: 'dist', src: 'starter-template.html', dest: destinationFolder }
+        ]
+      }
     },
 
     rename: {
-      script: { src: 'sweco-bootstrap/scripts/vendor.js', dest: 'sweco-bootstrap/scripts/sweco-bootstrap.min.js' },
-      css: { src: 'sweco-bootstrap/css/sweco-bootstrap.css', dest: 'sweco-bootstrap/css/sweco-bootstrap.min.css' }
+      script: { src: destinationFolder + '/scripts/vendor.js', dest: destinationFolder + '/scripts/sweco-bootstrap.min.js' },
+      css: { src: destinationFolder + '/css/sweco-bootstrap.css', dest: destinationFolder + '/css/sweco-bootstrap.min.css' }
     },
 
     compress: {
       main: {
         options: { archive: 'dist.zip' },
-        files: [ { src: ['sweco-bootstrap/**'], dest: '' } ]
+        files: [ { src: [destinationFolder + '/**'], dest: '' } ]
       }
     }
   });
@@ -35,6 +47,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-rename');
   grunt.loadNpmTasks('grunt-contrib-compress');
 
-  grunt.registerTask('default', ['shell:buildEmber', 'shell:removeDir', 'shell:makeDir', 'copy', 'rename', 'compress']);
+  grunt.registerTask('default', ['copy:app']);
+  grunt.registerTask('build', ['shell:buildEmber', 'shell:removeDir', 'shell:makeDir', 'copy:build', 'rename', 'compress']);
 
 };

@@ -80,6 +80,7 @@ You will need the following things properly installed on your computer.
 1. Change into the new directory
 1. `npm install`
 1. `bower install`
+1. `grunt`
 
 ## Running / Development
 
@@ -97,6 +98,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Building
 
+* `grunt build`
+
+### Building Ember
 * `ember build` (development)
 * `ember build --environment production` (production)
 
