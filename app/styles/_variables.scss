@@ -281,7 +281,9 @@ $zindex-popover:                 1020;
 $zindex-tooltip:                 1020;
 $zindex-fixed-content:           1020;
 $zindex-navbar-fixed:            1030;
-$zindex-navbar-sticky:           1030;
+$zindex-progressjs:              $zindex-navbar-fixed;
+$zindex-navbar-sticky:           $zindex-navbar-fixed;
+$zindex-navbar-dropdown:         ($zindex-navbar-fixed + 5);
 $zindex-offcanvas-backdrop:      1040;
 $zindex-offcanvas:               1050;
 $zindex-modal-bg:                1060;
@@ -289,7 +291,6 @@ $zindex-modal:                   1070;
 $zindex-dropdown-modal:          1080;
 $zindex-lightbox-backdrop:       2000;
 $zindex-lightbox:                2010;
-$zindex-progressjs:              3000;
 
 // Navbar
 $navbar-padding-x:               0;
