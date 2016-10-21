@@ -36,6 +36,9 @@ pids
 *.pid
 *.seed
 
+# Visual Studio
+.vscode/
+
 # Codekit
 config.codekit
 
