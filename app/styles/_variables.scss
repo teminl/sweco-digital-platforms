@@ -288,7 +288,7 @@ $zindex-offcanvas-backdrop:      1040;
 $zindex-offcanvas:               1050;
 $zindex-modal-bg:                1060;
 $zindex-modal:                   1070;
-$zindex-dropdown-modal:          1080;
+$zindex-dropdown-modal:          ($zindex-modal + 5);
 $zindex-lightbox-backdrop:       2000;
 $zindex-lightbox:                2010;
 
