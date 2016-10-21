@@ -13,6 +13,8 @@ logs
 # compiled output
 dist
 tmp
+app/styles/bootstrap
+app/styles/font-awesome
 
 # dependencies
 # Grunt, Node
