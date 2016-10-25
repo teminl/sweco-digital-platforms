@@ -8157,6 +8157,10 @@ h1 > .fa, h2 > .fa, h3 > .fa, h4 > .fa, h5 > .fa, h6 > .fa,
     .front-page .hero .jumbo {
       background-color: rgba(0, 0, 0, 0.77);
       padding: 2rem 2rem; }
+    .front-page .hero .version {
+      font-size: 0.8rem;
+      text-transform: none;
+      margin-left: 0.5rem; }
 
 header.header-image {
   height: 40vw;
