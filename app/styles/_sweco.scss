@@ -1505,7 +1505,7 @@ select.form-control[multiple]
         width: 15px !important;
         content: "\f105" !important;
         vertical-align: text-top;
-        margin: -4px 0;
+        margin: -3px 0;
       }
     }
     &.nav-stacked
@@ -1575,14 +1575,14 @@ select.form-control[multiple]
     {
       .fa
       {
-        margin: -1px 2px 0 -2px;
+        margin: -1px 2px 0 -1px;
       }
     }
     &:last-child
     {
       .fa
       {
-        margin: -1px -2px 0 2px;
+        margin: -1px -1px 0 2px;
       }
     }
   }
@@ -1610,8 +1610,10 @@ select.form-control[multiple]
       height: 30px;
       .fa
       {
-        font-size: $font-size-sm;
-        margin-top: -4px;
+        font-size: $font-size-lg;
+        margin-top: -2px;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }
@@ -1734,6 +1736,7 @@ select.form-control[multiple]
   .card-block
   {
     flex-grow: 1 !important;
+    padding: $spacer-y $spacer-x;
   }
   .card-footer
   {
@@ -1746,6 +1749,11 @@ select.form-control[multiple]
       @extend .btn-secondary;
       @extend .btn-sm;
       @extend .btn-block;
+      white-space: pre-wrap;
+      position: relative;
+      text-align: left;
+      padding-left: $spacer-x;
+      padding-right: ($spacer-x * 1.5);
       @include hover-focus
       {
         color: $btn-primary-color !important;
@@ -1763,7 +1771,11 @@ select.form-control[multiple]
         margin-right: 5px;
         &.fa-angle-right
         {
-          margin-left: 5px;
+          font-size: $font-size-base;
+          position: absolute;
+          bottom: 9px;
+          right: $spacer-x;
+          margin-left: 0;
           margin-right: 0;
         }
       }

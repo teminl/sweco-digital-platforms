@@ -96,10 +96,10 @@ $blue-lighter:          lighten($blue, 15%);        // #
 $blue-ultralight:       #c0d4fd;                    // Sweco Blue Bright
 
 // Red, validation and states
-$red:                   #c03;
+$red:                   #900;
 
 // Green, validation and states
-$green:                 #093;
+$green:                 #59854e;
 
 // Border
 $border-color:          $gray;
@@ -262,7 +262,7 @@ $transition: all .4s ease;
 
 // Tables
 $table-cell-padding:      .75rem;
-$table-sm-cell-padding:   .33rem .3rem .34rem;
+$table-sm-cell-padding:   .33rem $spacer-x .34rem;
 
 $table-bg:                transparent;
 $table-bg-accent:         $light-gray-superlight;
