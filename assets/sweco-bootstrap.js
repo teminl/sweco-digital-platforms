@@ -1388,7 +1388,7 @@ catch(err) {
 /* jshint ignore:start */
 
 if (!runningTests) {
-  require("sweco-bootstrap/app")["default"].create({"name":"sweco-bootstrap","version":"1.0.0+1ca4f738"});
+  require("sweco-bootstrap/app")["default"].create({"name":"sweco-bootstrap","version":"1.0.0+f0efc365"});
 }
 
 /* jshint ignore:end */
