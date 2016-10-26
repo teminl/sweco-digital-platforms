@@ -698,13 +698,20 @@ header.header-image
       opacity: 1 !important;
     }
   }
+  &.btn-outline-secondary,
+  &.btn-outline-primary,
+  &.btn-outline-info,
+  &.btn-outline-warning,
+  &.btn-outline-danger,
+  &.btn-outline-success
+  {
+    transition: $btn-outline-transition;
+  }
   &.btn-outline-secondary
   {
     color: $btn-secondary-color;
     box-shadow: inset 0 0 0 0 $btn-primary-bg;
-    &:hover,
-    &:focus,
-    &:active
+    @include hover-focus-active
     {
       color: $btn-primary-color;
       box-shadow: inset $btn-outline-box-width 0 0 0 $btn-primary-bg;
@@ -714,9 +721,7 @@ header.header-image
   &.btn-outline-primary
   {
     box-shadow: inset 0 0 0 0 $btn-primary-bg;
-    &:hover,
-    &:focus,
-    &:active
+    @include hover-focus-active
     {
       box-shadow: inset $btn-outline-box-width 0 0 0 $btn-primary-bg;
     }
@@ -724,9 +729,7 @@ header.header-image
   &.btn-outline-info
   {
     box-shadow: inset 0 0 0 0 $btn-info-bg;
-    &:hover,
-    &:focus,
-    &:active
+    @include hover-focus-active
     {
       box-shadow: inset $btn-outline-box-width 0 0 0 $btn-info-bg;
     }
@@ -734,9 +737,7 @@ header.header-image
   &.btn-outline-warning
   {
     box-shadow: inset 0 0 0 0 $btn-warning-bg;
-    &:hover,
-    &:focus,
-    &:active
+    @include hover-focus-active
     {
       box-shadow: inset $btn-outline-box-width 0 0 0 $btn-warning-bg;
     }
@@ -744,9 +745,7 @@ header.header-image
   &.btn-outline-danger
   {
     box-shadow: inset 0 0 0 0 $btn-danger-bg;
-    &:hover,
-    &:focus,
-    &:active
+    @include hover-focus-active
     {
       box-shadow: inset $btn-outline-box-width 0 0 0 $btn-danger-bg;
     }
@@ -754,9 +753,7 @@ header.header-image
   &.btn-outline-success
   {
     box-shadow: inset 0 0 0 0 $btn-success-bg;
-    &:hover,
-    &:focus,
-    &:active
+    @include hover-focus-active
     {
       box-shadow: inset $btn-outline-box-width 0 0 0 $btn-success-bg;
     }
