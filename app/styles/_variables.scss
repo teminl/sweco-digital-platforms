@@ -39,14 +39,14 @@ $white:                 #fff;
 // Black
 $black:                 #000;
 $black-ich:             #222;
-$black-light:           #3a3a3a;
+$black-light:           #3a3a3a;                  // Sweco Text color
 $black-lightning:       #444;
 $black-lighter:         #555;
 $black-ultralight:      #777;
 $black-superlight:      #999;
 
 // Sweco Gray Dark
-$dark-gray:             #4d535a;                    // Sweco Gray Dark
+$dark-gray:             #4d535a;                  // Sweco Gray Dark
 $dark-gray-ich:         lighten($dark-gray, 10%);   // #
 $dark-gray-light:       lighten($dark-gray, 20%);   // #
 $dark-gray-lighter:     lighten($dark-gray, 30%);   // #
@@ -55,16 +55,16 @@ $dark-gray-superlight:  lighten($dark-gray, 50%);   // #
 $gray-dark:             $dark-gray;                 // Bootstrap compability
 
 // Sweco Gray
-$gray:                  #a5a5a8;                    // Sweco Gray
+$gray:                  #a5a5a8;                  // Sweco Gray
 $gray-ich:              lighten($gray, 5%);         // #
 $gray-light:            lighten($gray, 10%);        // #
 $gray-lighter:          lighten($gray, 15%);        // #
 $gray-ultralight:       lighten($gray, 20%);        // #
-$gray-superlight:       #eee;                       // Sweco Gray Superlight
-$gray-lightest:         $gray-superlight;           // Bootstrap shim
+$gray-superlight:       #eee;                     // Sweco Gray Superlight
+$gray-lightest:         $gray-superlight;           // Bootstrap 3 shim
 
 // Sweco Gray Light
-$light-gray:            #e2e0da;                    // Sweco Gray Light
+$light-gray:            #e2e0da;                  // Sweco Gray Light
 $light-gray-ich:        lighten($light-gray, 2%);   // #
 $light-gray-light:      lighten($light-gray, 4%);   // #
 $light-gray-lighter:    lighten($light-gray, 6%);   // #
@@ -72,31 +72,31 @@ $light-gray-ultralight: lighten($light-gray, 8%);   // #
 $light-gray-superlight: lighten($light-gray, 10%);  // #
 
 // Sweco Ochre
-$ochre-dark:            #a4852f;                    // Sweco Ochre Muted
-$ochre:                 #dec55b;                    // Sweco Ochre Bright
+$ochre-dark:            #a4852f;                  // Sweco Ochre Muted
+$ochre:                 #dec55b;                  // Sweco Ochre Bright
 $ochre-ich:             lighten($ochre, 10%);       // #
 $ochre-light:           lighten($ochre, 15%);       // #
 $ochre-lighter:         lighten($ochre, 20%);       // #
 $ochre-ultralight:      lighten($ochre, 25%);       // #
 
 // Sweco Pink
-$pink-dark:             #b586a4;                    // Sweco Pink Muted
-$pink:                  #f2b1dc;                    // Sweco Pink Bright
+$pink-dark:             #b586a4;                  // Sweco Pink Muted
+$pink:                  #f2b1dc;                  // Sweco Pink Bright
 $pink-ich:              lighten($pink, 6%);         // #
 $pink-light:            lighten($pink, 8%);         // #
 $pink-lighter:          lighten($pink, 10%);        // #
 $pink-ultralight:       lighten($pink, 12%);        // #
 
 // Sweco Blue
-$blue-dark:             #7e8dab;                    // Sweco Blue Muted
-$blue:                  #8aa3b9;                    // Sweco Blue Text
+$blue-dark:             #7e8dab;                  // Sweco Blue Muted
+$blue:                  #8aa3b9;                  // Sweco Blue Text
 $blue-ich:              lighten($blue, 5%);         // #
 $blue-light:            lighten($blue, 10%);        // #
 $blue-lighter:          lighten($blue, 15%);        // #
-$blue-ultralight:       #c0d4fd;                    // Sweco Blue Bright
+$blue-ultralight:       #c0d4fd;                  // Sweco Blue Bright
 
 // Red, validation and states
-$red:                   #900;
+$red:                   #821307;
 
 // Green, validation and states
 $green:                 #59854e;
@@ -347,7 +347,8 @@ $btn-padding-y-lg:               .78rem;
 $btn-block-spacing-y:            .5rem;
 $btn-toolbar-margin:             .5rem;
 
-$btn-outline-box-width:          200px;
+$btn-outline-box-width:          400px;
+$btn-outline-transition:         all .6s ease;
 
 $btn-border-radius:              $border-radius;
 $btn-border-radius-lg:           $border-radius-lg;
