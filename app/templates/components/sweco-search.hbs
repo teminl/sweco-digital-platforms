@@ -1,4 +1,4 @@
-<div id="search" class="search">
+<div id="search" class="search" style="display: none;">
   <div class="input-group">
     {{input
       id='searchInput'
@@ -12,7 +12,7 @@
       placeholder='The placeholder for search'
     }}
     <span class="input-group-btn">
-      <button class="btn btn-search" type="button" tabindex="2" {{action 'search'}}><i class="fa fa-search"></i></button>
+      <button class="btn btn-search" type="button" tabindex="2" {{action 'search'}}><i class="fa fa-search" aria-hidden="true"></i></button>
     </span>
   </div>
   <!-- RESET START -->
