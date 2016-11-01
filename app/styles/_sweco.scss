@@ -759,6 +759,10 @@ header.header-image
     }
   }
 }
+.btn-sm
+{
+  font-size: $font-size-base;
+}
 // Btn Bootstrap 3 shim
 .btn-default
 {
@@ -767,6 +771,7 @@ header.header-image
 .btn-xs
 {
   @extend .btn-sm;
+  font-size: $font-size-sm;
   padding: $btn-padding-y-xs $btn-padding-x-xs !important;
 }
 
@@ -1131,10 +1136,22 @@ input[type="radio"]
   color: $input-group-addon-color !important;
 }
 
-.input-group-sm .input-group-btn .btn
+.input-group-sm
 {
-  height: $input-height-sm;
-  max-height: 2rem;
+  .input-group-addon
+  {
+    font-size: $font-size-base;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+  }
+  .input-group-btn .btn
+  {
+    font-size: $font-size-base;
+    padding-top: .32rem;
+    padding-bottom: .32rem;
+    height: $input-height-sm;
+    max-height: 2rem;
+  }
 }
 
 // Textarea
