@@ -490,7 +490,6 @@ h1, h2, h3, h4, h5, h6,
   }
   .search
   {
-    display: none;
     position: relative;
     margin-top: 10px;
     @include media-breakpoint-down(sm)
@@ -778,6 +777,7 @@ header.header-image
 // Dropdowns
 .dropdown-menu
 {
+  border: 0;
   box-shadow: $dropdown-box-shadow;
   &:before,
   &:after
@@ -790,12 +790,12 @@ header.header-image
     display: block;
     position: absolute;
     left: ($spacer-x / 2);
-    z-index: 1;
+    z-index: $zindex-dropdown;
   }
   &:before
   {
     border-width: 10px;
-    border-bottom-color: $border-color;
+    border-bottom-color: rgba(0,0,0,.1);
     top: -20px;
   }
   &:after
@@ -870,7 +870,7 @@ header.header-image
   {
     &:before
     {
-      border-top-color: $border-color !important;
+      border-top-color: rgba(0,0,0,.1) !important;
       border-bottom-color: transparent !important;
       top: auto !important;
       bottom: -20px !important;
@@ -1774,9 +1774,12 @@ select.form-control[multiple]
       @extend .btn-secondary;
       @extend .btn-sm;
       @extend .btn-block;
+      font-size: $font-size-sm;
       white-space: pre-wrap;
       position: relative;
       text-align: left;
+      padding: .47rem;
+      padding-bottom: .47rem;
       padding-left: $spacer-x;
       padding-right: ($spacer-x * 1.5);
       @include hover-focus
@@ -1796,9 +1799,9 @@ select.form-control[multiple]
         margin-right: 5px;
         &.fa-angle-right
         {
-          font-size: $font-size-base;
+          font-size: 18px !important;
           position: absolute;
-          bottom: 9px;
+          bottom: 8px;
           right: $spacer-x;
           margin-left: 0;
           margin-right: 0;
