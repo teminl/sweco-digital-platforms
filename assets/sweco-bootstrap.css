@@ -9079,7 +9079,7 @@ select.form-control[multiple] {
       white-space: pre-wrap;
       position: relative;
       text-align: left;
-      padding: .47rem;
+      padding-top: .47rem;
       padding-bottom: .47rem;
       padding-left: 1rem;
       padding-right: 1.5rem;
