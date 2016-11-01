@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Sweco Bootstrap v.1.0.1
+ * Sweco Bootstrap v.1.0.2
  */
 @font-face {
   font-family: 'SwecoSans-Regular';
@@ -8531,6 +8531,9 @@ input[type="radio"] {
 
 textarea.form-control {
   min-height: 80px; }
+
+select.form-control {
+  cursor: pointer; }
 
 select.form-control:not([size]):not([multiple]).form-control {
   height: 2.67rem; }
