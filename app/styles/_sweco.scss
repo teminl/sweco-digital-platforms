@@ -1144,6 +1144,11 @@ textarea.form-control
 }
 
 // Selects
+select.form-control
+{
+  cursor: pointer;
+}
+
 select.form-control:not([size]):not([multiple])
 {
   @extend .custom-select;
