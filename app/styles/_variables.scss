@@ -234,8 +234,8 @@ $blockquote-border-color: $light-gray;
 $blockquote-border-width: 0;
 
 // Content
-$mark-padding:            .2em;
-$mark-bg:                 $gray-lighter;
+$mark-padding:            .2em .1em;
+$mark-bg:                 $light-gray;
 
 $dt-font-weight:          normal;
 $list-inline-padding:     5px;
