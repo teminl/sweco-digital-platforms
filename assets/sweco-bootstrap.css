@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Sweco Bootstrap v.1.0.4
+ * Sweco Bootstrap v.1.0.5
  */
 @font-face {
   font-family: 'SwecoSans-Regular';
@@ -2817,8 +2817,8 @@ small,
 
 mark,
 .mark {
-  padding: 0.2em;
-  background-color: #ccccce; }
+  padding: 0.2em 0.1em;
+  background-color: #e2e0da; }
 
 .list-unstyled, ul.dropdown-menu, .breadcrumb, .colors ul {
   padding-left: 0;
@@ -8559,8 +8559,8 @@ select.form-control:not([size]):not([multiple]).form-control-sm, .input-group-sm
 .input-group-sm > .input-group-btn > select.form-control.btn:not([size]):not([multiple]), .card.card-info .card-footer
 .input-group-sm > .input-group-btn > select.form-control.btn:not([size]):not([multiple]) {
   height: 2rem;
-  padding-top: .36rem;
-  padding-bottom: .36rem; }
+  padding-top: .34rem;
+  padding-bottom: .34rem; }
 
 select.form-control[multiple] {
   max-height: 80px; }
