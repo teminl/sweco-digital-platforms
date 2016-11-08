@@ -1,5 +1,5 @@
 /*!
- * Sweco Bootstrap v.1.0.5
+ * Sweco Bootstrap v.1.0.6
  */
 
 // Sweco fonts (/fonts)
@@ -22,6 +22,9 @@
 
 // Sweco color classes
 @import "colors";
+
+// Datetimepicker
+@import "datetimepicker";
 
 // Sweco - for development
 @import "sweco-dev";

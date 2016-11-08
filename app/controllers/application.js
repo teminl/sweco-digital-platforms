@@ -28,6 +28,25 @@ export default Ember.Controller.extend({
       });
     });
 
+    // Datetimepicker
+    $(function () {
+      $('.datetimepicker').datetimepicker({
+        format: 'YYYY-MM-DD',
+        icons:
+        {
+          time: 'fa fa-clock-o',
+          date: 'fa fa-calendar',
+          up: 'fa fa-angle-up fa-lg',
+          down: 'fa fa-angle-down fa-lg',
+          previous: 'fa fa-angle-left fa-lg',
+          next: 'fa fa-angle-right fa-lg',
+          today: 'fa fa-calendar-o',
+          clear: 'fa fa-times-circle',
+          close: 'fa fa-times-circle'
+        }
+      });
+    });
+
   }
 
 });

@@ -10,7 +10,7 @@
           <div class="row">
             <div class="col-xs-10 offset-xs-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
               <div class="jumbo">
-                <h1>Sweco visual identity manual<br/>digital platforms<span class="version">v.1.0.5</span></h1>
+                <h1>Sweco visual identity manual<br/>digital platforms<span class="version">v.1.0.6</span></h1>
                 <p class="lead">Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.</p>
                 <div class="flexbox-row flexbox-center">
                   <button class="btn btn-info btn-front-page" {{action 'frontPage'}}><span class="hidden-lg-down">Sweco </span>Digital Platforms<i class="fa fa-right fa-angle-right"></i></button>
@@ -1251,6 +1251,37 @@
               <button type="button" class="btn btn-info btn-block my-1 progressjs-example">Progress example</button>
 <!-- PROGRESS STOP -->
             </div>
+
+            <div class="well well-secondary">
+              <h4 id="datepicker">Datetimepicker</h4>
+              <p>Read more about <a href="http://eonasdan.github.io/bootstrap-datetimepicker/" target="_blank">datetimepicker</a>.</p>
+<!-- DATETIMEPICKER START -->
+              <!-- Example js
+                $('.datetimepicker').datetimepicker({
+                  format: 'YYYY-MM-DD',
+                  icons:
+                  {
+                    time: 'fa fa-clock-o',
+                    date: 'fa fa-calendar',
+                    up: 'fa fa-angle-up fa-lg',
+                    down: 'fa fa-angle-down fa-lg',
+                    previous: 'fa fa-angle-left fa-lg',
+                    next: 'fa fa-angle-right fa-lg',
+                    today: 'fa fa-calendar-o',
+                    clear: 'fa fa-times-circle',
+                    close: 'fa fa-times-circle'
+                  }
+                });
+              -->
+              <div class="form-group input-group mb-0 datetimepicker">
+                <span class="input-group-addon">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                </span>
+                <input type="text" class="form-control" id="txtStartDate" placeholder="Date">
+              </div>
+<!-- DATETIMEPICKER STOP -->
+            </div>
+
           </div>
           <div class="col-lg-4">
             <div class="well well-secondary">
@@ -1298,6 +1329,8 @@
               <li><a href="https://github.com/schickling/jquery-browser-detection" target="_blank">jQuery-browser-detection</a></li>
               <li><a href="http://usablica.github.io/progress.js/" target="_blank">Progress.js</a></li>
               <li><a href="http://tether.io/" target="_blank">Tether</a></li>
+              <li><a href="https://github.com/moment/moment" target="_blank">Moment</a></li>
+              <li><a href="http://eonasdan.github.io/bootstrap-datetimepicker/" target="_blank">Datetimepicker</a></li>
             </ul>
             <p>Dependency versions see: <a href="https://github.com/sweco/sweco-digital-platforms/blob/master/bower.json" target="_blank">bower.json</a></p>
           </div>
@@ -1366,14 +1399,14 @@
               </dl>
             </div>
             <h4>Using Sass</h4>
-            <p>Requires a Sass compiler, <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a>, <a href="https://github.com/luisrudge/postcss-flexbugs-fixes" target="_blank">Postcss-flexbugs-fixes</a> (included in the package).</p>
+            <p>Requires a Sass compiler, <a href="https://github.com/postcss/autoprefixer" target="_blank">Autoprefixer</a>, <a href="https://github.com/luisrudge/postcss-flexbugs-fixes" target="_blank">Postcss-flexbugs-fixes</a>.<br>Copy Scss dependencies in your Scss reposititory: bootstrap/scss/** and font-awesome/scss/**, using <a href="http://gruntjs.com/" target="_blank">Grunt</a>.</p>
             <p>Your application Scss file should look something like this:</p>
 <figure class="html"><pre><code>
-  // Your application variables
-  @import "variables";
-
   // Sweco digital platforms
   @import "sweco-digital-platforms/style/sweco-bootstrap";
+
+  // Your application variables
+  @import "variables";
 
   // Your application custom SCSS
   @import "application";
@@ -1454,6 +1487,8 @@
             <p>It's important to follow the Bootstrap 4 HTML and class structure to get the complete Sweco styles. Read the Bootstrap documentation about <a href="http://v4-alpha.getbootstrap.com/layout/overview/" target="_blank">layout</a>, <a href="http://v4-alpha.getbootstrap.com/content/reboot/" target="_blank">content</a> and <a href="http://v4-alpha.getbootstrap.com/components/alerts/" target="_blank">components</a>. Also take advantage of using Bootstraps <a href="http://v4-alpha.getbootstrap.com/layout/responsive-utilities/" target="_blank">responsive utilities</a> and <a href="http://v4-alpha.getbootstrap.com/components/utilities/" target="_blank">utility classes</a>.</p>
             <p>If your application is using the Sweco navbars, navbar-north and navbar-south add classes to body. For navbar-north add <code>&lt;body class="navbarNorth"&gt;</code> or <code>&lt;body class="navbarNorth navbarSouth"&gt;</code> for both.</p>
             <p>If your application uses front-page as the example page, add class to body when active <code>&lt;body class="body-front-page"&gt;</code>.</p>
+
+            <h4>Please, take a look into the source code of this example page.</h4>
 
           </div>
         </div>

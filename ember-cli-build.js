@@ -49,6 +49,10 @@ module.exports = function(defaults) {
   app.import("bower_components/bootstrap/dist/js/bootstrap.min.js");
   // Progressjs
   app.import("bower_components/progress.js/minified/progress.min.js");
+  // Moment
+  app.import("bower_components/moment/min/moment.min.js");
+  // Bootstrap Datepicker
+  app.import("bower_components/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js");
 
   return app.toTree();
 };
