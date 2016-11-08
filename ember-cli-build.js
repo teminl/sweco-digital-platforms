@@ -50,7 +50,7 @@ module.exports = function(defaults) {
   // Progressjs
   app.import("bower_components/progress.js/minified/progress.min.js");
   // Moment
-  app.import("bower_components/moment/min/moment.min.js");
+  app.import("bower_components/moment/min/moment-with-locales.min.js");
   // Bootstrap Datepicker
   app.import("bower_components/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js");
 
