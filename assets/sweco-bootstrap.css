@@ -8218,7 +8218,7 @@ h1 > .fa, h2 > .fa, h3 > .fa, h4 > .fa, h5 > .fa, h6 > .fa,
     display: table-cell;
     vertical-align: middle;
     text-align: left;
-    margin-top: -60px; }
+    margin-top: -90px; }
     @media (max-width: 1199px) {
       .front-page .hero h1 {
         font-size: 1.7rem; } }
