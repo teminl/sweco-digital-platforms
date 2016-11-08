@@ -29,10 +29,11 @@ body.navbarSouth
   padding-bottom: $navbar-south-height;
 }
 
-// IE fix for scroll on fixed-navbars on scroll and modal open
+// Windows fix for scroll on fixed-navbars on scroll and modal open
 .ie-9,
 .ie-10,
-.ie-11
+.ie-11,
+.win.chrome
 {
   @include media-breakpoint-up(sm)
   {
