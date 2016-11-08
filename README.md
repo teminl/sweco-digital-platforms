@@ -57,6 +57,8 @@ The sweco-bootstrap.js includes a handful of JavaScript to help bring some of ou
 * [jQuery-browser-detection](https://github.com/schickling/jquery-browser-detection)
 * [Progress.js](http://usablica.github.io/progress.js/)
 * [Tether](http://tether.io/)
+* [Moment with locales](https://github.com/moment/moment)
+* [Datetimepicker](http://eonasdan.github.io/bootstrap-datetimepicker/)
 
 Dependency versions see: [bower.json](https://github.com/sweco/sweco-digital-platforms/blob/master/bower.json)
 
