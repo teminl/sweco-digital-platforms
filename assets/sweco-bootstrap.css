@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Sweco Bootstrap v.1.0.9
+ * Sweco Bootstrap v.1.1.0
  */
 @font-face {
   font-family: 'SwecoSans-Regular';
@@ -8667,14 +8667,16 @@ select.form-control[multiple] {
   .custom-file .custom-file-input:focus + .custom-file-control {
     background-color: #fff !important;
     border-color: #727275 !important; }
-  .custom-file.custom-file-sm .custom-file-control {
-    height: 2rem;
-    padding-top: 0.44rem;
-    padding-bottom: 0.44rem; }
-    .custom-file.custom-file-sm .custom-file-control:before {
+  .custom-file.custom-file-sm {
+    height: 2rem; }
+    .custom-file.custom-file-sm .custom-file-control {
       height: 2rem;
       padding-top: 0.44rem;
       padding-bottom: 0.44rem; }
+      .custom-file.custom-file-sm .custom-file-control:before {
+        height: 2rem;
+        padding-top: 0.44rem;
+        padding-bottom: 0.44rem; }
 
 .check,
 .radio {
