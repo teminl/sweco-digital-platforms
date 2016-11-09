@@ -142,6 +142,12 @@ body.navbarSouth
   display: none !important;
 }
 
+// Show
+.show
+{
+  display: block !important;
+}
+
 // Typography
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
@@ -1230,6 +1236,21 @@ select.form-control[multiple]
       {
         background-color: $input-bg-focus !important;
         border-color: $input-border-focus !important;
+      }
+    }
+  }
+  &.custom-file-sm
+  {
+    .custom-file-control
+    {
+      height: 2rem;
+      padding-top: 0.44rem;
+      padding-bottom: 0.44rem;
+      &:before
+      {
+        height: 2rem;
+        padding-top: 0.44rem;
+        padding-bottom: 0.44rem;
       }
     }
   }
