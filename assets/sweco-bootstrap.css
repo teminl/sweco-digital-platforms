@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Sweco Bootstrap v.1.0.7
+ * Sweco Bootstrap v.1.0.8
  */
 @font-face {
   font-family: 'SwecoSans-Regular';
@@ -7611,7 +7611,9 @@ body.navbarSouth {
   .ie-10 .navbar-fixed-top,
   .ie-10 .navbar-fixed-bottom,
   .ie-11 .navbar-fixed-top,
-  .ie-11 .navbar-fixed-bottom {
+  .ie-11 .navbar-fixed-bottom,
+  .win.chrome .navbar-fixed-top,
+  .win.chrome .navbar-fixed-bottom {
     padding-left: calc(100vw - 100%) !important; }
     .ie-9 .navbar-fixed-top .container > .row,
     .ie-9 .navbar-fixed-top .progressjs-navbar,
@@ -7624,7 +7626,11 @@ body.navbarSouth {
     .ie-11 .navbar-fixed-top .container > .row,
     .ie-11 .navbar-fixed-top .progressjs-navbar,
     .ie-11 .navbar-fixed-bottom .container > .row,
-    .ie-11 .navbar-fixed-bottom .progressjs-navbar {
+    .ie-11 .navbar-fixed-bottom .progressjs-navbar,
+    .win.chrome .navbar-fixed-top .container > .row,
+    .win.chrome .navbar-fixed-top .progressjs-navbar,
+    .win.chrome .navbar-fixed-bottom .container > .row,
+    .win.chrome .navbar-fixed-bottom .progressjs-navbar {
       margin-left: -25px !important;
       margin-right: -5px !important; } }
 
