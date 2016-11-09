@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Sweco Bootstrap v.1.0.8
+ * Sweco Bootstrap v.1.0.9
  */
 @font-face {
   font-family: 'SwecoSans-Regular';
@@ -7710,6 +7710,9 @@ body.navbarSouth {
 .radio input {
   display: none !important; }
 
+.show {
+  display: block !important; }
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .bootstrap-datetimepicker-widget .timepicker-hour,
 .bootstrap-datetimepicker-widget .timepicker-minute,
@@ -8664,6 +8667,14 @@ select.form-control[multiple] {
   .custom-file .custom-file-input:focus + .custom-file-control {
     background-color: #fff !important;
     border-color: #727275 !important; }
+  .custom-file.custom-file-sm .custom-file-control {
+    height: 2rem;
+    padding-top: 0.44rem;
+    padding-bottom: 0.44rem; }
+    .custom-file.custom-file-sm .custom-file-control:before {
+      height: 2rem;
+      padding-top: 0.44rem;
+      padding-bottom: 0.44rem; }
 
 .check,
 .radio {
