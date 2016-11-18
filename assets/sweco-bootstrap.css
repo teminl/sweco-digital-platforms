@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Sweco Bootstrap v.1.1.0
+ * Sweco Bootstrap v.1.1.1
  */
 @font-face {
   font-family: 'SwecoSans-Regular';
@@ -2573,8 +2573,8 @@ textarea {
     .table td,
     .table th {
       background-color: #fff !important; }
-  .table-bordered th,
-  .table-bordered td {
+  .table-bordered th, .table th,
+  .table-bordered td, .table td {
     border: 1px solid #ddd !important; } }
 
 html {
@@ -2699,8 +2699,8 @@ table {
   background-color: transparent; }
 
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.33rem 1rem 0.34rem;
+  padding-bottom: 0.33rem 1rem 0.34rem;
   color: #a5a5a8;
   text-align: left;
   caption-side: bottom; }
@@ -2824,7 +2824,7 @@ mark,
   padding: 0.2em 0.1em;
   background-color: #e2e0da; }
 
-.list-unstyled, ul.dropdown-menu, ul.bootstrap-datetimepicker-widget.dropdown-menu, .breadcrumb, .bootstrap-datetimepicker-widget, .bootstrap-datetimepicker-widget ul, .colors ul {
+.list-unstyled, ul.dropdown-menu, ul.bootstrap-datetimepicker-widget.dropdown-menu, .twitter-typeahead ul.tt-menu, .breadcrumb, .bootstrap-datetimepicker-widget, .bootstrap-datetimepicker-widget ul, .colors ul {
   padding-left: 0;
   list-style: none; }
 
@@ -3636,7 +3636,7 @@ pre {
   margin-bottom: 1rem; }
   .table th,
   .table td {
-    padding: 0.75rem;
+    padding: 0.33rem 1rem 0.34rem;
     vertical-align: top;
     border-top: 1px solid #a5a5a8; }
   .table thead th {
@@ -3647,23 +3647,23 @@ pre {
   .table .table {
     background-color: #eee; }
 
-.table-sm th, .table th,
-.table-sm td, .table td {
-  padding: 0.33rem 1rem 0.34rem; }
+.table-sm th,
+.table-sm td {
+  padding: 0.33rem 0.33rem; }
 
-.table-bordered {
+.table-bordered, .table {
   border: 1px solid #a5a5a8; }
-  .table-bordered th,
-  .table-bordered td {
+  .table-bordered th, .table th,
+  .table-bordered td, .table td {
     border: 1px solid #a5a5a8; }
-  .table-bordered thead th,
-  .table-bordered thead td {
+  .table-bordered thead th, .table thead th,
+  .table-bordered thead td, .table thead td {
     border-bottom-width: 2px; }
 
-.table-striped tbody tr:nth-of-type(odd) {
+.table-striped tbody tr:nth-of-type(odd), .table tbody tr:nth-of-type(odd) {
   background-color: #f8f8f7; }
 
-.table-hover tbody tr:hover {
+.table-hover tbody tr:hover, .table tbody tr:hover {
   background-color: #eee; }
 
 .table-active,
@@ -3671,10 +3671,10 @@ pre {
 .table-active > td {
   background-color: #eee; }
 
-.table-hover .table-active:hover {
+.table-hover .table-active:hover, .table .table-active:hover {
   background-color: #e1e1e1; }
-  .table-hover .table-active:hover > td,
-  .table-hover .table-active:hover > th {
+  .table-hover .table-active:hover > td, .table .table-active:hover > td,
+  .table-hover .table-active:hover > th, .table .table-active:hover > th {
     background-color: #e1e1e1; }
 
 .table-success,
@@ -3682,10 +3682,10 @@ pre {
 .table-success > td {
   background-color: transparent; }
 
-.table-hover .table-success:hover {
+.table-hover .table-success:hover, .table .table-success:hover {
   background-color: transparent; }
-  .table-hover .table-success:hover > td,
-  .table-hover .table-success:hover > th {
+  .table-hover .table-success:hover > td, .table .table-success:hover > td,
+  .table-hover .table-success:hover > th, .table .table-success:hover > th {
     background-color: transparent; }
 
 .table-info,
@@ -3693,10 +3693,10 @@ pre {
 .table-info > td {
   background-color: transparent; }
 
-.table-hover .table-info:hover {
+.table-hover .table-info:hover, .table .table-info:hover {
   background-color: transparent; }
-  .table-hover .table-info:hover > td,
-  .table-hover .table-info:hover > th {
+  .table-hover .table-info:hover > td, .table .table-info:hover > td,
+  .table-hover .table-info:hover > th, .table .table-info:hover > th {
     background-color: transparent; }
 
 .table-warning,
@@ -3704,10 +3704,10 @@ pre {
 .table-warning > td {
   background-color: transparent; }
 
-.table-hover .table-warning:hover {
+.table-hover .table-warning:hover, .table .table-warning:hover {
   background-color: transparent; }
-  .table-hover .table-warning:hover > td,
-  .table-hover .table-warning:hover > th {
+  .table-hover .table-warning:hover > td, .table .table-warning:hover > td,
+  .table-hover .table-warning:hover > th, .table .table-warning:hover > th {
     background-color: transparent; }
 
 .table-danger,
@@ -3715,10 +3715,10 @@ pre {
 .table-danger > td {
   background-color: transparent; }
 
-.table-hover .table-danger:hover {
+.table-hover .table-danger:hover, .table .table-danger:hover {
   background-color: transparent; }
-  .table-hover .table-danger:hover > td,
-  .table-hover .table-danger:hover > th {
+  .table-hover .table-danger:hover > td, .table .table-danger:hover > td,
+  .table-hover .table-danger:hover > th, .table .table-danger:hover > th {
     background-color: transparent; }
 
 .thead-inverse th {
@@ -3736,7 +3736,7 @@ pre {
   .table-inverse td,
   .table-inverse thead th {
     border-color: #a5a5a8; }
-  .table-inverse.table-bordered {
+  .table-inverse.table-bordered, .table-inverse.table {
     border: 0; }
 
 .table-responsive {
@@ -4548,7 +4548,7 @@ tbody.collapse.in {
   border-top: 0;
   border-bottom: 0.3em solid; }
 
-.dropdown-menu, .bootstrap-datetimepicker-widget.dropdown-menu {
+.dropdown-menu, .bootstrap-datetimepicker-widget.dropdown-menu, .twitter-typeahead .tt-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -4572,7 +4572,7 @@ tbody.collapse.in {
   overflow: hidden;
   background-color: #a5a5a8; }
 
-.dropdown-item, ul.dropdown-menu > li, ul.bootstrap-datetimepicker-widget.dropdown-menu > li {
+.dropdown-item, ul.dropdown-menu > li, ul.bootstrap-datetimepicker-widget.dropdown-menu > li, .twitter-typeahead ul.tt-menu > li, .twitter-typeahead .tt-menu div.tt-suggestion {
   display: block;
   width: 100%;
   padding: 3px 1rem;
@@ -4583,42 +4583,42 @@ tbody.collapse.in {
   white-space: nowrap;
   background: none;
   border: 0; }
-  .dropdown-item:focus, ul.dropdown-menu > li:focus {
+  .dropdown-item:focus, ul.dropdown-menu > li:focus, .twitter-typeahead ul.tt-menu > li:focus, .twitter-typeahead .tt-menu div.tt-suggestion:focus {
     color: #3a3a3a;
     text-decoration: none;
     background-color: #eee; }
-  .dropdown-item:hover, ul.dropdown-menu > li:hover {
+  .dropdown-item:hover, ul.dropdown-menu > li:hover, .twitter-typeahead ul.tt-menu > li:hover, .twitter-typeahead .tt-menu div.tt-suggestion:hover {
     color: #3a3a3a;
     text-decoration: none;
     background-color: #eee; }
-  .dropdown-item.active, ul.dropdown-menu > li.active, .dropdown-item.active:focus, ul.dropdown-menu > li.active:focus {
+  .dropdown-item.active, ul.dropdown-menu > li.active, .twitter-typeahead ul.tt-menu > li.active, .twitter-typeahead .tt-menu div.active.tt-suggestion, .dropdown-item.active:focus, ul.dropdown-menu > li.active:focus, .twitter-typeahead ul.tt-menu > li.active:focus, .twitter-typeahead .tt-menu div.active.tt-suggestion:focus {
     color: #fff;
     text-decoration: none;
     background-color: #4d535a;
     outline: 0; }
-  .dropdown-item.active:hover, ul.dropdown-menu > li.active:hover {
+  .dropdown-item.active:hover, ul.dropdown-menu > li.active:hover, .twitter-typeahead ul.tt-menu > li.active:hover, .twitter-typeahead .tt-menu div.active.tt-suggestion:hover {
     color: #fff;
     text-decoration: none;
     background-color: #4d535a;
     outline: 0; }
-  .dropdown-item.disabled, ul.dropdown-menu > li.disabled, .dropdown-item.disabled:focus, ul.dropdown-menu > li.disabled:focus {
+  .dropdown-item.disabled, ul.dropdown-menu > li.disabled, .twitter-typeahead ul.tt-menu > li.disabled, .twitter-typeahead .tt-menu div.disabled.tt-suggestion, .dropdown-item.disabled:focus, ul.dropdown-menu > li.disabled:focus, .twitter-typeahead ul.tt-menu > li.disabled:focus, .twitter-typeahead .tt-menu div.disabled.tt-suggestion:focus {
     color: #a5a5a8; }
-  .dropdown-item.disabled:hover, ul.dropdown-menu > li.disabled:hover {
+  .dropdown-item.disabled:hover, ul.dropdown-menu > li.disabled:hover, .twitter-typeahead ul.tt-menu > li.disabled:hover, .twitter-typeahead .tt-menu div.disabled.tt-suggestion:hover {
     color: #a5a5a8; }
-  .dropdown-item.disabled:focus, ul.dropdown-menu > li.disabled:focus {
+  .dropdown-item.disabled:focus, ul.dropdown-menu > li.disabled:focus, .twitter-typeahead ul.tt-menu > li.disabled:focus, .twitter-typeahead .tt-menu div.disabled.tt-suggestion:focus {
     text-decoration: none;
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
     filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)"; }
-  .dropdown-item.disabled:hover, ul.dropdown-menu > li.disabled:hover {
+  .dropdown-item.disabled:hover, ul.dropdown-menu > li.disabled:hover, .twitter-typeahead ul.tt-menu > li.disabled:hover, .twitter-typeahead .tt-menu div.disabled.tt-suggestion:hover {
     text-decoration: none;
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
     filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)"; }
 
-.open > .dropdown-menu {
+.open > .dropdown-menu, .twitter-typeahead .open > .tt-menu {
   display: block; }
 
 .open > a {
@@ -4654,8 +4654,10 @@ tbody.collapse.in {
   border-top: 0;
   border-bottom: 0.3em solid; }
 
-.dropup .dropdown-menu,
-.navbar-fixed-bottom .dropdown .dropdown-menu {
+.dropup .dropdown-menu, .dropup .twitter-typeahead .tt-menu, .twitter-typeahead .dropup .tt-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu,
+.navbar-fixed-bottom .dropdown .twitter-typeahead .tt-menu, .twitter-typeahead
+.navbar-fixed-bottom .dropdown .tt-menu {
   top: auto;
   bottom: 100%;
   margin-bottom: 10px; }
@@ -5170,7 +5172,7 @@ tbody.collapse.in {
     color: #3a3a3a;
     background-color: #fff;
     border-color: #a5a5a8 #a5a5a8 transparent; }
-  .nav-tabs .dropdown-menu {
+  .nav-tabs .dropdown-menu, .nav-tabs .twitter-typeahead .tt-menu, .twitter-typeahead .nav-tabs .tt-menu {
     margin-top: -1px; }
 
 .nav-pills::after {
@@ -5346,7 +5348,7 @@ tbody.collapse.in {
   .navbar-toggleable-xs .navbar-nav {
     margin-top: .5rem;
     margin-bottom: .5rem; }
-    .navbar-toggleable-xs .navbar-nav .dropdown-menu {
+    .navbar-toggleable-xs .navbar-nav .dropdown-menu, .navbar-toggleable-xs .navbar-nav .twitter-typeahead .tt-menu, .twitter-typeahead .navbar-toggleable-xs .navbar-nav .tt-menu {
       position: static;
       float: none; } }
 
@@ -5368,7 +5370,7 @@ tbody.collapse.in {
   .navbar-toggleable-sm .navbar-nav {
     margin-top: .5rem;
     margin-bottom: .5rem; }
-    .navbar-toggleable-sm .navbar-nav .dropdown-menu {
+    .navbar-toggleable-sm .navbar-nav .dropdown-menu, .navbar-toggleable-sm .navbar-nav .twitter-typeahead .tt-menu, .twitter-typeahead .navbar-toggleable-sm .navbar-nav .tt-menu {
       position: static;
       float: none; } }
 
@@ -5390,7 +5392,7 @@ tbody.collapse.in {
   .navbar-toggleable-md .navbar-nav {
     margin-top: .5rem;
     margin-bottom: .5rem; }
-    .navbar-toggleable-md .navbar-nav .dropdown-menu {
+    .navbar-toggleable-md .navbar-nav .dropdown-menu, .navbar-toggleable-md .navbar-nav .twitter-typeahead .tt-menu, .twitter-typeahead .navbar-toggleable-md .navbar-nav .tt-menu {
       position: static;
       float: none; } }
 
@@ -5412,7 +5414,7 @@ tbody.collapse.in {
   .navbar-toggleable-lg .navbar-nav {
     margin-top: .5rem;
     margin-bottom: .5rem; }
-    .navbar-toggleable-lg .navbar-nav .dropdown-menu {
+    .navbar-toggleable-lg .navbar-nav .dropdown-menu, .navbar-toggleable-lg .navbar-nav .twitter-typeahead .tt-menu, .twitter-typeahead .navbar-toggleable-lg .navbar-nav .tt-menu {
       position: static;
       float: none; } }
 
@@ -5434,7 +5436,7 @@ tbody.collapse.in {
   .navbar-toggleable-xl .navbar-nav {
     margin-top: .5rem;
     margin-bottom: .5rem; }
-    .navbar-toggleable-xl .navbar-nav .dropdown-menu {
+    .navbar-toggleable-xl .navbar-nav .dropdown-menu, .navbar-toggleable-xl .navbar-nav .twitter-typeahead .tt-menu, .twitter-typeahead .navbar-toggleable-xl .navbar-nav .tt-menu {
       position: static;
       float: none; }
 
@@ -7596,6 +7598,13 @@ body {
 .body-fixed, .body-front-page {
   overflow: hidden; }
 
+.body-iframe {
+  background-color: #fff; }
+  .body-iframe .container,
+  .body-iframe .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
 body.navbarNorth {
   padding-top: 60px; }
   @media (max-width: 767px) {
@@ -7693,14 +7702,14 @@ body.navbarSouth {
   -webkit-user-select: all;
   user-select: all; }
 
-.inner, .inner-y, .dropdown-menu > div, .bootstrap-datetimepicker-widget.dropdown-menu > div, .popover .popover-content, select.form-control[multiple], .modal-page .modal-dialog .modal-content .modal-body, .inner-x {
+.inner, .inner-y, .dropdown-menu > div, .bootstrap-datetimepicker-widget.dropdown-menu > div, .twitter-typeahead .tt-menu > div, .popover .popover-content, select.form-control[multiple], .modal-page .modal-dialog .modal-content .modal-body, .inner-x {
   width: 100%;
   height: 100%;
   overflow-x: auto;
   overflow-y: auto;
   overflow-scrolling: touch; }
 
-.inner-y, .dropdown-menu > div, .bootstrap-datetimepicker-widget.dropdown-menu > div, .popover .popover-content, select.form-control[multiple], .modal-page .modal-dialog .modal-content .modal-body {
+.inner-y, .dropdown-menu > div, .bootstrap-datetimepicker-widget.dropdown-menu > div, .twitter-typeahead .tt-menu > div, .popover .popover-content, select.form-control[multiple], .modal-page .modal-dialog .modal-content .modal-body {
   overflow-x: hidden; }
 
 .inner-x {
@@ -7992,11 +8001,19 @@ samp {
     .well.well-warning a:hover, .download a:hover, .jumbotron a:hover, .card.card-info a:hover, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn a:hover {
       color: #fff; }
 
-.table.table-bordered thead th {
+.table thead th {
   border-bottom-width: 1px; }
 
-.table.table-bordered tr {
+.table tbody th {
+  width: 1%;
+  text-align: right; }
+
+.table tr {
   transition: all 0.4s ease; }
+
+.table.table-sm th,
+.table.table-sm td {
+  font-size: 0.8rem; }
 
 .btn > .fa, .card.card-info .card-footer .btn > .fa {
   margin-right: 10px; }
@@ -8019,7 +8036,7 @@ h1 > .fa, h2 > .fa, h3 > .fa, h4 > .fa, h5 > .fa, h6 > .fa,
   .navbar .container,
   .navbar .container-fluid {
     position: relative; }
-  .navbar .dropdown-menu {
+  .navbar .dropdown-menu, .navbar .twitter-typeahead .tt-menu, .twitter-typeahead .navbar .tt-menu {
     z-index: 1035; }
   .navbar .nav,
   .navbar .nav.navbar-nav {
@@ -8369,10 +8386,10 @@ header.header-image {
   font-size: 0.8rem;
   padding: 0.1rem 0.25rem !important; }
 
-.dropdown-menu, .bootstrap-datetimepicker-widget.dropdown-menu {
+.dropdown-menu, .bootstrap-datetimepicker-widget.dropdown-menu, .twitter-typeahead .tt-menu {
   border: 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
-  .dropdown-menu:before, .bootstrap-datetimepicker-widget.dropdown-menu:before, .dropdown-menu:after, .bootstrap-datetimepicker-widget.dropdown-menu:after {
+  .dropdown-menu:before, .bootstrap-datetimepicker-widget.dropdown-menu:before, .twitter-typeahead .tt-menu:before, .dropdown-menu:after, .bootstrap-datetimepicker-widget.dropdown-menu:after, .twitter-typeahead .tt-menu:after {
     content: '';
     width: 0;
     height: 0;
@@ -8382,23 +8399,23 @@ header.header-image {
     position: absolute;
     left: 0.5rem;
     z-index: 1000; }
-  .dropdown-menu:before, .bootstrap-datetimepicker-widget.dropdown-menu:before {
+  .dropdown-menu:before, .bootstrap-datetimepicker-widget.dropdown-menu:before, .twitter-typeahead .tt-menu:before {
     border-width: 10px;
     border-bottom-color: rgba(0, 0, 0, 0.1);
     top: -20px; }
-  .dropdown-menu:after, .bootstrap-datetimepicker-widget.dropdown-menu:after {
+  .dropdown-menu:after, .bootstrap-datetimepicker-widget.dropdown-menu:after, .twitter-typeahead .tt-menu:after {
     margin-left: 0px;
     border-width: 10px;
     border-bottom-color: #fff;
     top: -19px; }
-  .dropdown-menu .dropdown-item, ul.dropdown-menu > li, .bootstrap-datetimepicker-widget.dropdown-menu ul.dropdown-menu > li, ul.bootstrap-datetimepicker-widget.dropdown-menu > li {
+  .dropdown-menu .dropdown-item, .twitter-typeahead .tt-menu .dropdown-item, ul.dropdown-menu > li, .bootstrap-datetimepicker-widget.dropdown-menu ul.dropdown-menu > li, .twitter-typeahead .tt-menu ul.dropdown-menu > li, ul.bootstrap-datetimepicker-widget.dropdown-menu > li, .twitter-typeahead .dropdown-menu ul.tt-menu > li, .twitter-typeahead ul.tt-menu > li, .twitter-typeahead .tt-menu div.tt-suggestion {
     padding: 5px 1rem;
     white-space: nowrap; }
-    .dropdown-menu .dropdown-item.active:hover, ul.dropdown-menu > li.active:hover, .bootstrap-datetimepicker-widget.dropdown-menu ul.dropdown-menu > li.active:hover {
+    .dropdown-menu .dropdown-item.active:hover, .twitter-typeahead .tt-menu .dropdown-item.active:hover, ul.dropdown-menu > li.active:hover, .bootstrap-datetimepicker-widget.dropdown-menu ul.dropdown-menu > li.active:hover, .twitter-typeahead .tt-menu ul.dropdown-menu > li.active:hover, .twitter-typeahead .dropdown-menu ul.tt-menu > li.active:hover, .twitter-typeahead ul.tt-menu > li.active:hover, .twitter-typeahead .tt-menu div.active.tt-suggestion:hover {
       background-color: #41464c; }
-  .dropdown-menu .dropdown-divider {
+  .dropdown-menu .dropdown-divider, .twitter-typeahead .tt-menu .dropdown-divider {
     margin: 0; }
-  .dropdown-menu > div, .bootstrap-datetimepicker-widget.dropdown-menu > div {
+  .dropdown-menu > div, .bootstrap-datetimepicker-widget.dropdown-menu > div, .twitter-typeahead .tt-menu > div {
     max-height: 180px; }
 
 .dropdown-toggle:after {
@@ -8420,39 +8437,41 @@ header.header-image {
   content: "\f106" !important;
   border: 0 !important; }
 
-.dropup .dropdown-menu:before {
+.dropup .dropdown-menu:before, .dropup .twitter-typeahead .tt-menu:before, .twitter-typeahead .dropup .tt-menu:before {
   border-top-color: rgba(0, 0, 0, 0.1) !important;
   border-bottom-color: transparent !important;
   top: auto !important;
   bottom: -20px !important; }
 
-.dropup .dropdown-menu:after {
+.dropup .dropdown-menu:after, .dropup .twitter-typeahead .tt-menu:after, .twitter-typeahead .dropup .tt-menu:after {
   border-top-color: #fff !important;
   border-bottom-color: transparent !important;
   top: auto !important;
   bottom: -19px !important; }
 
-ul.dropdown-menu, ul.bootstrap-datetimepicker-widget.dropdown-menu {
+ul.dropdown-menu, ul.bootstrap-datetimepicker-widget.dropdown-menu, .twitter-typeahead ul.tt-menu {
   margin: 10px 0 0 !important;
   padding: 0; }
-  ul.dropdown-menu > li, ul.bootstrap-datetimepicker-widget.dropdown-menu > li {
+  ul.dropdown-menu > li, ul.bootstrap-datetimepicker-widget.dropdown-menu > li, .twitter-typeahead ul.tt-menu > li {
     padding: 0 !important; }
-    ul.dropdown-menu > li a, ul.bootstrap-datetimepicker-widget.dropdown-menu > li a {
+    ul.dropdown-menu > li a, ul.bootstrap-datetimepicker-widget.dropdown-menu > li a, .twitter-typeahead ul.tt-menu > li a {
       display: block;
       padding: 5px 1rem;
       color: #3a3a3a !important;
       outline: 0 !important;
       text-decoration: none !important; }
-    ul.dropdown-menu > li.active a {
+    ul.dropdown-menu > li.active a, .twitter-typeahead ul.tt-menu > li.active a {
       color: #fff !important; }
-    ul.dropdown-menu > li.disabled a {
+    ul.dropdown-menu > li.disabled a, .twitter-typeahead ul.tt-menu > li.disabled a {
       color: #a5a5a8 !important;
       text-decoration: none !important;
       cursor: not-allowed !important;
       background-color: transparent !important; }
 
-.dropup ul.dropdown-menu,
-.navbar-fixed-bottom ul.dropdown-menu {
+.dropup ul.dropdown-menu, .dropup .twitter-typeahead ul.tt-menu, .twitter-typeahead .dropup ul.tt-menu,
+.navbar-fixed-bottom ul.dropdown-menu,
+.navbar-fixed-bottom .twitter-typeahead ul.tt-menu, .twitter-typeahead
+.navbar-fixed-bottom ul.tt-menu {
   margin-top: 0 !important;
   margin-bottom: 10px !important; }
 
@@ -9296,7 +9315,7 @@ select.form-control[multiple] {
   .modal .modal-content .modal-footer .btn + .btn, .modal .modal-content .modal-footer .card.card-info .card-footer .btn + .btn {
     margin: 0; }
 
-.modal .modal-content .dropdown-menu {
+.modal .modal-content .dropdown-menu, .modal .modal-content .twitter-typeahead .tt-menu, .twitter-typeahead .modal .modal-content .tt-menu {
   z-index: 1075; }
 
 .modal-page {
@@ -9651,22 +9670,22 @@ select.form-control[multiple] {
 
 .bootstrap-datetimepicker-widget {
   margin: 0; }
-  .bootstrap-datetimepicker-widget.dropdown-menu {
+  .bootstrap-datetimepicker-widget.dropdown-menu, .twitter-typeahead .bootstrap-datetimepicker-widget.tt-menu {
     z-index: 1000;
     width: 240px; }
-    .bootstrap-datetimepicker-widget.timepicker-sbs.dropdown-menu {
+    .bootstrap-datetimepicker-widget.timepicker-sbs.dropdown-menu, .twitter-typeahead .bootstrap-datetimepicker-widget.timepicker-sbs.tt-menu {
       width: 480px; }
-    .bootstrap-datetimepicker-widget.top.dropdown-menu:before {
+    .bootstrap-datetimepicker-widget.top.dropdown-menu:before, .twitter-typeahead .bootstrap-datetimepicker-widget.top.tt-menu:before {
       border-top-color: rgba(0, 0, 0, 0.1) !important;
       border-bottom-color: transparent !important;
       top: auto !important;
       bottom: -20px !important; }
-    .bootstrap-datetimepicker-widget.top.dropdown-menu:after {
+    .bootstrap-datetimepicker-widget.top.dropdown-menu:after, .twitter-typeahead .bootstrap-datetimepicker-widget.top.tt-menu:after {
       border-top-color: #fff !important;
       border-bottom-color: transparent !important;
       top: auto !important;
       bottom: -19px !important; }
-  .modal .bootstrap-datetimepicker-widget.dropdown-menu {
+  .modal .bootstrap-datetimepicker-widget.dropdown-menu, .modal .twitter-typeahead .bootstrap-datetimepicker-widget.tt-menu, .twitter-typeahead .modal .bootstrap-datetimepicker-widget.tt-menu {
     z-index: 1075; }
   .bootstrap-datetimepicker-widget ul {
     margin: 0; }
@@ -9829,6 +9848,31 @@ select.form-control[multiple] {
 
 .input-group.date .input-group-addon {
   cursor: pointer; }
+
+.twitter-typeahead {
+  display: inline-block !important;
+  width: 100%;
+  float: left; }
+  .twitter-typeahead .tt-hint {
+    color: #a5a5a8 !important; }
+  .twitter-typeahead .tt-menu {
+    min-width: 100%; }
+    .twitter-typeahead .tt-menu > div {
+      height: auto;
+      max-height: 180px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      overflow-scrolling: touch; }
+    .twitter-typeahead .tt-menu div.tt-suggestion .tt-highlight {
+      text-transform: none !important; }
+    .twitter-typeahead .tt-menu div.tt-suggestion.tt-cursor {
+      cursor: pointer;
+      background-color: #eee !important;
+      color: #3a3a3a !important; }
+    .twitter-typeahead .tt-menu div.tt-suggestion:hover {
+      cursor: pointer;
+      background-color: #eee !important;
+      color: #3a3a3a !important; }
 
 .line-height-computed {
   font-size: 0.8rem;
