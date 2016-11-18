@@ -6,7 +6,8 @@
     "_",
     "Ember",
     "$",
-    "progressJs"
+    "progressJs",
+    "Bloodhound"
   ],
   "browser": true,
   "boss": true,
