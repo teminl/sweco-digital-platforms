@@ -261,8 +261,8 @@ $caret-width-lg:          $caret-width;
 $transition: all .4s ease;
 
 // Tables
-$table-cell-padding:      .75rem;
-$table-sm-cell-padding:   .33rem $spacer-x .34rem;
+$table-cell-padding:      .33rem $spacer-x .34rem;
+$table-sm-cell-padding:   .33rem .33rem;
 
 $table-bg:                transparent;
 $table-bg-accent:         $light-gray-superlight;

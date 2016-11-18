@@ -13,6 +13,18 @@ body
   overflow: hidden;
 }
 
+// Body when included in iframe
+.body-iframe
+{
+  background-color: $white; 
+  .container,
+  .container-fluid
+  {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 // If .navbar-north add .navbarNorth class to body
 body.navbarNorth
 {
@@ -370,19 +382,34 @@ samp
 // Table
 .table
 {
-  @extend .table-sm;
-  &.table-bordered
+  @extend .table-bordered;
+  @extend .table-striped;
+  @extend .table-hover;
+  thead
   {
-    thead
+    th
     {
-      th
-      {
-        border-bottom-width: 1px;
-      }
+      border-bottom-width: 1px;
     }
-    tr
+  }
+  tbody
+  {
+    th
     {
-      transition: $transition;
+      width: 1%;
+      text-align: right;
+    }
+  }
+  tr
+  {
+    transition: $transition;
+  }
+  &.table-sm
+  {
+    th,
+    td
+    {
+      font-size: $font-size-xs;
     }
   }
 }
