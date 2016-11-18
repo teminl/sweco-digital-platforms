@@ -1,0 +1,52 @@
+// Typeahead
+
+// The typeahead.js wrapper
+.twitter-typeahead
+{
+  display: inline-block !important;
+  width: 100%;
+  float: left;
+  .tt-hint
+  {
+    color: $text-muted !important;
+  }
+  .tt-input
+  {
+  }
+  // Dropdown
+  .tt-menu
+  {
+    @extend .dropdown-menu;
+    min-width: 100%;
+    > div
+    {
+      height: auto;
+      max-height: $dropdown-max-height;
+      overflow-x: hidden;
+      overflow-y: auto;
+      overflow-scrolling: touch;
+    }
+    // item
+    div.tt-suggestion
+    {
+      @extend .dropdown-item;
+      .tt-highlight
+      {
+        text-transform: none !important;
+      }
+      // item hover
+      &.tt-cursor
+      {
+        cursor: pointer;
+        background-color: $dropdown-link-hover-bg !important;
+        color: $dropdown-link-hover-color !important;
+      }
+      &:hover
+      {
+        cursor: pointer;
+        background-color: $dropdown-link-hover-bg !important;
+        color: $dropdown-link-hover-color !important;
+      }
+    }
+  }
+}

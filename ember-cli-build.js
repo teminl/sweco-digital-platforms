@@ -53,6 +53,8 @@ module.exports = function(defaults) {
   app.import("bower_components/moment/min/moment-with-locales.min.js");
   // Bootstrap Datepicker
   app.import("bower_components/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js");
+  // Typeahead.js
+  app.import("bower_components/typeahead.js/dist/typeahead.bundle.min.js");
 
   return app.toTree();
 };

@@ -10,7 +10,7 @@
           <div class="row">
             <div class="col-xs-10 offset-xs-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2">
               <div class="jumbo">
-                <h1>Sweco visual identity manual<br/>digital platforms<span class="version">v.1.1.0</span></h1>
+                <h1>Sweco visual identity manual<br/>digital platforms<span class="version">v.1.1.1</span></h1>
                 <p class="lead">Quickly get a project started with any of our examples ranging from using parts of the framework to custom components and layouts.</p>
                 <div class="flexbox-row flexbox-center">
                   <button class="btn btn-info btn-front-page" {{action 'frontPage'}}><span class="hidden-lg-down">Sweco </span>Digital Platforms<i class="fa fa-right fa-angle-right"></i></button>
@@ -1252,6 +1252,22 @@
 <!-- PROGRESS STOP -->
             </div>
 
+          </div>
+          <div class="col-lg-4">
+            <div class="well well-secondary">
+<!-- POPOVER START -->
+              <h4 id="popover">Popovers</h4>
+              <p>Read more about <a href="http://v4-alpha.getbootstrap.com/components/popovers/" target="_blank">popovers</a>.</p>
+
+              <button type="button" class="btn btn-info btn-block my-1" data-container="body" data-toggle="popover" data-placement="top" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on top</button>
+              <button type="button" class="btn btn-info btn-block my-1" data-container="body" data-toggle="popover" data-placement="right" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on right</button>
+              <button type="button" class="btn btn-info btn-block my-1" data-container="body" data-toggle="popover" data-placement="left" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on left</button>
+              <button type="button" class="btn btn-info btn-block my-1" data-container="body" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="Vivamus
+              sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on bottom</button>
+<!-- POPOVER STOP -->
+            </div>
+
+
             <div class="well well-secondary">
               <h4 id="datepicker">Datetimepicker</h4>
               <p>Read more about <a href="http://eonasdan.github.io/bootstrap-datetimepicker/" target="_blank">datetimepicker</a>.</p>
@@ -1284,20 +1300,7 @@
 
           </div>
           <div class="col-lg-4">
-            <div class="well well-secondary">
-<!-- POPOVER START -->
-              <h4 id="popover">Popovers</h4>
-              <p>Read more about <a href="http://v4-alpha.getbootstrap.com/components/popovers/" target="_blank">popovers</a>.</p>
 
-              <button type="button" class="btn btn-info btn-block my-1" data-container="body" data-toggle="popover" data-placement="top" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on top</button>
-              <button type="button" class="btn btn-info btn-block my-1" data-container="body" data-toggle="popover" data-placement="right" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on right</button>
-              <button type="button" class="btn btn-info btn-block my-1" data-container="body" data-toggle="popover" data-placement="left" title="Popover title" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on left</button>
-              <button type="button" class="btn btn-info btn-block my-1" data-container="body" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="Vivamus
-              sagittis lacus vel augue laoreet rutrum faucibus." {{action 'popover'}}>Popover on bottom</button>
-<!-- POPOVER STOP -->
-            </div>
-          </div>
-          <div class="col-lg-4">
             <div class="well well-secondary">
 <!-- TOOLTIP START -->
               <h4 id="tooltip">Tooltips</h4>
@@ -1309,6 +1312,17 @@
               <button type="button" class="btn btn-info btn-block my-1" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
 <!-- TOOLTIP STOP -->
             </div>
+
+            <div class="well well-secondary">
+<!-- TYPEAHEAD START -->
+              <h4 id="typeahead">Typeahead</h4>
+              <p>Read more about <a href="https://twitter.github.io/typeahead.js/" target="_blank">typeahead</a>.</p>
+              <div id="demo-typeahead">
+                <input class="form-control typeahead" type="text" placeholder="Enter a country">
+              </div>
+<!-- TYPEAHEAD STOP -->
+            </div>
+
           </div>
         </div>
 <!-- COMPONENTS START -->
@@ -1330,7 +1344,8 @@
               <li><a href="http://usablica.github.io/progress.js/" target="_blank">Progress.js</a></li>
               <li><a href="http://tether.io/" target="_blank">Tether</a></li>
               <li><a href="https://github.com/moment/moment" target="_blank">Moment with locales</a></li>
-              <li><a href="http://eonasdan.github.io/bootstrap-datetimepicker/" target="_blank">Datetimepicker</a></li>
+              <li><a href="http://eonasdan.github.io/bootstrap-datetimepicker/" target="_blank">Bootstrap datetimepicker</a></li>
+              <li><a href="https://twitter.github.io/typeahead.js/" target="_blank">Typeahead.js</a></li>
             </ul>
             <p>Dependency versions see: <a href="https://github.com/sweco/sweco-digital-platforms/blob/master/bower.json" target="_blank">bower.json</a></p>
           </div>

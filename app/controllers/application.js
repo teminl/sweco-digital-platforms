@@ -47,6 +47,20 @@ export default Ember.Controller.extend({
       });
     });
 
+    // Typeahead.js
+    $(function () {
+      var demoData = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.whitespace,
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        prefetch: 'demo/demo-data.json'
+      });
+      // Demo
+      $('#demo-typeahead .typeahead').typeahead(null, {
+        name: 'demoData',
+        source: demoData
+      });
+    });
+
   }
 
 });
