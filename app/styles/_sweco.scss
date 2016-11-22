@@ -380,36 +380,61 @@ samp
 }
 
 // Table
-.table
+table
 {
-  @extend .table-bordered;
-  @extend .table-striped;
-  @extend .table-hover;
-  thead
+  background-color: $table-bg;
+  width: 100%;
+  max-width: 100%;
+  th,
+  td
   {
-    th
+    padding: 0;
+    vertical-align: top;
+  }
+  thead th
+  {
+    vertical-align: bottom;
+    border-bottom: 0;
+  }
+  tbody + tbody
+  {
+    border-top: 0;
+  }
+  &.table
+  {
+    @extend .table-bordered;
+    @extend .table-striped;
+    @extend .table-hover;
+    thead
     {
-      border-bottom-width: 1px;
+      th
+      {
+        border-bottom-width: 1px;
+      }
     }
-  }
-  tbody
-  {
-    th
+    tbody + tbody
     {
-      width: 1%;
-      text-align: right;
+      border-top-width: 1px;
     }
-  }
-  tr
-  {
-    transition: $transition;
-  }
-  &.table-sm
-  {
-    th,
-    td
+    tbody
     {
-      font-size: $font-size-xs;
+      th
+      {
+        width: 1%;
+        text-align: right;
+      }
+    }
+    tr
+    {
+      transition: $transition;
+    }
+    &.table-sm
+    {
+      th,
+      td
+      {
+        font-size: $font-size-xs;
+      }
     }
   }
 }
