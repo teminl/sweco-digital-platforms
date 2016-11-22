@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Sweco Bootstrap v.1.1.2
+ * Sweco Bootstrap v.1.1.3
  */
 @font-face {
   font-family: 'SwecoSans-Regular';
@@ -2573,8 +2573,8 @@ textarea {
     .table td,
     .table th {
       background-color: #fff !important; }
-  .table-bordered th, .table th,
-  .table-bordered td, .table td {
+  .table-bordered th, table.table th,
+  .table-bordered td, table.table td {
     border: 1px solid #ddd !important; } }
 
 html {
@@ -3651,19 +3651,19 @@ pre {
 .table-sm td {
   padding: 0.33rem 0.33rem; }
 
-.table-bordered, .table {
+.table-bordered, table.table {
   border: 1px solid #a5a5a8; }
-  .table-bordered th, .table th,
-  .table-bordered td, .table td {
+  .table-bordered th, table.table th,
+  .table-bordered td, table.table td {
     border: 1px solid #a5a5a8; }
-  .table-bordered thead th, .table thead th,
-  .table-bordered thead td, .table thead td {
+  .table-bordered thead th, table.table thead th,
+  .table-bordered thead td, table.table thead td {
     border-bottom-width: 2px; }
 
-.table-striped tbody tr:nth-of-type(odd), .table tbody tr:nth-of-type(odd) {
+.table-striped tbody tr:nth-of-type(odd), table.table tbody tr:nth-of-type(odd) {
   background-color: #f8f8f7; }
 
-.table-hover tbody tr:hover, .table tbody tr:hover {
+.table-hover tbody tr:hover, table.table tbody tr:hover {
   background-color: #eee; }
 
 .table-active,
@@ -3671,10 +3671,10 @@ pre {
 .table-active > td {
   background-color: #eee; }
 
-.table-hover .table-active:hover, .table .table-active:hover {
+.table-hover .table-active:hover, table.table .table-active:hover {
   background-color: #e1e1e1; }
-  .table-hover .table-active:hover > td, .table .table-active:hover > td,
-  .table-hover .table-active:hover > th, .table .table-active:hover > th {
+  .table-hover .table-active:hover > td, table.table .table-active:hover > td,
+  .table-hover .table-active:hover > th, table.table .table-active:hover > th {
     background-color: #e1e1e1; }
 
 .table-success,
@@ -3682,10 +3682,10 @@ pre {
 .table-success > td {
   background-color: transparent; }
 
-.table-hover .table-success:hover, .table .table-success:hover {
+.table-hover .table-success:hover, table.table .table-success:hover {
   background-color: transparent; }
-  .table-hover .table-success:hover > td, .table .table-success:hover > td,
-  .table-hover .table-success:hover > th, .table .table-success:hover > th {
+  .table-hover .table-success:hover > td, table.table .table-success:hover > td,
+  .table-hover .table-success:hover > th, table.table .table-success:hover > th {
     background-color: transparent; }
 
 .table-info,
@@ -3693,10 +3693,10 @@ pre {
 .table-info > td {
   background-color: transparent; }
 
-.table-hover .table-info:hover, .table .table-info:hover {
+.table-hover .table-info:hover, table.table .table-info:hover {
   background-color: transparent; }
-  .table-hover .table-info:hover > td, .table .table-info:hover > td,
-  .table-hover .table-info:hover > th, .table .table-info:hover > th {
+  .table-hover .table-info:hover > td, table.table .table-info:hover > td,
+  .table-hover .table-info:hover > th, table.table .table-info:hover > th {
     background-color: transparent; }
 
 .table-warning,
@@ -3704,10 +3704,10 @@ pre {
 .table-warning > td {
   background-color: transparent; }
 
-.table-hover .table-warning:hover, .table .table-warning:hover {
+.table-hover .table-warning:hover, table.table .table-warning:hover {
   background-color: transparent; }
-  .table-hover .table-warning:hover > td, .table .table-warning:hover > td,
-  .table-hover .table-warning:hover > th, .table .table-warning:hover > th {
+  .table-hover .table-warning:hover > td, table.table .table-warning:hover > td,
+  .table-hover .table-warning:hover > th, table.table .table-warning:hover > th {
     background-color: transparent; }
 
 .table-danger,
@@ -3715,10 +3715,10 @@ pre {
 .table-danger > td {
   background-color: transparent; }
 
-.table-hover .table-danger:hover, .table .table-danger:hover {
+.table-hover .table-danger:hover, table.table .table-danger:hover {
   background-color: transparent; }
-  .table-hover .table-danger:hover > td, .table .table-danger:hover > td,
-  .table-hover .table-danger:hover > th, .table .table-danger:hover > th {
+  .table-hover .table-danger:hover > td, table.table .table-danger:hover > td,
+  .table-hover .table-danger:hover > th, table.table .table-danger:hover > th {
     background-color: transparent; }
 
 .thead-inverse th {
@@ -3736,7 +3736,7 @@ pre {
   .table-inverse td,
   .table-inverse thead th {
     border-color: #a5a5a8; }
-  .table-inverse.table-bordered, .table-inverse.table {
+  .table-inverse.table-bordered, table.table-inverse.table {
     border: 0; }
 
 .table-responsive {
@@ -3825,8 +3825,8 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0; }
 
 .col-form-label-lg {
-  padding-top: 0.78;
-  padding-bottom: 0.78;
+  padding-top: 0.77;
+  padding-bottom: 0.77;
   font-size: 1.35rem; }
 
 .col-form-label-sm {
@@ -3873,14 +3873,14 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn, .card.card-info .card-footer
 .input-group-lg > .input-group-btn > .btn {
-  padding: 0.78 0.75rem;
+  padding: 0.77 0.75rem;
   font-size: 1.35rem; }
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]), .card.card-info .card-footer
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
-  height: 3.36rem; }
+  height: 3.34rem; }
 
 .form-group {
   margin-bottom: 1rem; }
@@ -4840,7 +4840,7 @@ tbody.collapse.in {
   .input-group-lg > .input-group-addon,
   .input-group-lg > .input-group-btn > .input-group-addon.btn, .card.card-info .card-footer
   .input-group-lg > .input-group-btn > .input-group-addon.btn {
-    padding: 0.78 0.75rem;
+    padding: 0.77 0.75rem;
     font-size: 1.35rem; }
   .input-group-addon input[type="radio"],
   .input-group-addon input[type="checkbox"] {
@@ -8001,19 +8001,31 @@ samp {
     .well.well-warning a:hover, .download a:hover, .jumbotron a:hover, .card.card-info a:hover, .modal-page .modal-dialog .modal-content .modal-header .modal-header-btn-group .btn a:hover {
       color: #fff; }
 
-.table thead th {
-  border-bottom-width: 1px; }
-
-.table tbody th {
-  width: 1%;
-  text-align: right; }
-
-.table tr {
-  transition: all 0.4s ease; }
-
-.table.table-sm th,
-.table.table-sm td {
-  font-size: 0.8rem; }
+table {
+  background-color: transparent;
+  width: 100%;
+  max-width: 100%; }
+  table th,
+  table td {
+    padding: 0;
+    vertical-align: top; }
+  table thead th {
+    vertical-align: bottom;
+    border-bottom: 0; }
+  table tbody + tbody {
+    border-top: 0; }
+  table.table thead th {
+    border-bottom-width: 1px; }
+  table.table tbody + tbody {
+    border-top-width: 1px; }
+  table.table tbody th {
+    width: 1%;
+    text-align: right; }
+  table.table tr {
+    transition: all 0.4s ease; }
+  table.table.table-sm th,
+  table.table.table-sm td {
+    font-size: 0.8rem; }
 
 .btn > .fa, .card.card-info .card-footer .btn > .fa {
   margin-right: 10px; }
@@ -8610,14 +8622,14 @@ fieldset {
     min-height: 2rem; }
 
 .input-group.input-group-lg .btn, .input-group.input-group-lg .card.card-info .card-footer .btn, .card.card-info .card-footer .input-group.input-group-lg .btn {
-  min-height: 3.36rem; }
+  min-height: 3.34rem; }
 
 .ie .input-group .form-control {
   min-height: 41px; }
   .ie .input-group .form-control.form-control-lg, .ie .input-group .input-group-lg > .form-control, .ie .input-group
   .input-group-lg > .input-group-btn > .form-control.btn, .ie .input-group .card.card-info .card-footer
   .input-group-lg > .input-group-btn > .form-control.btn {
-    min-height: 3.36rem; }
+    min-height: 3.34rem; }
   .ie .input-group .form-control.form-control-sm, .ie .input-group .input-group-sm > .form-control, .ie .input-group
   .input-group-sm > .input-group-btn > .form-control.btn, .ie .input-group .card.card-info .card-footer
   .input-group-sm > .input-group-btn > .form-control.btn {
