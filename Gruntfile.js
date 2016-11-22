@@ -21,6 +21,7 @@ module.exports = function(grunt) {
         files: [
           { expand: true, cwd: 'dist', src: 'fonts/*', dest: destinationFolder + '' },
           { expand: true, cwd: 'dist', src: 'img/*', dest: destinationFolder + '' },
+          { expand: true, cwd: 'dist', src: 'demo/*', dest: destinationFolder + '' },
           { expand: true, cwd: 'dist/assets', src: 'sweco-bootstrap.css', dest: destinationFolder + '/css' },
           { expand: true, cwd: 'dist/assets', src: 'vendor.js', dest: destinationFolder + '/scripts' },
           { expand: true, cwd: 'dist/scripts', src: 'application.js', dest: destinationFolder + '/scripts' },
